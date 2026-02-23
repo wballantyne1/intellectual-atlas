@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "idea.schema.json",
+  "title": "Idea",
+  "description": "A concept, argument, movement, or doctrine",
+  "type": "object",
+  "required": ["id", "type", "name", "tradition", "summary"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in kebab-case",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "type": {
+      "type": "string",
+      "const": "idea"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the idea"
+    },
+    "tradition": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tradition(s) this idea belongs to"
+    },
+    "contested": {
+      "type": "boolean",
+      "description": "Is this idea significantly disputed in the literature?"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Accessible 2-3 sentence summary for a general audience"
+    },
+    "long_summary": {
+      "type": "string",
+      "description": "Longer scholarly summary (optional)"
+    },
+    "first_appearance": {
+      "type": "string",
+      "description": "Approximate date of first articulation (year or decade)"
+    },
+    "primary_thinker": {
+      "type": "string",
+      "description": "ID of the thinker most associated with this idea"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_nodes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of directly connected nodes"
+    }
+  },
+  "additionalProperties": false
+}

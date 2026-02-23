@@ -1,0 +1,20 @@
+{
+  "id": "critique-of-pure-reason",
+  "type": "idea",
+  "name": "Critique of Pure Reason",
+  "tradition": ["Critical Philosophy", "Epistemology", "Metaphysics"],
+  "contested": false,
+  "summary": "Kant's 1781 masterwork — one of the most consequential and difficult books in the Western philosophical tradition. It asks: what can human reason know, and what are its limits? Kant's answer reshaped philosophy, drawing a boundary between legitimate scientific knowledge and the overreaching claims of traditional metaphysics (about God, the soul, the universe as a whole).",
+  "long_summary": "The Critique of Pure Reason is less a single argument than a complete reorganisation of philosophy. Its central question is how synthetic a priori judgments are possible — that is, how we can have knowledge that is both necessarily true (a priori, not dependent on experience) and genuinely informative (synthetic, not just unpacking definitions). Kant's answer involves three main moves: the Transcendental Aesthetic (space and time are forms of our intuition), the Transcendental Analytic (the categories — causality, substance, etc. — are contributions of the understanding), and the Transcendental Dialectic (when reason tries to go beyond experience to things-in-themselves, it generates unavoidable antinomies and illusions). The Dialectic is especially significant: it explains why traditional metaphysics — proofs of God's existence, arguments for the soul's immortality, cosmological speculation — cannot succeed. The first Critique was followed by the Critique of Practical Reason (ethics) and the Critique of the Power of Judgment (aesthetics and teleology).",
+  "first_appearance": "1781",
+  "primary_thinker": "kant-immanuel",
+  "tags": ["epistemology", "metaphysics", "synthetic a priori", "reason", "understanding", "Enlightenment"],
+  "related_nodes": [
+    "kant-immanuel",
+    "transcendental-idealism",
+    "categorical-imperative",
+    "hume-david",
+    "leibniz-gottfried-wilhelm",
+    "hegel-georg-wilhelm-friedrich"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "kant-to-hegel-influence",
+  "type": "connection",
+  "from": "kant-immanuel",
+  "to": "hegel-georg-wilhelm-friedrich",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Hegel's entire philosophy is a sustained engagement with and transformation of Kant. Where Kant drew a firm boundary between appearances and things-in-themselves, Hegel dissolved it — arguing that the thing-in-itself is not an unknowable remainder but is progressively revealed through the development of Geist (Spirit/Mind) in history. Hegel accepted Kant's insight that subject and object are not simply given but actively related, and radicalised it: the relation is itself the substance of reality, not a veil over it. The Hegelian dialectic — thesis, antithesis, synthesis — is in large part a critique of Kant's static, ahistorical categories.",
+  "source": "Hegel, Phenomenology of Spirit (1807), Preface and Introduction; Science of Logic (1812-16)",
+  "direction": "forward"
+}

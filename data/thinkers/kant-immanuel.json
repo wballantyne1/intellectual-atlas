@@ -1,0 +1,32 @@
+{
+  "id": "kant-immanuel",
+  "type": "thinker",
+  "name": "Immanuel Kant",
+  "born": "1724-04-22",
+  "died": "1804-02-12",
+  "nationality": "Prussian (German)",
+  "tradition": ["German Idealism", "Enlightenment", "Critical Philosophy"],
+  "key_works": [
+    { "title": "Critique of Pure Reason", "year": "1781" },
+    { "title": "Groundwork of the Metaphysics of Morals", "year": "1785" },
+    { "title": "Critique of Practical Reason", "year": "1788" },
+    { "title": "Critique of the Power of Judgment", "year": "1790" },
+    { "title": "Prolegomena to Any Future Metaphysics", "year": "1783" }
+  ],
+  "summary": "Immanuel Kant is arguably the pivot of modern Western philosophy. He argued that the human mind actively shapes experience rather than passively receiving it — that space, time, and causality are frameworks we impose on the world, not features we read off it. His 'Copernican revolution' in philosophy attempted to reconcile the scientific rationalism of Newton with the sceptical empiricism of Hume.",
+  "long_summary": "Born and spent his entire life in Königsberg, Prussia (now Kaliningrad, Russia), Kant published little of lasting significance before the age of 57. The Critique of Pure Reason (1781) — one of the most difficult and consequential books in the philosophical tradition — attempted to answer the question of how synthetic a priori knowledge is possible: how we can know things about the world (like that every event has a cause) that are both necessarily true and informative, before experience. His answer was transcendental idealism: the structures of experience (space, time, the categories of the understanding) are contributions of the mind, not features of things-in-themselves. In ethics, Kant grounded morality in reason alone, producing the categorical imperative: act only according to that maxim by which you can also will that it should become a universal law. His three Critiques — of pure reason, practical reason, and judgment — set the agenda for almost all subsequent European philosophy.",
+  "tags": ["epistemology", "metaphysics", "ethics", "aesthetics", "enlightenment", "German idealism", "critical philosophy"],
+  "related_nodes": [
+    "hume-david",
+    "leibniz-gottfried-wilhelm",
+    "newton-isaac",
+    "rousseau-jean-jacques",
+    "wolff-christian",
+    "fichte-johann-gottlieb",
+    "hegel-georg-wilhelm-friedrich",
+    "schopenhauer-arthur",
+    "transcendental-idealism",
+    "categorical-imperative",
+    "critique-of-pure-reason"
+  ]
+}

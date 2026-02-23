@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "connection.schema.json",
+  "title": "Connection",
+  "description": "A relationship between any two nodes",
+  "type": "object",
+  "required": ["id", "type", "from", "to", "relationship", "weight", "description"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in format from-to-relationship",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "type": {
+      "type": "string",
+      "const": "connection"
+    },
+    "from": {
+      "type": "string",
+      "description": "ID of the source node"
+    },
+    "to": {
+      "type": "string",
+      "description": "ID of the target node"
+    },
+    "relationship": {
+      "type": "string",
+      "enum": ["influenced", "contradicted", "extended", "responded-to"],
+      "description": "Type of relationship"
+    },
+    "weight": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Significance of this connection: 1=minor, 5=foundational"
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable explanation of this connection"
+    },
+    "source": {
+      "type": "string",
+      "description": "Citation or evidence for this connection"
+    },
+    "direction": {
+      "type": "string",
+      "enum": ["forward", "bidirectional"],
+      "description": "forward = A influenced B chronologically; bidirectional = mutual influence"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "transcendental-idealism",
+  "type": "idea",
+  "name": "Transcendental Idealism",
+  "tradition": ["Critical Philosophy", "German Idealism", "Epistemology"],
+  "contested": true,
+  "summary": "Kant's doctrine that space and time are not features of reality as it is in itself, but forms that the human mind imposes on experience. We can only ever know the world as it appears to us (phenomena), never as it really is (noumena or 'things-in-themselves'). This was Kant's attempt to explain how objective knowledge is possible while accepting that we are never in direct contact with mind-independent reality.",
+  "long_summary": "Transcendental idealism distinguishes between appearances (how things seem to us, shaped by the mind's own forms of intuition and understanding) and things-in-themselves (the underlying reality, forever inaccessible to human cognition). Kant argued that space and time are pure forms of intuition — frameworks the mind brings to experience rather than properties discovered in it. Similarly, concepts like causality are categories of the understanding, not features read off the world. This allowed Kant to explain the necessity and universality of scientific knowledge (we know that every event has a cause because causality is a condition of possible experience, not a contingent discovery) while simultaneously blocking dogmatic metaphysics (we cannot know whether God, freedom, or immortality exist, because these lie beyond possible experience). The doctrine has been contested from almost every direction: by Fichte (who argued it still left an unknowable thing-in-itself), by Hegel (who dissolved the distinction entirely), by analytic philosophers (who questioned whether the synthetic/analytic distinction holds), and by realists who argue Kant's idealism collapses into subjectivism.",
+  "first_appearance": "1781",
+  "primary_thinker": "kant-immanuel",
+  "tags": ["epistemology", "metaphysics", "idealism", "phenomena", "noumena", "space", "time", "causality"],
+  "related_nodes": [
+    "kant-immanuel",
+    "critique-of-pure-reason",
+    "german-idealism",
+    "hume-david",
+    "fichte-johann-gottlieb",
+    "hegel-georg-wilhelm-friedrich",
+    "schopenhauer-arthur"
+  ]
+}

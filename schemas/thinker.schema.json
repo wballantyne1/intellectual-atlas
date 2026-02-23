@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "thinker.schema.json",
+  "title": "Thinker",
+  "description": "A human being who contributed to intellectual history",
+  "type": "object",
+  "required": ["id", "type", "name", "born", "tradition", "summary"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in format lastname-firstname",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "type": {
+      "type": "string",
+      "const": "thinker"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full name"
+    },
+    "born": {
+      "type": "string",
+      "description": "Birth year or date (e.g. '1724' or '1724-04-22')"
+    },
+    "died": {
+      "type": "string",
+      "description": "Death year, date, or 'living'"
+    },
+    "nationality": {
+      "type": "string",
+      "description": "Country or region of origin"
+    },
+    "tradition": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Philosophical or intellectual tradition(s)"
+    },
+    "key_works": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "year"],
+        "properties": {
+          "title": { "type": "string" },
+          "year": { "type": "string" }
+        }
+      }
+    },
+    "summary": {
+      "type": "string",
+      "description": "Accessible 2-3 sentence summary for a general audience"
+    },
+    "long_summary": {
+      "type": "string",
+      "description": "Longer scholarly summary (optional)"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_nodes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of directly connected nodes (denormalised for quick lookup)"
+    }
+  },
+  "additionalProperties": false
+}

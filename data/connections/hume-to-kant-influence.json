@@ -1,0 +1,11 @@
+{
+  "id": "hume-to-kant-influence",
+  "type": "connection",
+  "from": "hume-david",
+  "to": "kant-immanuel",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "David Hume's scepticism about causation — his argument that we never observe necessary connection between events, only constant conjunction — famously 'woke Kant from his dogmatic slumber' (Kant's own phrase). Hume had argued that the concept of causation cannot be derived from experience; Kant accepted this challenge but reversed its conclusion: if causation cannot come from experience, it must be a contribution of the mind itself. The entire architecture of the Critique of Pure Reason is shaped by Kant's attempt to answer Hume without retreating into dogmatic rationalism.",
+  "source": "Kant, Prolegomena to Any Future Metaphysics (1783), Preface; also Enquiry Concerning Human Understanding (1748)",
+  "direction": "forward"
+}
