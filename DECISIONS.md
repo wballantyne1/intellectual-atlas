@@ -91,17 +91,43 @@
 
 ---
 
-## D007 — Division of labour: Claude commits, human pushes
+## D007 — Division of labour: Claude writes files, human runs git
+*Date: 2026-02-23 (revised same day)*
+*Status: Confirmed*
+
+**Decision:** Claude handles all file creation and editing only. Claude never runs git commands. At the end of every session, Claude provides an exact copy-paste block of `git add`, `git commit`, and `git push` commands. The human runs these from the Intellectual Atlas folder in their terminal.
+
+**Reasoning (original):** Claude cannot authenticate with GitHub directly, so the human must run `git push`.
+
+**Reasoning (revision):** Claude's sandbox shares the filesystem with the user's Mac. When Claude runs `git add`, it creates a `.git/index.lock` file that the sandbox lacks permission to delete. This leaves a stale lock that blocks the human's subsequent git operations. After repeated failures to work around this, the cleanest fix is to draw the line earlier: Claude writes files, git is entirely the human's responsibility.
+
+**Practical implication:** Every session ends with a commit block like:
+```bash
+git add -A
+git commit -m "description of session work"
+git push
+```
+
+**Revisit when:** A sandbox environment with proper git permissions is available.
+
+---
+
+## D009 — Phase 1 tooling is Obsidian-native; custom tools belong to Phase 2
 *Date: 2026-02-23*
 *Status: Confirmed*
 
-**Decision:** Claude handles all file creation, editing, and git commits. The human's only recurring terminal action is `git push` to sync commits to GitHub at the end of a session.
+**Decision:** All interactive features in Phase 1 are built using Obsidian itself — native graph view, community plugins — rather than custom HTML/JS tools. Two HTML prototypes built earlier in the session (Timeline.html, Path Finder.html) are retained as Phase 2 design references but are not Phase 1 working tools.
 
-**Reasoning:** Claude runs in a sandbox environment that has access to the workspace folder and can run git commands, but cannot authenticate with GitHub directly. Rather than requiring the human to manage files manually, we draw the line at the point that actually requires their credentials: the push to the remote. Everything before that (writing, staging, committing) is Claude's responsibility.
+**Phase 1 plugin stack:**
+- **Dataview** — queries note frontmatter as a live database. Replaces the HTML timeline: `TABLE born_year, died_year FROM #thinker SORT born_year ASC`. Essential.
+- **Path Finder** (by jerrywcy) — finds shortest paths between any two notes in the vault. Replaces the HTML path-between tool. Natively inside Obsidian.
+- **Map View** — renders notes as pins on an OpenStreetMap using coordinates stored in note frontmatter. Visualises the geographic spread of the Atlas.
 
-**Practical implication:** The human needs to be in the Intellectual Atlas folder in their terminal to run `git push`. The prompt will show `Intellectual Atlas %` when in the right place.
+**Reasoning:** Building custom HTML tools in Phase 1 duplicates functionality that already exists as mature Obsidian plugins. The principle should be: use what Obsidian provides natively; build custom only in Phase 2 when the React canvas becomes the primary interface. Everything should stay within one environment without jumping to a browser.
 
-**Revisit when:** A GitHub token-based authentication approach is set up that allows Claude to push directly.
+**Frontmatter additions required:** To support Dataview and Map View, notes need numeric year fields (`born_year`, `died_year`, `first_year`) and coordinate fields (`location: [lat, lng]`) alongside the existing human-readable text fields.
+
+**Revisit when:** Moving to Phase 2, at which point custom React tools replace all Obsidian plugins.
 
 ---
 

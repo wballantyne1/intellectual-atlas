@@ -1,6 +1,7 @@
 ---
 tags:
   - contested-idea
+first_year: 1781
 ---
 
 # Transcendental Idealism

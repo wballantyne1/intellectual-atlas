@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: 1724
+died_year: 1804
+location: [54.71, 20.51]
 ---
 
 # Immanuel Kant

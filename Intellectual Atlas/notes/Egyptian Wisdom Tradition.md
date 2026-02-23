@@ -1,6 +1,9 @@
 ---
 tags:
   - tradition
+start_year: -3100
+end_year: 400
+location: [30.06, 31.22]
 ---
 
 # Egyptian Wisdom Tradition

@@ -5,13 +5,28 @@
   "born": "c. 570 BCE",
   "died": "c. 495 BCE",
   "nationality": "Greek (Samian)",
-  "tradition": ["Pre-Socratic Philosophy", "Mathematical Philosophy", "Pythagorean School"],
+  "tradition": [
+    "Pre-Socratic Philosophy",
+    "Mathematical Philosophy",
+    "Pythagorean School"
+  ],
   "key_works": [
-    { "title": "None surviving — teachings transmitted orally within the Pythagorean brotherhood", "year": "c. 530 BCE" }
+    {
+      "title": "None surviving — teachings transmitted orally within the Pythagorean brotherhood",
+      "year": "c. 530 BCE"
+    }
   ],
   "summary": "Proposed that the fundamental reality is number — not water, air, or fire, but mathematical ratio and proportion. Founded a quasi-religious brotherhood in southern Italy based on this insight. His influence on Plato was immense: the idea that reality is fundamentally mathematical runs from Pythagoras through Plato to Galileo, Newton, and modern theoretical physics.",
   "long_summary": "Pythagoras is one of the most historically elusive figures in Western philosophy. He left no writings; his followers attributed all discoveries to him; and later tradition embellished his life extensively. What can be reasonably attributed to him or his school: (1) The discovery that musical harmonies correspond to simple numerical ratios — the octave is 2:1, the fifth is 3:2. This was a genuinely remarkable finding, suggesting that mathematics underlies sensory experience. (2) The generalisation from music to all of reality: number is the arche. Not a physical substance, but an abstract principle. (3) The Pythagorean theorem, though known to Babylonian mathematicians long before Pythagoras, was likely given its first proof in his school. (4) The doctrine of the transmigration of souls — a belief in reincarnation that gave the Pythagorean brotherhood its religious character. Pythagoras reportedly studied in both Egypt and Babylon; the numerical mysticism of his school clearly draws on Babylonian mathematical traditions. His influence on Plato is decisive: Plato's theory of Forms — eternal, mathematical, abstract — is Pythagorean in inspiration. The idea that the book of nature is written in the language of mathematics (Galileo's phrase) is ultimately a Pythagorean claim.",
-  "tags": ["Pre-Socratic", "mathematics", "number", "musical harmony", "Pythagoreanism", "Plato influence", "mathematical idealism"],
+  "tags": [
+    "Pre-Socratic",
+    "mathematics",
+    "number",
+    "musical harmony",
+    "Pythagoreanism",
+    "Plato influence",
+    "mathematical idealism"
+  ],
   "related_nodes": [
     "babylonian-intellectual-tradition",
     "egyptian-wisdom-tradition",
@@ -19,5 +34,13 @@
     "plato",
     "arche",
     "naturalistic-explanation"
-  ]
+  ],
+  "location": {
+    "city": "Croton (via Samos)",
+    "modern_country": "Italy",
+    "coordinates": [
+      39.08,
+      17.13
+    ]
+  }
 }

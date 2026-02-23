@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: 1646
+died_year: 1716
+location: [51.34, 12.38]
 ---
 
 # Gottfried Wilhelm Leibniz

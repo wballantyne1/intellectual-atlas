@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -428
+died_year: -348
+location: [37.97, 23.73]
 ---
 
 # Plato

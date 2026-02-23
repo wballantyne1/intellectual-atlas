@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intellectual Atlas — Path Finder</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; color: #e0d8cc; font-family: 'Georgia', serif; min-height: 100vh; display: flex; flex-direction: column; }
+
+  header { padding: 14px 24px; border-bottom: 1px solid #2a2a2a; display: flex; align-items: center; gap: 16px; }
+  header h1 { font-size: 1rem; font-weight: normal; color: #a09080; letter-spacing: 0.05em; text-transform: uppercase; }
+
+  .search-panel { padding: 24px 24px 20px; border-bottom: 1px solid #1e1e1e; display: flex; gap: 16px; align-items: flex-end; flex-wrap: wrap; }
+  .field { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 200px; }
+  .field label { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: #666; }
+
+  .search-wrap { position: relative; }
+  .search-input { width: 100%; padding: 8px 12px; background: #1a1a1a; border: 1px solid #333; color: #e0d8cc; font-family: 'Georgia', serif; font-size: 0.85rem; border-radius: 4px; outline: none; }
+  .search-input:focus { border-color: #c8a84b; }
+
+  .dropdown { position: absolute; top: 100%; left: 0; right: 0; background: #1e1e1e; border: 1px solid #333; border-top: none; max-height: 220px; overflow-y: auto; z-index: 100; border-radius: 0 0 4px 4px; display: none; }
+  .dropdown.open { display: block; }
+  .dropdown::-webkit-scrollbar { width: 5px; }
+  .dropdown::-webkit-scrollbar-track { background: #1e1e1e; }
+  .dropdown::-webkit-scrollbar-thumb { background: #333; }
+  .dropdown-item { padding: 7px 12px; cursor: pointer; font-size: 0.82rem; color: #c0b8a8; border-bottom: 1px solid #252525; display: flex; align-items: center; gap: 8px; }
+  .dropdown-item:hover { background: #252525; color: #f0e8d0; }
+  .dropdown-item .type-badge { font-size: 0.6rem; padding: 1px 5px; border-radius: 8px; flex-shrink: 0; }
+  .badge-thinker { background: #1a3a5c; color: #5b9fd4; }
+  .badge-idea { background: #2a2000; color: #c8a84b; }
+  .badge-tradition { background: #0e2a12; color: #6aaa70; }
+
+  .find-btn { padding: 9px 22px; background: #2a2a1a; border: 1px solid #c8a84b; color: #c8a84b; font-family: 'Georgia', serif; font-size: 0.85rem; cursor: pointer; border-radius: 4px; white-space: nowrap; transition: background 0.2s; flex-shrink: 0; }
+  .find-btn:hover { background: #3a3a1a; }
+  .find-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  .result-area { flex: 1; padding: 28px 24px; }
+  .placeholder { color: #444; font-size: 0.85rem; line-height: 1.8; max-width: 480px; }
+  .placeholder strong { color: #666; }
+
+  .path-chain { display: flex; flex-direction: column; gap: 0; }
+  .path-node { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px; padding: 14px 18px; max-width: 600px; }
+  .path-node.start { border-color: #5b9fd4; }
+  .path-node.end { border-color: #c8a84b; }
+  .path-node-name { font-size: 0.95rem; color: #e0d4b0; margin-bottom: 3px; }
+  .path-node-meta { font-size: 0.7rem; color: #666; margin-bottom: 8px; }
+  .path-node-summary { font-size: 0.78rem; color: #908880; line-height: 1.6; }
+
+  .path-edge { display: flex; align-items: center; gap: 10px; padding: 6px 20px; max-width: 600px; }
+  .edge-line { width: 2px; background: #2a2a2a; height: 20px; margin-left: 18px; }
+  .edge-label { background: #1e1e1e; border: 1px solid #2a2a2a; border-radius: 10px; padding: 3px 12px; font-size: 0.7rem; color: #888; margin-left: 16px; }
+  .edge-label.influenced { color: #5b9fd4; border-color: #1a3a5c; }
+  .edge-label.contradicted { color: #c8504b; border-color: #3a1a1a; }
+  .edge-label.responded-to { color: #c8a84b; border-color: #2a2000; }
+
+  .no-path { color: #664; font-size: 0.85rem; background: #1a1a0e; border: 1px solid #2a2a18; border-radius: 6px; padding: 14px 18px; max-width: 500px; }
+  .degrees { font-size: 0.75rem; color: #666; margin-bottom: 18px; }
+
+  .error-msg { color: #c85050; font-size: 0.82rem; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Intellectual Atlas</h1>
+  <span style="color:#333;">·</span>
+  <span style="font-size:0.85rem;color:#666;">Path Finder</span>
+</header>
+
+<div class="search-panel">
+  <div class="field">
+    <label>From</label>
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="fromInput" placeholder="Search thinkers, ideas, traditions…" autocomplete="off">
+      <div class="dropdown" id="fromDropdown"></div>
+    </div>
+    <input type="hidden" id="fromId">
+  </div>
+
+  <div class="field">
+    <label>To</label>
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="toInput" placeholder="Search thinkers, ideas, traditions…" autocomplete="off">
+      <div class="dropdown" id="toDropdown"></div>
+    </div>
+    <input type="hidden" id="toId">
+  </div>
+
+  <button class="find-btn" id="findBtn" disabled onclick="findPath()">Find Path</button>
+</div>
+
+<div class="result-area" id="resultArea">
+  <p class="placeholder">
+    Search for two thinkers, ideas, or traditions and discover the chain of intellectual connections between them.
+    <br><br>
+    <strong>Try:</strong> Heraclitus → Kant · or · Babylonian Intellectual Tradition → Immanuel Kant
+  </p>
+</div>
+
+<script>
+// ── DATA ─────────────────────────────────────────────────────────────────────
+
+const NODES = {
+  "thales-of-miletus": {name:"Thales of Miletus",type:"thinker",dates:"-624 — -546 BCE",summary:"Traditionally the first philosopher in the Western tradition. Asked what the world is fundamentally made of and answered: water. The first known attempt to explain the cosmos through a single natural principle rather than through divine agency."},
+  "anaximander-of-miletus": {name:"Anaximander of Miletus",type:"thinker",dates:"c. 610 — 546 BCE",summary:"Student of Thales who proposed the Apeiron — the boundless, indefinite — as the fundamental substance. The first fully abstract concept in Western philosophy."},
+  "heraclitus-of-ephesus": {name:"Heraclitus of Ephesus",type:"thinker",dates:"c. 535 — 475 BCE",summary:"The philosopher of flux and fire. Argued that constant, structured change governed by the Logos is the fundamental reality. 'You cannot step in the same river twice.'"},
+  "parmenides-of-elea": {name:"Parmenides of Elea",type:"thinker",dates:"c. 515 — 450 BCE",summary:"Argued that change is impossible and all apparent multiplicity is illusion. The direct logical contradiction of Heraclitus. Refuted him not with evidence but with pure argument."},
+  "pythagoras-of-samos": {name:"Pythagoras of Samos",type:"thinker",dates:"c. 570 — 495 BCE",summary:"Proposed that the fundamental reality is number — not water, air, or fire, but mathematical ratio and proportion. His influence on Plato's mathematical idealism was immense."},
+  "democritus-of-abdera": {name:"Democritus of Abdera",type:"thinker",dates:"c. 460 — 370 BCE",summary:"The originator of atomic theory: all of reality consists of indivisible particles (atoms) moving through empty void. The most prescient theory in the history of philosophy."},
+  "socrates": {name:"Socrates",type:"thinker",dates:"c. 470 — 399 BCE",summary:"The founder of Western ethical philosophy. Wrote nothing, claimed to know nothing, and was executed for his ideas. His method of relentless questioning changed philosophy permanently."},
+  "plato": {name:"Plato",type:"thinker",dates:"c. 428 — 348 BCE",summary:"The most influential philosopher in the Western tradition. His Theory of Forms attempted to synthesise the entire Pre-Socratic debate."},
+  "aristotle": {name:"Aristotle",type:"thinker",dates:"384 — 322 BCE",summary:"Plato's greatest student and most systematic critic. Invented formal logic, founded biology, and shaped medieval Islamic and Christian philosophy for a thousand years."},
+  "epicurus": {name:"Epicurus",type:"thinker",dates:"341 — 270 BCE",summary:"Founder of Epicureanism. Argued for the quiet pleasure of friendship and freedom from fear, using Democritus's atomism to dissolve anxiety about death and the gods."},
+  "zeno-of-citium": {name:"Zeno of Citium",type:"thinker",dates:"c. 334 — 262 BCE",summary:"Founder of Stoicism. Synthesised Heraclitus's Logos with a practical ethics: the good life consists in living in accordance with rational law."},
+  "lucretius": {name:"Lucretius",type:"thinker",dates:"c. 99 — 55 BCE",summary:"Roman Epicurean poet whose De Rerum Natura preserved atomic theory for Western civilisation. Lost for a thousand years, rediscovered in 1417."},
+  "marcus-aurelius": {name:"Marcus Aurelius",type:"thinker",dates:"121 — 180 CE",summary:"Roman Emperor and Stoic philosopher. The Meditations are personal reminders to practise Stoic principles under the pressure of governing an empire."},
+  "plotinus": {name:"Plotinus",type:"thinker",dates:"c. 204 — 270 CE",summary:"Founder of Neoplatonism. Fused Plato's philosophy with mystical thought into a grand vision of reality emanating from the One. Became the framework of both Christian theology and Islamic philosophy."},
+  "kant-immanuel": {name:"Immanuel Kant",type:"thinker",dates:"1724 — 1804",summary:"Arguably the pivot of modern Western philosophy. Argued that the mind actively shapes experience — that space, time, and causality are frameworks we impose, not features we read off the world."},
+  "hume-david": {name:"David Hume",type:"thinker",dates:"1711 — 1776",summary:"Scottish Enlightenment philosopher whose scepticism about causation 'woke Kant from his dogmatic slumber' and set the agenda for the critical philosophy."},
+  "hegel-georg-wilhelm-friedrich": {name:"G.W.F. Hegel",type:"thinker",dates:"1770 — 1831",summary:"The culmination of German Idealism. His entire philosophy is a sustained engagement with and transformation of Kant."},
+  "babylonian-intellectual-tradition": {name:"Babylonian Intellectual Tradition",type:"tradition",dates:"c. 3000 — 500 BCE",summary:"The oldest significant body of systematic astronomical and mathematical knowledge. Directly influenced early Greek philosophy, particularly Thales and Pythagoras."},
+  "egyptian-wisdom-tradition": {name:"Egyptian Wisdom Tradition",type:"tradition",dates:"c. 3100 BCE — 400 CE",summary:"One of the longest-lived intellectual traditions in human history. Egyptian ideas fed into Greek philosophy via Pythagoras, Plato, and Plotinus."},
+  "islamic-golden-age-tradition": {name:"Islamic Golden Age",type:"tradition",dates:"c. 750 — 1250 CE",summary:"The period of Islamic intellectual flourishing that transmitted and transformed Greek philosophy, preserving and extending Aristotle and Plotinus for medieval Europe."},
+  "theory-of-forms": {name:"Theory of Forms",type:"idea",dates:"c. 385 BCE",summary:"Plato's doctrine that true reality consists of eternal, perfect, abstract entities of which physical things are imperfect copies."},
+  "virtue-ethics": {name:"Virtue Ethics",type:"idea",dates:"c. 400 BCE",summary:"The ethical framework that locates morality in the character of the agent rather than in consequences or rules."},
+  "syllogistic-logic": {name:"Syllogistic Logic",type:"idea",dates:"c. 350 BCE",summary:"Aristotle's invention of formal deductive logic. The dominant framework for logic for two thousand years."},
+  "logos": {name:"Logos",type:"idea",dates:"c. 500 BCE",summary:"The rational principle ordering the cosmos. Originated with Heraclitus, developed by the Stoics, transformed by Christian theology."},
+  "atomism": {name:"Atomism",type:"idea",dates:"c. 430 BCE",summary:"The theory that all reality consists of indivisible particles. Proposed by Democritus, vindicated by modern chemistry."},
+  "stoic-ethics": {name:"Stoic Ethics",type:"idea",dates:"c. 300 BCE",summary:"Virtue is the only genuine good; everything else is indifferent. We cannot control external events, only our responses."},
+  "cosmopolitanism": {name:"Cosmopolitanism",type:"idea",dates:"c. 400 BCE",summary:"All human beings are members of a single community. All humans share in the divine Logos and are equal in moral standing."},
+  "ataraxia": {name:"Ataraxia",type:"idea",dates:"c. 300 BCE",summary:"The Epicurean ideal of tranquillity — an undisturbed, anxiety-free state of mind."},
+  "the-one": {name:"The One",type:"idea",dates:"c. 253 CE",summary:"Plotinus's term for the absolute first principle of all reality — utterly simple, beyond being, beyond description."},
+  "emanation": {name:"Emanation",type:"idea",dates:"c. 253 CE",summary:"The Neoplatonic account of how the world comes to exist through necessary overflow from the One."},
+  "transcendental-idealism": {name:"Transcendental Idealism",type:"idea",dates:"1781",summary:"Kant's doctrine that space and time are forms the human mind imposes on experience, not features of reality itself."},
+  "critique-of-pure-reason": {name:"Critique of Pure Reason",type:"idea",dates:"1781",summary:"Kant's masterwork asking: what can human reason know, and what are its limits?"},
+  "naturalistic-explanation": {name:"Naturalistic Explanation",type:"idea",dates:"c. 585 BCE",summary:"The founding move of Western philosophy — explaining the cosmos through impersonal causes rather than divine will."},
+  "arche": {name:"Arche",type:"idea",dates:"c. 585 BCE",summary:"The fundamental principle from which all things originate. The central question of Pre-Socratic philosophy."},
+  "apeiron": {name:"The Apeiron",type:"idea",dates:"c. 560 BCE",summary:"Anaximander's proposal: the Apeiron — 'the boundless', the first fully abstract concept in Western philosophy."},
+  "maat-concept": {name:"Ma'at",type:"idea",dates:"c. 2700 BCE",summary:"The ancient Egyptian concept of cosmic order, truth, and justice — a structural precursor to the Greek Logos."},
+};
+
+const CONNECTIONS = [
+  {from:"babylonian-intellectual-tradition",to:"thales-of-miletus",rel:"influenced",desc:"Thales used Babylonian astronomical records and mathematical techniques, almost certainly including data for his famous eclipse prediction of 585 BCE."},
+  {from:"babylonian-intellectual-tradition",to:"pythagoras-of-samos",rel:"influenced",desc:"Pythagoras reportedly travelled to Babylon. Babylonian mathematics — including number theory and proportional reasoning — directly shaped his mathematical philosophy."},
+  {from:"egyptian-wisdom-tradition",to:"thales-of-miletus",rel:"influenced",desc:"Thales reportedly visited Egypt, where he encountered Egyptian geometry and cosmological ideas about water as the primordial substance."},
+  {from:"egyptian-wisdom-tradition",to:"plotinus",rel:"influenced",desc:"Plotinus was born and educated in Egypt, studying under Ammonius Saccas in Alexandria. Egyptian ideas about the soul's unity with the divine are present throughout his work."},
+  {from:"thales-of-miletus",to:"anaximander-of-miletus",rel:"influenced",desc:"Anaximander was Thales' student and immediate successor in the Milesian school. He built directly on Thales' project while critiquing his specific answer."},
+  {from:"anaximander-of-miletus",to:"heraclitus-of-ephesus",rel:"influenced",desc:"Both were Ionian thinkers; Heraclitus was familiar with Anaximander's work and likely influenced by his abstract approach to the arche."},
+  {from:"heraclitus-of-ephesus",to:"parmenides-of-elea",rel:"contradicted",desc:"The most fundamental contradiction in Pre-Socratic philosophy: Heraclitus says everything changes; Parmenides says nothing can change. Their opposition runs through the whole of Western metaphysics."},
+  {from:"parmenides-of-elea",to:"democritus-of-abdera",rel:"responded-to",desc:"Democritus's atomic theory is explicitly a response to the Parmenidean challenge. By dividing reality into atoms (Being) and void (Not-being), he tried to save the possibility of motion."},
+  {from:"parmenides-of-elea",to:"plato",rel:"influenced",desc:"The Theory of Forms is essentially a synthesis of Parmenidean permanence (the Forms are eternal and unchanging) with Heraclitean flux (the sensible world is in constant motion)."},
+  {from:"pythagoras-of-samos",to:"plato",rel:"influenced",desc:"Plato's mathematical idealism — the idea that the Forms are mathematical in character, and that philosophy proceeds by mathematical method — is deeply Pythagorean."},
+  {from:"socrates",to:"plato",rel:"influenced",desc:"The most consequential teacher-student relationship in Western philosophy. Plato's entire output is an attempt to honour, extend, and sometimes subtly diverge from Socratic teaching."},
+  {from:"democritus-of-abdera",to:"epicurus",rel:"influenced",desc:"Epicurus adopted Democritus's atomic theory wholesale, transforming its purpose from physical explanation to psychological liberation."},
+  {from:"heraclitus-of-ephesus",to:"zeno-of-citium",rel:"influenced",desc:"Heraclitus's Logos — the rational principle governing all flux — is the direct ancestor of the Stoic Logos. The Stoics explicitly adopted Heraclitean ideas."},
+  {from:"plato",to:"aristotle",rel:"influenced",desc:"Aristotle studied at Plato's Academy for approximately twenty years (367–347 BCE) — the longest and most productive philosophical apprenticeship in history."},
+  {from:"aristotle",to:"theory-of-forms",rel:"contradicted",desc:"Aristotle's most famous philosophical disagreement: his systematic rejection of the separate, transcendent Forms in favour of forms inherent in individual things."},
+  {from:"plato",to:"plotinus",rel:"influenced",desc:"Plotinus understood himself as a faithful interpreter of Plato. His entire system is a radicalisation of Platonic ideas: the Form of the Good becomes the One, the realm of Forms becomes Nous."},
+  {from:"plotinus",to:"islamic-golden-age-tradition",rel:"influenced",desc:"Neoplatonism was transmitted to the Islamic world through a text known as the Theology of Aristotle (actually excerpts from Plotinus's Enneads), profoundly shaping Al-Kindi, Al-Farabi, and Avicenna."},
+  {from:"zeno-of-citium",to:"kant-immanuel",rel:"influenced",desc:"Kant's ethics — particularly the concept of duty, the categorical imperative, and the kingdom of ends — show clear Stoic influence in their universalism and rational self-governance."},
+  {from:"hume-david",to:"kant-immanuel",rel:"influenced",desc:"David Hume's scepticism about causation 'woke Kant from his dogmatic slumber' and made the critical philosophy necessary."},
+  {from:"kant-immanuel",to:"hegel-georg-wilhelm-friedrich",rel:"influenced",desc:"Hegel's entire philosophy is a sustained engagement with and transformation of Kant."},
+];
+
+// ── BUILD ADJACENCY LIST (bidirectional for pathfinding) ──────────────────────
+const adj = {}; // id → [{neighbour, connection}]
+
+function addEdge(a, b, conn) {
+  if (!adj[a]) adj[a] = [];
+  if (!adj[b]) adj[b] = [];
+  adj[a].push({neighbour: b, conn, forward: true});
+  adj[b].push({neighbour: a, conn, forward: false});
+}
+
+CONNECTIONS.forEach(c => addEdge(c.from, c.to, c));
+
+// ── SEARCH ────────────────────────────────────────────────────────────────────
+let fromId = null, toId = null;
+
+function setupSearch(inputId, dropdownId, hiddenId, onSelect) {
+  const input = document.getElementById(inputId);
+  const dropdown = document.getElementById(dropdownId);
+  const hidden = document.getElementById(hiddenId);
+
+  input.addEventListener('input', () => {
+    const q = input.value.toLowerCase().trim();
+    hidden.value = '';
+    fromId = toId = null;
+    document.getElementById('findBtn').disabled = true;
+
+    if (!q) { dropdown.classList.remove('open'); return; }
+
+    const matches = Object.entries(NODES).filter(([id, n]) =>
+      n.name.toLowerCase().includes(q) || id.includes(q)
+    ).slice(0, 12);
+
+    dropdown.innerHTML = '';
+    if (!matches.length) { dropdown.classList.remove('open'); return; }
+
+    matches.forEach(([id, n]) => {
+      const item = document.createElement('div');
+      item.className = 'dropdown-item';
+      item.innerHTML = `<span class="type-badge badge-${n.type}">${n.type}</span>${n.name}`;
+      item.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        input.value = n.name;
+        hidden.value = id;
+        dropdown.classList.remove('open');
+        onSelect(id);
+      });
+      dropdown.appendChild(item);
+    });
+    dropdown.classList.add('open');
+  });
+
+  input.addEventListener('blur', () => setTimeout(() => dropdown.classList.remove('open'), 150));
+}
+
+setupSearch('fromInput', 'fromDropdown', 'fromId', (id) => {
+  fromId = id;
+  checkReady();
+});
+setupSearch('toInput', 'toDropdown', 'toId', (id) => {
+  toId = id;
+  checkReady();
+});
+
+function checkReady() {
+  document.getElementById('findBtn').disabled = !(fromId && toId);
+}
+
+// ── BFS PATHFINDING ───────────────────────────────────────────────────────────
+function bfs(startId, endId) {
+  if (startId === endId) return [{nodeId: startId, edge: null}];
+  if (!NODES[startId] || !NODES[endId]) return null;
+
+  const visited = new Set([startId]);
+  const queue = [[startId]]; // path arrays
+  const edgeMap = {}; // nodeId → {conn, forward} used to reach it
+
+  while (queue.length) {
+    const path = queue.shift();
+    const current = path[path.length - 1];
+
+    for (const {neighbour, conn, forward} of (adj[current] || [])) {
+      if (visited.has(neighbour)) continue;
+      visited.add(neighbour);
+      edgeMap[neighbour] = {conn, forward};
+
+      const newPath = [...path, neighbour];
+      if (neighbour === endId) {
+        // Reconstruct with edges
+        return newPath.map((nid, i) => ({
+          nodeId: nid,
+          edge: i === 0 ? null : edgeMap[nid]
+        }));
+      }
+      queue.push(newPath);
+    }
+  }
+  return null; // no path
+}
+
+// ── RENDER PATH ───────────────────────────────────────────────────────────────
+function relLabel(rel, forward) {
+  if (rel === 'influenced') return forward ? 'influenced →' : '← influenced by';
+  if (rel === 'contradicted') return forward ? 'contradicted →' : '← contradicted by';
+  if (rel === 'responded-to') return forward ? 'responded to →' : '← responded to by';
+  return rel;
+}
+
+function typeColor(type) {
+  if (type === 'thinker') return '#5b9fd4';
+  if (type === 'idea') return '#c8a84b';
+  if (type === 'tradition') return '#6aaa70';
+  return '#888';
+}
+
+function findPath() {
+  const result = document.getElementById('resultArea');
+  if (!fromId || !toId) return;
+
+  if (fromId === toId) {
+    result.innerHTML = `<div class="no-path">Same node selected at both ends.</div>`;
+    return;
+  }
+
+  const path = bfs(fromId, toId);
+  if (!path) {
+    const from = NODES[fromId]?.name || fromId;
+    const to = NODES[toId]?.name || toId;
+    result.innerHTML = `<div class="no-path">No connection found between <strong>${from}</strong> and <strong>${to}</strong> in the current database. The database is still growing — this path may appear as more nodes are added.</div>`;
+    return;
+  }
+
+  const degrees = path.length - 1;
+  let html = `<div class="degrees">${degrees} degree${degrees !== 1 ? 's' : ''} of separation · ${path.length} node${path.length !== 1 ? 's' : ''}</div>`;
+  html += `<div class="path-chain">`;
+
+  path.forEach((step, i) => {
+    const node = NODES[step.nodeId] || {name: step.nodeId, type: 'thinker', summary: ''};
+    const isStart = i === 0;
+    const isEnd = i === path.length - 1;
+    const color = typeColor(node.type);
+
+    // Edge above the node
+    if (step.edge) {
+      const {conn, forward} = step.edge;
+      const edgeRelClass = conn.rel.replace(/\s+/g, '-');
+      html += `
+        <div style="display:flex;align-items:stretch;">
+          <div style="width:2px;background:#2a2a2a;margin:0 0 0 20px;"></div>
+          <div class="edge-label ${edgeRelClass}" style="margin:4px 0 4px 12px;">${relLabel(conn.rel, forward)}</div>
+        </div>
+      `;
+    }
+
+    html += `
+      <div class="path-node ${isStart ? 'start' : isEnd ? 'end' : ''}" style="border-color:${isStart || isEnd ? color : '#2a2a2a'}">
+        <div class="path-node-name">
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:7px;vertical-align:middle"></span>
+          ${node.name}
+        </div>
+        <div class="path-node-meta">${node.type} · ${node.dates || ''}</div>
+        <div class="path-node-summary">${node.summary}</div>
+        ${step.edge && step.edge.conn.desc ? `<div style="margin-top:8px;font-size:0.72rem;color:#777;line-height:1.5;border-top:1px solid #222;padding-top:8px;font-style:italic">${step.edge.conn.desc}</div>` : ''}
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  result.innerHTML = html;
+}
+
+// Allow Enter key on inputs to trigger search
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && fromId && toId) findPath();
+});
+</script>
+</body>
+</html>

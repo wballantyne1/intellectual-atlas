@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: 50
+died_year: 135
+location: [37.93, 29.12]
 ---
 
 # Epictetus

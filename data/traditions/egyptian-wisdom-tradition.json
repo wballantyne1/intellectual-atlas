@@ -20,7 +20,16 @@
   "named_thinkers": [
     "imhotep"
   ],
-  "tags": ["cosmology", "ethics", "Ma'at", "mathematics", "medicine", "Hermeticism", "ancient Africa", "pre-Socratic influences"],
+  "tags": [
+    "cosmology",
+    "ethics",
+    "Ma'at",
+    "mathematics",
+    "medicine",
+    "Hermeticism",
+    "ancient Africa",
+    "pre-Socratic influences"
+  ],
   "related_nodes": [
     "babylonian-intellectual-tradition",
     "thales-of-miletus",
@@ -28,5 +37,13 @@
     "plato",
     "maat-concept",
     "naturalistic-explanation"
-  ]
+  ],
+  "location": {
+    "city": "Memphis / Alexandria",
+    "modern_country": "Egypt",
+    "coordinates": [
+      30.06,
+      31.22
+    ]
+  }
 }

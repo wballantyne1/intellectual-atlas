@@ -14,7 +14,23 @@ A GitHub repository containing structured JSON files. No server, no database, no
 
 Think of it like a filing cabinet: each drawer is a folder (`thinkers/`, `ideas/`, `connections/`), each file is a card. The connections folder is the index — it tells you how the cards relate to each other.
 
-**Working arrangement:** Claude creates files, stages changes, and commits locally. The human runs `git push` from the Intellectual Atlas folder to sync to GitHub.
+**Working arrangement:** Claude creates and edits files only. Claude never runs git commands. At the end of each session the human runs the commit block Claude provides. See D007.
+
+---
+
+## End-of-session git workflow
+
+At the end of every working session, run these three commands from the `Intellectual Atlas` folder:
+
+```bash
+git add -A
+git commit -m "brief description of what was done"
+git push
+```
+
+`git add -A` stages everything — new files, edits, and deletions. This is intentional: Claude manages the files, so whatever is in the folder is what should be committed.
+
+**Why Claude doesn't run git:** Claude's sandbox shares the filesystem with your Mac but cannot clean up git lock files it creates, which blocks subsequent git operations. Running git exclusively from the Mac terminal avoids this entirely.
 
 ---
 
@@ -145,10 +161,70 @@ The Phase 1 JSON schema is designed to be migration-friendly: all IDs will map c
 
 Obsidian is pointed at the nested `Intellectual Atlas/` subfolder as its vault. Markdown mirror notes live in `Intellectual Atlas/notes/` — one file per node, using `[[wiki-links]]` to create the connection graph.
 
-**How the graph works:** Obsidian scans all markdown files for `[[links]]` and draws a line between any two files that reference each other. The intelligence is in the links Claude writes, not in Obsidian itself. Obsidian's graph view shows node connections but cannot differentiate edge types (influence vs. contradiction). Node colouring by type (thinker/idea/tradition) is available via Obsidian's Groups feature.
+**How the graph works:** Obsidian scans all markdown files for `[[links]]` and draws a line between any two files that reference each other. The intelligence is in the links Claude writes, not in Obsidian itself. Node colouring by type (thinker/idea/tradition) is available via Obsidian's Groups feature.
 
 **Mirror note conventions:**
 - Full nodes: complete summaries, all connections listed with wiki-links
 - Stub nodes: minimal entry marked `> Stub — full node not yet built`, with key connections listed
 
-**Limitation:** Obsidian cannot render different connection types visually. This is a known Phase 1 constraint — React Flow in Phase 2 will display edge types (influenced/contradicted/extended) as distinct visual styles.
+---
+
+## Phase 1 plugin stack
+
+All interactive features are Obsidian-native. No browser required. Install via Settings → Community plugins → Browse.
+
+| Plugin | Purpose | Status |
+|--------|---------|--------|
+| **Dataview** | Live queries on note frontmatter — timeline views, filtered lists, sorted tables | Install |
+| **Path Finder** (by jerrywcy) | Finds shortest path between any two notes in the vault | Install |
+| **Map View** | Renders notes as pins on OpenStreetMap using `location` frontmatter coordinates | Install |
+
+### Dataview queries (examples)
+
+Timeline of thinkers sorted by birth year:
+```dataview
+TABLE born_year, died_year, nationality FROM #thinker
+WHERE born_year != null
+SORT born_year ASC
+```
+
+All ideas before 0 CE:
+```dataview
+TABLE first_year, primary_thinker FROM #idea
+WHERE first_year < 0
+SORT first_year ASC
+```
+
+All nodes in a given tradition:
+```dataview
+LIST FROM #thinker OR #idea
+WHERE contains(tradition, "Stoicism")
+```
+
+### Note frontmatter fields (extended for plugins)
+
+Thinker notes carry the following YAML frontmatter:
+```yaml
+tags: [thinker]
+born_year: -624        # integer; negative = BCE. Used by Dataview.
+died_year: -546        # integer. Used by Dataview.
+location: [37.53, 27.28]   # [lat, lng]. Used by Map View.
+```
+
+Idea notes:
+```yaml
+tags: [idea]
+first_year: -585       # integer; year of first articulation. Used by Dataview.
+```
+
+Tradition notes:
+```yaml
+tags: [tradition]
+start_year: -3000      # integer. Used by Dataview.
+end_year: -500         # integer. Used by Dataview.
+location: [32.54, 44.42]   # [lat, lng]. Used by Map View.
+```
+
+---
+
+**Known limitation:** Obsidian cannot render different connection types visually (influence vs. contradiction appears as identical edges). This is a Phase 1 constraint — React Flow in Phase 2 will display edge types as distinct visual styles.

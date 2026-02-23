@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -99
+died_year: -55
+location: [41.9, 12.5]
 ---
 
 # Lucretius

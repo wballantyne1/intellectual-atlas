@@ -2,6 +2,9 @@
 tags:
   - tradition
   - stub
+start_year: 750
+end_year: 1250
+location: [33.34, 44.4]
 ---
 
 # Islamic Golden Age Tradition

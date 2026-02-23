@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -460
+died_year: -370
+location: [40.94, 25.01]
 ---
 
 # Democritus of Abdera

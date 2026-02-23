@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: 1788
+died_year: 1860
+location: [50.11, 8.68]
 ---
 
 # Arthur Schopenhauer

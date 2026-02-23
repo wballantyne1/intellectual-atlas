@@ -1,6 +1,7 @@
 ---
 tags:
   - idea
+first_year: -2700
 ---
 
 # Ma'at

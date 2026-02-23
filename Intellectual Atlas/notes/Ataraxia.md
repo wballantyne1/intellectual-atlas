@@ -1,6 +1,7 @@
 ---
 tags:
   - idea
+first_year: -300
 ---
 
 # Ataraxia

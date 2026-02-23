@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -610
+died_year: -546
+location: [37.53, 27.28]
 ---
 
 # Anaximander of Miletus

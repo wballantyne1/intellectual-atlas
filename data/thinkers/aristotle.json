@@ -5,19 +5,54 @@
   "born": "384 BCE",
   "died": "322 BCE",
   "nationality": "Greek (Macedonian-Athenian)",
-  "tradition": ["Classical Greek Philosophy", "Aristotelianism", "Natural Philosophy", "Logic"],
+  "tradition": [
+    "Classical Greek Philosophy",
+    "Aristotelianism",
+    "Natural Philosophy",
+    "Logic"
+  ],
   "key_works": [
-    { "title": "Nicomachean Ethics", "year": "c. 350 BCE" },
-    { "title": "Politics", "year": "c. 350 BCE" },
-    { "title": "Metaphysics", "year": "c. 350 BCE" },
-    { "title": "Physics", "year": "c. 350 BCE" },
-    { "title": "Poetics", "year": "c. 335 BCE" },
-    { "title": "Prior Analytics (Organon)", "year": "c. 350 BCE" },
-    { "title": "On the Soul (De Anima)", "year": "c. 350 BCE" }
+    {
+      "title": "Nicomachean Ethics",
+      "year": "c. 350 BCE"
+    },
+    {
+      "title": "Politics",
+      "year": "c. 350 BCE"
+    },
+    {
+      "title": "Metaphysics",
+      "year": "c. 350 BCE"
+    },
+    {
+      "title": "Physics",
+      "year": "c. 350 BCE"
+    },
+    {
+      "title": "Poetics",
+      "year": "c. 335 BCE"
+    },
+    {
+      "title": "Prior Analytics (Organon)",
+      "year": "c. 350 BCE"
+    },
+    {
+      "title": "On the Soul (De Anima)",
+      "year": "c. 350 BCE"
+    }
   ],
   "summary": "Plato's greatest student and, in many ways, his most systematic critic. Where Plato located reality in an abstract realm of Forms, Aristotle brought it back to earth — reality is in individual things, which have form and matter inseparably united. He invented formal logic, founded biology as a discipline, and shaped the intellectual frameworks of medieval Islamic and Christian philosophy for a thousand years.",
   "long_summary": "Aristotle studied at Plato's Academy for twenty years, then founded his own school, the Lyceum. His rejection of Platonic Forms was not a rejection of Plato's questions but a different answer to them. For Aristotle, the form of a horse is not a transcendent Horse-Form but the actual organisation of matter that makes this particular horse a horse. Form and matter are inseparable; there is no realm of pure Forms apart from the physical world. This immanent teleology — things have natural ends (telos) that constitute their flourishing — grounded his ethics: the good life for humans is the life that fulfils human nature (the Nicomachean Ethics). His logical works (the Organon) invented the syllogism and formal deductive logic — a framework that dominated Western thought until the 19th century. His natural philosophy covered physics, cosmology, biology, psychology, and meteorology; he was the first systematic empirical biologist, categorising hundreds of species. His Poetics established the theory of drama for two millennia. When his works were rediscovered in medieval Europe via Islamic scholars (particularly Averroes), the synthesis of Aristotle and Christian theology by Aquinas became the intellectual foundation of medieval Catholicism. The Scientific Revolution of the 17th century was in large part a revolt against Aristotelian physics.",
-  "tags": ["logic", "ethics", "biology", "metaphysics", "teleology", "Aristotelianism", "medieval philosophy", "natural philosophy"],
+  "tags": [
+    "logic",
+    "ethics",
+    "biology",
+    "metaphysics",
+    "teleology",
+    "Aristotelianism",
+    "medieval philosophy",
+    "natural philosophy"
+  ],
   "related_nodes": [
     "plato",
     "socrates",
@@ -28,5 +63,13 @@
     "theory-of-forms",
     "islamic-golden-age-tradition",
     "kant-immanuel"
-  ]
+  ],
+  "location": {
+    "city": "Athens",
+    "modern_country": "Greece",
+    "coordinates": [
+      37.97,
+      23.73
+    ]
+  }
 }

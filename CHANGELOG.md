@@ -4,6 +4,40 @@
 
 ---
 
+## 2026-02-23 — Session 1 (continued): Git workflow fix (D007 revised)
+
+**Decision (D007 revised):** Claude no longer runs git commands. Sandbox permission issues leave stale lock files that block the human's git operations. New rule: Claude writes files, human runs all git commands at end of session using `git add -A && git commit -m "..." && git push`.
+
+**Documentation updated:** DECISIONS.md (D007), ARCHITECTURE.md (end-of-session workflow)
+
+---
+
+## 2026-02-23 — Session 1 (continued): Obsidian-native tooling + geographic stamps
+
+**Decision (D009):** Phase 1 tooling is Obsidian-native. All interactive features use community plugins rather than custom HTML/JS, keeping everything inside one environment without jumping to a browser.
+
+**Phase 1 plugin stack established:**
+- **Dataview** — live queries on note frontmatter (timeline, filtered lists, tradition views)
+- **Path Finder** (jerrywcy) — shortest-path finding between any two notes, natively in Obsidian
+- **Map View** — renders notes as pins on OpenStreetMap using frontmatter coordinates
+
+**Note frontmatter — new fields added to all 43 notes:**
+- Thinkers (24 notes): `born_year`, `died_year` (integers), `location: [lat, lng]`
+- Ideas (16 notes): `first_year` (integer)
+- Traditions (3 notes): `start_year`, `end_year`, `location: [lat, lng]`
+
+**Schema:**
+- `schemas/thinker.schema.json` — added `location` field (`city`, `modern_country`, `coordinates`)
+
+**Data — Geographic stamps added to all 15 thinker nodes and 2 tradition nodes.**
+
+**Prototypes (moved to `prototypes/`):**
+- `Timeline.html` and `Path Finder.html` retained as Phase 2 design references, not Phase 1 working tools.
+
+**Documentation updated:** DECISIONS.md (D009), ARCHITECTURE.md (plugin stack, frontmatter spec)
+
+---
+
 ## 2026-02-23 — Session 1 (continued): Hellenistic period — Stoics, Epicureans, Neoplatonists
 
 **Data — Thinkers (5 full nodes):**

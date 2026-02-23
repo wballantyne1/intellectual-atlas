@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intellectual Atlas — Timeline</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; color: #e0d8cc; font-family: 'Georgia', serif; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+  header { padding: 14px 24px; border-bottom: 1px solid #2a2a2a; display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+  header h1 { font-size: 1rem; font-weight: normal; color: #a09080; letter-spacing: 0.05em; text-transform: uppercase; }
+  header .year-display { font-size: 1.4rem; color: #e8d5a0; min-width: 120px; }
+
+  .slider-row { padding: 10px 24px 8px; border-bottom: 1px solid #1e1e1e; flex-shrink: 0; display: flex; align-items: center; gap: 12px; }
+  .slider-row label { font-size: 0.75rem; color: #666; white-space: nowrap; }
+  input[type=range] { flex: 1; -webkit-appearance: none; appearance: none; height: 3px; background: #2a2a2a; border-radius: 2px; outline: none; cursor: pointer; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: #c8a84b; cursor: pointer; }
+  .era-label { font-size: 0.7rem; color: #555; min-width: 60px; }
+  .era-label.right { text-align: right; }
+
+  .main { display: flex; flex: 1; overflow: hidden; }
+
+  .chart-panel { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 16px 24px; }
+  .chart-panel::-webkit-scrollbar { width: 6px; }
+  .chart-panel::-webkit-scrollbar-track { background: #111; }
+  .chart-panel::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+  .section-label { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #555; margin: 10px 0 6px; }
+
+  .node-row { display: flex; align-items: center; margin-bottom: 5px; cursor: pointer; transition: opacity 0.2s; }
+  .node-row.inactive { opacity: 0.18; }
+  .node-row:hover { opacity: 1 !important; }
+  .node-name { font-size: 0.78rem; min-width: 180px; max-width: 180px; color: #c8c0b0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 10px; }
+  .node-name.active-name { color: #f0e8d0; }
+
+  .bar-track { flex: 1; position: relative; height: 20px; }
+  .bar { position: absolute; height: 8px; top: 6px; border-radius: 4px; transition: filter 0.2s; }
+  .bar.thinker { background: #3a6fa8; }
+  .bar.active { background: #5b9fd4; filter: drop-shadow(0 0 4px #4a8fc4); }
+  .bar.idea { background: #8a6a20; height: 6px; top: 7px; }
+  .bar.idea.active { background: #c8a84b; filter: drop-shadow(0 0 4px #b89840); }
+  .bar.tradition { background: #4a7a50; }
+  .bar.tradition.active { background: #6aaa70; filter: drop-shadow(0 0 4px #5a9a60); }
+
+  .scrubber { position: absolute; top: 0; bottom: 0; width: 2px; background: #e8d5a0; opacity: 0.6; pointer-events: none; transition: left 0.05s; z-index: 10; }
+  .scrubber-wrapper { position: relative; }
+
+  .now-dot { position: absolute; width: 8px; height: 8px; background: #e8d5a0; border-radius: 50%; top: 6px; transform: translateX(-50%); pointer-events: none; }
+
+  .detail-panel { width: 280px; border-left: 1px solid #1e1e1e; padding: 20px 18px; overflow-y: auto; flex-shrink: 0; }
+  .detail-panel h2 { font-size: 0.95rem; color: #e0d4b0; margin-bottom: 4px; line-height: 1.4; }
+  .detail-panel .meta { font-size: 0.7rem; color: #888; margin-bottom: 12px; }
+  .detail-panel .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; }
+  .detail-panel p { font-size: 0.8rem; color: #b0a898; line-height: 1.6; }
+  .detail-panel .tradition-tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .detail-panel .tag { font-size: 0.65rem; padding: 2px 7px; background: #1e1e1e; border: 1px solid #333; border-radius: 10px; color: #888; }
+  .detail-placeholder { color: #444; font-size: 0.78rem; line-height: 1.6; padding-top: 10px; }
+
+  .legend { display: flex; gap: 16px; padding: 8px 24px; border-top: 1px solid #1e1e1e; flex-shrink: 0; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.68rem; color: #666; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Intellectual Atlas</h1>
+  <span style="color:#333;">·</span>
+  <span style="font-size:0.85rem;color:#666;">Timeline</span>
+  <div style="flex:1"></div>
+  <div class="year-display" id="yearDisplay">—</div>
+</header>
+
+<div class="slider-row">
+  <span class="era-label">700 BCE</span>
+  <input type="range" id="yearSlider" min="-700" max="1900" value="-500" step="1">
+  <span class="era-label right">1900 CE</span>
+</div>
+
+<div class="main">
+  <div class="chart-panel" id="chartPanel">
+    <div class="section-label">Thinkers</div>
+    <div id="thinkersChart"></div>
+    <div class="section-label" style="margin-top:14px;">Ideas</div>
+    <div id="ideasChart"></div>
+    <div class="section-label" style="margin-top:14px;">Traditions</div>
+    <div id="traditionsChart"></div>
+  </div>
+
+  <div class="detail-panel" id="detailPanel">
+    <p class="detail-placeholder">← Drag the slider to explore time. Click any row to see details.</p>
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#5b9fd4"></div> Thinker (active)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3a6fa8;opacity:0.4"></div> Thinker (inactive)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#c8a84b"></div> Idea (active)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#6aaa70"></div> Tradition (active)</div>
+</div>
+
+<script>
+// ── DATA ─────────────────────────────────────────────────────────────────────
+
+const THINKERS = [
+  {id:"thales-of-miletus",name:"Thales of Miletus",born:-624,died:-546,tradition:["Pre-Socratic Philosophy","Milesian School"],location:{city:"Miletus",modern_country:"Turkey"},summary:"Traditionally the first philosopher in the Western tradition. Thales asked what the world is fundamentally made of and answered: water. The answer matters less than the move — this was the first known attempt to explain the cosmos through a single natural principle rather than through divine agency or myth."},
+  {id:"anaximander-of-miletus",name:"Anaximander of Miletus",born:-610,died:-546,tradition:["Pre-Socratic Philosophy","Milesian School"],location:{city:"Miletus",modern_country:"Turkey"},summary:"Student of Thales and the first philosopher to give a genuine philosophical argument rather than merely assert a position. He rejected his teacher's answer (water) by asking: if water is fundamental, what is water itself made of? His answer was the Apeiron — the boundless, indefinite — the first fully abstract concept in Western philosophy."},
+  {id:"heraclitus-of-ephesus",name:"Heraclitus of Ephesus",born:-535,died:-475,tradition:["Pre-Socratic Philosophy"],location:{city:"Ephesus",modern_country:"Turkey"},summary:"The philosopher of flux and fire. Heraclitus argued that the fundamental reality is not a static substance but a process — constant, structured change governed by an underlying rational principle he called the Logos. 'You cannot step in the same river twice.'"},
+  {id:"parmenides-of-elea",name:"Parmenides of Elea",born:-515,died:-450,tradition:["Pre-Socratic Philosophy","Eleatic School"],location:{city:"Elea (Velia)",modern_country:"Italy"},summary:"The philosopher who argued that change is impossible and all apparent multiplicity is illusion. Only Being exists — this is the direct and total contradiction of Heraclitus, and Parmenides refuted him not with evidence but with pure logical argument."},
+  {id:"pythagoras-of-samos",name:"Pythagoras of Samos",born:-570,died:-495,tradition:["Pre-Socratic Philosophy","Mathematical Philosophy"],location:{city:"Croton (via Samos)",modern_country:"Italy"},summary:"Proposed that the fundamental reality is number — not water, air, or fire, but mathematical ratio and proportion. His influence on Plato was immense: the idea that reality is fundamentally mathematical runs from Pythagoras through Plato to Galileo, Newton, and modern theoretical physics."},
+  {id:"democritus-of-abdera",name:"Democritus of Abdera",born:-460,died:-370,tradition:["Pre-Socratic Philosophy","Atomism"],location:{city:"Abdera",modern_country:"Greece"},summary:"The originator of atomic theory: all of reality consists of indivisible particles (atoms) moving through empty void. This is the most prescient theory in the history of philosophy: ignored for two millennia, it became the foundation of modern chemistry and physics."},
+  {id:"socrates",name:"Socrates",born:-470,died:-399,tradition:["Classical Greek Philosophy","Ethics"],location:{city:"Athens",modern_country:"Greece"},summary:"The founder of Western ethical philosophy — and one of the most paradoxical figures in intellectual history. He wrote nothing, claimed to know nothing, and was executed for his ideas. His method — relentless questioning to expose hidden assumptions — changed philosophy permanently."},
+  {id:"plato",name:"Plato",born:-428,died:-348,tradition:["Classical Greek Philosophy","Platonism"],location:{city:"Athens",modern_country:"Greece"},summary:"The most influential philosopher in the Western tradition. Student of Socrates, teacher of Aristotle, founder of the Academy. His Theory of Forms — that true reality is a realm of eternal, perfect, abstract entities — attempted to synthesise the entire Pre-Socratic debate."},
+  {id:"aristotle",name:"Aristotle",born:-384,died:-322,tradition:["Classical Greek Philosophy","Aristotelianism"],location:{city:"Athens",modern_country:"Greece"},summary:"Plato's greatest student and, in many ways, his most systematic critic. He invented formal logic, founded biology as a discipline, and shaped the intellectual frameworks of medieval Islamic and Christian philosophy for a thousand years."},
+  {id:"epicurus",name:"Epicurus",born:-341,died:-270,tradition:["Epicureanism","Hellenistic Philosophy"],location:{city:"Athens",modern_country:"Greece"},summary:"Founder of Epicureanism. Epicurus did not advocate hedonistic excess — he argued for the quiet pleasure of friendship, philosophical conversation, and freedom from fear. He adopted Democritus's atomism to eliminate the two great sources of human anxiety: fear of death and fear of the gods."},
+  {id:"zeno-of-citium",name:"Zeno of Citium",born:-334,died:-262,tradition:["Stoicism","Hellenistic Philosophy"],location:{city:"Athens (born Cyprus)",modern_country:"Greece"},summary:"Founder of Stoicism. Zeno began teaching in the Stoa Poikile ('Painted Porch') in Athens around 300 BCE. He synthesised Heraclitus's Logos with a practical ethics: if the universe is governed by rational law, the good life consists in living in accordance with that law."},
+  {id:"lucretius",name:"Lucretius",born:-99,died:-55,tradition:["Epicureanism","Roman Philosophy"],location:{city:"Rome",modern_country:"Italy"},summary:"Roman poet and Epicurean philosopher whose single surviving work, De Rerum Natura, preserved the atomic theory for Western civilisation. His poem was lost for a thousand years, rediscovered in 1417, and arguably changed the course of history."},
+  {id:"marcus-aurelius",name:"Marcus Aurelius",born:121,died:180,tradition:["Stoicism","Roman Philosophy"],location:{city:"Rome",modern_country:"Italy"},summary:"Roman Emperor and Stoic philosopher — the most powerful person in the world who wrote one of the most intimate documents in philosophical history. The Meditations are personal notes to himself: reminders to practise Stoic principles under the pressure of governing an empire."},
+  {id:"plotinus",name:"Plotinus",born:204,died:270,tradition:["Neoplatonism","Mysticism"],location:{city:"Alexandria / Rome",modern_country:"Egypt / Italy"},summary:"The founder of Neoplatonism. Born in Egypt, he fused Plato's philosophy with mystical thought into a grand vision of reality as emanating from a single source — the One — through successive levels down to matter. His philosophy became the intellectual framework of both Christian theology and Islamic philosophy."},
+  {id:"kant-immanuel",name:"Immanuel Kant",born:1724,died:1804,tradition:["German Idealism","Enlightenment"],location:{city:"Königsberg",modern_country:"Germany (now Russia)"},summary:"Arguably the pivot of modern Western philosophy. He argued that the human mind actively shapes experience rather than passively receiving it — that space, time, and causality are frameworks we impose on the world, not features we read off it."}
+];
+
+const IDEAS = [
+  {id:"maat-concept",name:"Ma'at",first:-2700,tradition:["Egyptian Wisdom Tradition"],summary:"The ancient Egyptian concept of cosmic order, truth, justice, and harmony. One of the earliest known attempts to articulate a universal, impersonal principle governing both the natural world and human conduct."},
+  {id:"naturalistic-explanation",name:"Naturalistic Explanation",first:-585,tradition:["Pre-Socratic Philosophy"],summary:"The move from mythological to natural explanations of the world — explaining events through impersonal causes rather than divine will. This is the founding gesture of Western philosophy and science."},
+  {id:"arche",name:"Arche",first:-585,tradition:["Pre-Socratic Philosophy"],summary:"The Greek concept of the fundamental principle from which all things originate. Each Pre-Socratic philosopher proposed a different candidate: water, the Apeiron, air, fire, number, atoms."},
+  {id:"apeiron",name:"The Apeiron",first:-560,tradition:["Pre-Socratic Philosophy"],summary:"Anaximander's proposal: not water or any determinate substance, but the Apeiron — 'the boundless' or 'the indefinite'. The first fully abstract concept in Western philosophy."},
+  {id:"logos",name:"Logos",first:-500,tradition:["Pre-Socratic Philosophy","Stoicism"],summary:"The rational principle or word that orders and governs the cosmos. In Heraclitus, the Logos is the hidden structure underlying all flux. Taken up by the Stoics, Philo of Alexandria, and ultimately the Gospel of John."},
+  {id:"atomism",name:"Atomism",first:-430,tradition:["Pre-Socratic Philosophy","Materialism"],summary:"The theory that all reality consists of indivisible particles (atoms) moving through empty void. Proposed by Democritus, ignored for two millennia, and vindicated by modern chemistry and physics."},
+  {id:"virtue-ethics",name:"Virtue Ethics",first:-400,tradition:["Classical Greek Philosophy"],summary:"The ethical framework that locates morality in the character of the agent. Asks not 'what should I do?' but 'what kind of person should I be?' Originating with Socrates, developed by Plato and Aristotle."},
+  {id:"cosmopolitanism",name:"Cosmopolitanism",first:-400,tradition:["Stoicism","Political Philosophy"],summary:"The idea that all human beings are members of a single community, regardless of nationality. All humans share in the divine Logos and are therefore equal in moral standing."},
+  {id:"theory-of-forms",name:"Theory of Forms",first:-385,tradition:["Platonism"],summary:"Plato's doctrine that true reality consists of eternal, perfect, abstract entities — Forms — of which physical things are imperfect copies. This two-world ontology resolved the Heraclitus/Parmenides contradiction."},
+  {id:"syllogistic-logic",name:"Syllogistic Logic",first:-350,tradition:["Classical Greek Philosophy"],summary:"Aristotle's invention of formal deductive logic — the syllogism. For the first time, the form of a valid argument was separated from its content. The dominant framework for logic for two thousand years."},
+  {id:"stoic-ethics",name:"Stoic Ethics",first:-300,tradition:["Stoicism"],summary:"The Stoic ethical framework: virtue is the only genuine good; everything else is 'indifferent'. We cannot control external events, only our responses to them. Made Stoicism available to slave and emperor alike."},
+  {id:"ataraxia",name:"Ataraxia",first:-300,tradition:["Epicureanism"],summary:"The Epicurean ideal of tranquillity — an undisturbed, anxiety-free state of mind achieved through the elimination of unnecessary fears and the cultivation of simple pleasures."},
+  {id:"the-one",name:"The One",first:253,tradition:["Neoplatonism"],summary:"Plotinus's term for the absolute first principle of all reality — utterly simple, beyond being, beyond thought. Everything that exists emanates from the One as light emanates from the sun."},
+  {id:"emanation",name:"Emanation",first:253,tradition:["Neoplatonism"],summary:"The Neoplatonic account of how the world comes to exist: not through deliberate creation but through necessary overflow. The One overflows into Nous, Soul, and finally Matter."},
+  {id:"transcendental-idealism",name:"Transcendental Idealism",first:1781,tradition:["Critical Philosophy","German Idealism"],summary:"Kant's doctrine that space and time are not features of reality as it is in itself, but forms the human mind imposes on experience. We can only ever know the world as it appears to us, never as it really is."},
+  {id:"critique-of-pure-reason",name:"Critique of Pure Reason",first:1781,tradition:["Critical Philosophy"],summary:"Kant's 1781 masterwork — one of the most consequential and difficult books in the Western philosophical tradition. Asks: what can human reason know, and what are its limits?"}
+];
+
+const TRADITIONS = [
+  {id:"babylonian-intellectual-tradition",name:"Babylonian Intellectual Tradition",born:-3000,died:-500,tradition:["Ancient Near East"],location:{city:"Babylon",modern_country:"Iraq"},summary:"The oldest significant body of systematic astronomical and mathematical knowledge in the ancient world. Babylonian observations of celestial movements, mathematical techniques, and calendrical systems directly influenced early Greek philosophy, particularly Thales and Pythagoras."},
+  {id:"egyptian-wisdom-tradition",name:"Egyptian Wisdom Tradition",born:-3100,died:400,tradition:["Ancient Near East","Africa"],location:{city:"Memphis / Alexandria",modern_country:"Egypt"},summary:"One of the longest-lived intellectual traditions in human history. Egyptian ideas — particularly about cosmic order (Ma'at), the soul, and the afterlife — fed into Greek philosophy via Pythagoras, Plato, and ultimately Plotinus."}
+];
+
+// ── CONFIG ────────────────────────────────────────────────────────────────────
+const MIN_YEAR = -700;
+const MAX_YEAR = 1900;
+
+// ── STATE ─────────────────────────────────────────────────────────────────────
+let currentYear = -500;
+let selectedNode = null;
+
+// ── HELPERS ───────────────────────────────────────────────────────────────────
+function yearToPercent(y) {
+  return ((y - MIN_YEAR) / (MAX_YEAR - MIN_YEAR)) * 100;
+}
+
+function formatYear(y) {
+  if (y < 0) return Math.abs(y) + ' BCE';
+  return y + ' CE';
+}
+
+function isActiveAtYear(node, year) {
+  if (node.born !== undefined && node.died !== undefined) {
+    // thinker or tradition
+    return year >= node.born && year <= node.died;
+  }
+  if (node.first !== undefined) {
+    // idea — active from first_appearance onward
+    return year >= node.first;
+  }
+  return false;
+}
+
+// ── RENDERING ─────────────────────────────────────────────────────────────────
+function renderBars(container, nodes, type) {
+  container.innerHTML = '';
+  // sort by born/first
+  const sorted = [...nodes].sort((a, b) => {
+    const ay = a.born ?? a.first ?? 0;
+    const by2 = b.born ?? b.first ?? 0;
+    return ay - by2;
+  });
+
+  sorted.forEach(node => {
+    const active = isActiveAtYear(node, currentYear);
+    const row = document.createElement('div');
+    row.className = 'node-row' + (active ? '' : ' inactive');
+    row.dataset.id = node.id;
+
+    const nameEl = document.createElement('div');
+    nameEl.className = 'node-name' + (active ? ' active-name' : '');
+    nameEl.textContent = node.name;
+    nameEl.title = node.name;
+
+    const track = document.createElement('div');
+    track.className = 'bar-track';
+
+    const bar = document.createElement('div');
+    bar.className = 'bar ' + type + (active ? ' active' : '');
+
+    if (type === 'idea') {
+      // idea: from first_appearance to end
+      const leftPct = yearToPercent(node.first);
+      const widthPct = yearToPercent(MAX_YEAR) - leftPct;
+      bar.style.left = leftPct + '%';
+      bar.style.width = Math.max(widthPct, 0.5) + '%';
+    } else {
+      const leftPct = Math.max(yearToPercent(node.born), 0);
+      const rightPct = Math.min(yearToPercent(node.died), 100);
+      bar.style.left = leftPct + '%';
+      bar.style.width = Math.max(rightPct - leftPct, 0.5) + '%';
+    }
+
+    track.appendChild(bar);
+
+    // Scrubber line
+    const scrubLine = document.createElement('div');
+    scrubLine.className = 'scrubber';
+    scrubLine.id = 'scrubber-' + node.id;
+    scrubLine.style.left = yearToPercent(currentYear) + '%';
+    track.appendChild(scrubLine);
+
+    row.appendChild(nameEl);
+    row.appendChild(track);
+
+    row.addEventListener('click', () => selectNode(node, type));
+    container.appendChild(row);
+  });
+}
+
+function updateScrubbers() {
+  const pct = yearToPercent(currentYear) + '%';
+  document.querySelectorAll('.scrubber').forEach(el => el.style.left = pct);
+}
+
+function updateActiveStates() {
+  document.querySelectorAll('.node-row').forEach(row => {
+    const id = row.dataset.id;
+    const node = findNode(id);
+    if (!node) return;
+    const active = isActiveAtYear(node, currentYear);
+    row.classList.toggle('inactive', !active);
+    const nameEl = row.querySelector('.node-name');
+    nameEl.classList.toggle('active-name', active);
+    const bar = row.querySelector('.bar');
+    bar.classList.toggle('active', active);
+  });
+}
+
+function findNode(id) {
+  return THINKERS.find(t => t.id === id) ||
+         IDEAS.find(i => i.id === id) ||
+         TRADITIONS.find(t => t.id === id);
+}
+
+function selectNode(node, type) {
+  selectedNode = node;
+  const panel = document.getElementById('detailPanel');
+  const colorMap = {thinker: '#5b9fd4', idea: '#c8a84b', tradition: '#6aaa70'};
+  const color = colorMap[type] || '#888';
+
+  let meta = '';
+  if (type === 'thinker') {
+    meta = `${formatYear(node.born)} – ${formatYear(node.died)} · ${node.location?.city || ''}, ${node.location?.modern_country || ''}`;
+  } else if (type === 'idea') {
+    meta = `First appeared: ${formatYear(node.first)}`;
+  } else if (type === 'tradition') {
+    meta = `${formatYear(node.born)} – ${formatYear(node.died)} · ${node.location?.city || ''}`;
+  }
+
+  const tags = (node.tradition || []).map(t => `<span class="tag">${t}</span>`).join('');
+
+  panel.innerHTML = `
+    <h2><span class="dot" style="background:${color}"></span>${node.name}</h2>
+    <div class="meta">${meta}</div>
+    <p>${node.summary}</p>
+    <div class="tradition-tags">${tags}</div>
+  `;
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+function init() {
+  renderBars(document.getElementById('thinkersChart'), THINKERS, 'thinker');
+  renderBars(document.getElementById('ideasChart'), IDEAS, 'idea');
+  renderBars(document.getElementById('traditionsChart'), TRADITIONS, 'tradition');
+  updateDisplay();
+}
+
+function updateDisplay() {
+  document.getElementById('yearDisplay').textContent = formatYear(currentYear);
+  updateActiveStates();
+  updateScrubbers();
+}
+
+document.getElementById('yearSlider').addEventListener('input', function() {
+  currentYear = parseInt(this.value);
+  updateDisplay();
+});
+
+init();
+</script>
+</body>
+</html>

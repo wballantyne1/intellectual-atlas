@@ -1,6 +1,9 @@
 ---
 tags:
   - tradition
+start_year: -3000
+end_year: -500
+location: [32.54, 44.42]
 ---
 
 # Babylonian Intellectual Tradition

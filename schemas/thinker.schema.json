@@ -63,6 +63,21 @@
       "type": "array",
       "items": { "type": "string" },
       "description": "IDs of directly connected nodes (denormalised for quick lookup)"
+    },
+    "location": {
+      "type": "object",
+      "description": "Primary geographic location associated with this thinker's active life",
+      "properties": {
+        "city": { "type": "string", "description": "City or region name (ancient)" },
+        "modern_country": { "type": "string", "description": "Modern country name" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "[latitude, longitude]"
+        }
+      }
     }
   },
   "additionalProperties": false

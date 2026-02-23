@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: 234
+died_year: 305
+location: [41.9, 12.5]
 ---
 
 # Porphyry

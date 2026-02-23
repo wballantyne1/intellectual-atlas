@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: 1711
+died_year: 1776
+location: [55.95, -3.19]
 ---
 
 # David Hume

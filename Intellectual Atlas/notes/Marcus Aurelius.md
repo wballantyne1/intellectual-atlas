@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: 121
+died_year: 180
+location: [41.9, 12.5]
 ---
 
 # Marcus Aurelius

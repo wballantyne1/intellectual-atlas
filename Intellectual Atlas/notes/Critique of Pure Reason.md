@@ -1,6 +1,7 @@
 ---
 tags:
   - idea
+first_year: 1781
 ---
 
 # Critique of Pure Reason

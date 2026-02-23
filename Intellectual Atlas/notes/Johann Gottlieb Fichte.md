@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: 1762
+died_year: 1814
+location: [52.52, 13.4]
 ---
 
 # Johann Gottlieb Fichte

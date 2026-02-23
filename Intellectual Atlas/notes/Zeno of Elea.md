@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: -490
+died_year: -430
+location: [40.11, 15.13]
 ---
 
 # Zeno of Elea

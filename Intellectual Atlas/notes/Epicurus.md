@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -341
+died_year: -270
+location: [37.97, 23.73]
 ---
 
 # Epicurus

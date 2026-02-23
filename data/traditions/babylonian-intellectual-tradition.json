@@ -18,11 +18,27 @@
     "Catalogue of celestial phenomena spanning centuries"
   ],
   "named_thinkers": [],
-  "tags": ["astronomy", "mathematics", "cosmogony", "law", "Mesopotamia", "pre-Socratic influences", "ancient Near East"],
+  "tags": [
+    "astronomy",
+    "mathematics",
+    "cosmogony",
+    "law",
+    "Mesopotamia",
+    "pre-Socratic influences",
+    "ancient Near East"
+  ],
   "related_nodes": [
     "egyptian-wisdom-tradition",
     "thales-of-miletus",
     "pythagoras-of-samos",
     "naturalistic-explanation"
-  ]
+  ],
+  "location": {
+    "city": "Babylon (Mesopotamia)",
+    "modern_country": "Iraq",
+    "coordinates": [
+      32.54,
+      44.42
+    ]
+  }
 }

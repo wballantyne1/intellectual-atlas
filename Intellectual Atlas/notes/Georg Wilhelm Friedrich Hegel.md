@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: 1770
+died_year: 1831
+location: [48.78, 9.18]
 ---
 
 # Georg Wilhelm Friedrich Hegel

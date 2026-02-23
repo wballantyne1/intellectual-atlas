@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -515
+died_year: -450
+location: [40.11, 15.13]
 ---
 
 # Parmenides of Elea

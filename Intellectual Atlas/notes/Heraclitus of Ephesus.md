@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -535
+died_year: -475
+location: [37.94, 27.34]
 ---
 
 # Heraclitus of Ephesus

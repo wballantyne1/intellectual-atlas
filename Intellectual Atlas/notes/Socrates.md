@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -470
+died_year: -399
+location: [37.97, 23.73]
 ---
 
 # Socrates

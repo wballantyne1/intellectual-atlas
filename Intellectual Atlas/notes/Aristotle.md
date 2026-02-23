@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -384
+died_year: -322
+location: [37.97, 23.73]
 ---
 
 # Aristotle

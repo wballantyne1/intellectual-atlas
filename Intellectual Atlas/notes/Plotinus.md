@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: 204
+died_year: 270
+location: [31.2, 29.92]
 ---
 
 # Plotinus

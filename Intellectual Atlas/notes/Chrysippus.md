@@ -2,6 +2,9 @@
 tags:
   - thinker
   - stub
+born_year: -279
+died_year: -206
+location: [37.97, 23.73]
 ---
 
 # Chrysippus

@@ -1,6 +1,9 @@
 ---
 tags:
   - thinker
+born_year: -570
+died_year: -495
+location: [39.08, 17.13]
 ---
 
 # Pythagoras of Samos
