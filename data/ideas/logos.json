@@ -1,0 +1,19 @@
+{
+  "id": "logos",
+  "type": "idea",
+  "name": "Logos",
+  "tradition": ["Pre-Socratic Philosophy", "Stoicism", "Christian Theology", "Neoplatonism"],
+  "contested": true,
+  "summary": "The rational principle or word that orders and governs the cosmos. In Heraclitus, the Logos is the hidden structure underlying all flux — the reason why change is orderly rather than chaotic. The concept was taken up and transformed by the Stoics, by Philo of Alexandria (who fused it with Jewish theology), and by the Gospel of John ('In the beginning was the Word'). It is one of the most travelled ideas in intellectual history.",
+  "long_summary": "Logos (λόγος) means, in Greek, both 'word' and 'reason' — a unity that proved philosophically productive. For Heraclitus it is the immanent rational principle that ensures the world's flux is structured: things change, but they change according to a measure. The Logos is not a god but a principle — more like a law than a person. The Stoics developed this substantially: the Logos is the active, rational principle pervading all matter, identical with God, fate, and nature. Living according to the Logos — according to reason and nature — is the Stoic ethical ideal. Philo of Alexandria (c. 20 BCE–50 CE) fused the Stoic Logos with the Jewish concept of God's creative Word (the Memra), making the Logos the intermediary between the transcendent God and the material world. The Gospel of John opens: 'In the beginning was the Logos, and the Logos was with God, and the Logos was God.' This identification of the Logos with Christ was enormously consequential for Christian theology. The concept also has a structural parallel with Egyptian Ma'at — both are impersonal ordering principles immanent in the cosmos — suggesting either influence or parallel development. The Logos is one of the clearest examples in the Atlas of an idea that mutates radically as it travels across traditions.",
+  "first_appearance": "c. 500 BCE",
+  "primary_thinker": "heraclitus-of-ephesus",
+  "tags": ["cosmology", "reason", "order", "Stoicism", "Christian theology", "Heraclitus", "Neoplatonism", "Ma'at parallel"],
+  "related_nodes": [
+    "heraclitus-of-ephesus",
+    "maat-concept",
+    "egyptian-wisdom-tradition",
+    "naturalistic-explanation",
+    "parmenides-of-elea"
+  ]
+}

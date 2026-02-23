@@ -1,0 +1,11 @@
+{
+  "id": "parmenides-to-atomism-responded-to",
+  "type": "connection",
+  "from": "parmenides-of-elea",
+  "to": "democritus-of-abdera",
+  "relationship": "responded-to",
+  "weight": 5,
+  "description": "Democritus's atomic theory is explicitly a response to the Parmenidean challenge. Parmenides had argued that Non-being (the void) cannot exist, and therefore change is impossible. Democritus's radical move was to assert that the void does exist — as a kind of extended nothingness — and that atoms (which satisfy the Parmenidean requirement of being unchanging and eternal) move through it. Atomism thus accepts the Parmenidean logic (atoms themselves do not change) while rescuing the appearance of change (atomic combinations and separations). It is one of the most elegant philosophical responses in the ancient world.",
+  "source": "Aristotle, On Generation and Corruption 325a; Simplicius, Commentary on Aristotle's Physics",
+  "direction": "forward"
+}

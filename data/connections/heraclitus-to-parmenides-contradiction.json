@@ -1,0 +1,11 @@
+{
+  "id": "heraclitus-to-parmenides-contradiction",
+  "type": "connection",
+  "from": "heraclitus-of-ephesus",
+  "to": "parmenides-of-elea",
+  "relationship": "contradicted",
+  "weight": 5,
+  "description": "The most fundamental contradiction in Pre-Socratic philosophy, and one of the most consequential in Western thought. Heraclitus held that change is the fundamental reality — everything flows, nothing is stable, and the apparent permanence of things is an illusion. Parmenides held the exact opposite: change is the illusion, only permanent, unchanging Being truly exists. These are not differences of emphasis or degree — they are total contradictions on the most basic question of metaphysics. Parmenides did not name Heraclitus directly, but his argument is almost certainly a response to Heraclitean flux. The tension was never fully resolved: Plato attempted a synthesis (the Forms are permanent, the sensible world changes); Aristotle developed potentiality and actuality to explain change without Non-being; Hegel made the contradiction itself into a philosophical method (dialectic). The question of how stable knowledge is possible in a changing world runs unbroken from this confrontation to Kant's Critique of Pure Reason.",
+  "source": "Plato, Sophist 242d–243a (on the battle between permanence and flux); Aristotle, Metaphysics 1.5",
+  "direction": "forward"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "parmenides-of-elea",
+  "type": "thinker",
+  "name": "Parmenides of Elea",
+  "born": "c. 515 BCE",
+  "died": "c. 450 BCE",
+  "nationality": "Greek (Eleatic)",
+  "tradition": ["Pre-Socratic Philosophy", "Eleatic School", "Metaphysics"],
+  "key_works": [
+    { "title": "On Nature", "year": "c. 480 BCE (a philosophical poem, significant fragments survive)" }
+  ],
+  "summary": "The philosopher who argued that change is impossible and all apparent multiplicity is illusion. Only Being exists; Non-being cannot exist; therefore nothing can come into existence or cease to exist, and all change is mere appearance. This is the direct and total contradiction of Heraclitus. Parmenides did not refute Heraclitus with evidence — he refuted him with pure logical argument, and the argument is genuinely difficult to escape.",
+  "long_summary": "Parmenides wrote in verse — his poem 'On Nature' survives in substantial fragments. Its argument is deceptively simple. 'It is, and it cannot not be' — Being exists, Non-being does not. But change requires that something comes from Non-being (what didn't exist, now does) or passes into it (what existed, now doesn't). Since Non-being doesn't exist, neither of these is possible. Therefore change is impossible. Reality must be one, eternal, unchanging, and undivided — what he calls 'the One'. The apparent world of change and multiplicity is a world of opinion and illusion. This is startling and radical: the entire fabric of ordinary experience is declared to be false on the basis of a logical argument. Parmenides was a pivotal figure because he forced subsequent philosophers to either refute his argument or accommodate it. Plato's theory of Forms is in large part a response to Parmenides: Plato agrees that true reality (the Forms) is unchanging, but argues that the changing world of appearances is not illusion but a lesser grade of reality. Zeno of Elea (Parmenides' student) developed famous paradoxes to support the Parmenidean position. Aristotle developed the concepts of potentiality and actuality to try to make change philosophically respectable again.",
+  "tags": ["Pre-Socratic", "Eleatic school", "Being", "metaphysics", "logic", "monism", "anti-change"],
+  "related_nodes": [
+    "heraclitus-of-ephesus",
+    "zeno-of-elea",
+    "plato",
+    "aristotle",
+    "arche",
+    "naturalistic-explanation"
+  ]
+}

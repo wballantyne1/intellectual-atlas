@@ -1,0 +1,18 @@
+{
+  "id": "atomism",
+  "type": "idea",
+  "name": "Atomism",
+  "tradition": ["Pre-Socratic Philosophy", "Materialism", "Natural Philosophy", "Physics"],
+  "contested": false,
+  "summary": "The theory that all reality consists of indivisible particles (atoms) moving through empty void. All apparent qualities, change, and complexity arise from the mechanical combination and separation of atoms. Proposed by Leucippus and Democritus in the 5th century BCE, ignored for two millennia, revived by Epicurus and Lucretius, and vindicated by modern chemistry and physics. One of the most prescient theories in the history of thought.",
+  "long_summary": "Atomism was developed as a response to the Parmenidean problem: Parmenides had argued that change is impossible because it requires the existence of Non-being (void). Democritus and his teacher Leucippus bit the bullet: the void does exist, as a kind of extended nothingness through which atoms move. Atoms themselves are indivisible (a-tomos = uncuttable), eternal, and varying in shape and size — but all purely quantitative, with no qualities like colour or temperature. Qualities arise from the interaction of atomic configurations with our sense organs. This is the first systematic statement of what would later be called the distinction between primary qualities (shape, size, weight — real properties of atoms) and secondary qualities (colour, smell, taste — appearances produced in the perceiver). All change is the rearrangement of atoms; there is no creation or destruction, only combination and separation. The soul, for Democritus, is also made of atoms — particularly fine, spherical, mobile ones — and perception is a physical process of atomic interaction. Atomism was condemned by Plato and largely ignored by Aristotle (who rejected the void). Epicurus adopted and modified it for ethical purposes. Lucretius's poem 'De Rerum Natura' (c. 55 BCE) preserved it for later centuries. Rediscovered in the Renaissance, it became foundational for the mechanical philosophy of Descartes, Gassendi, Boyle, and Newton — and was vindicated by Dalton's chemical atomic theory (1808) and 20th-century physics.",
+  "first_appearance": "c. 430 BCE",
+  "primary_thinker": "democritus-of-abdera",
+  "tags": ["materialism", "mechanism", "physics", "Pre-Socratic", "void", "particles", "scientific precursor"],
+  "related_nodes": [
+    "democritus-of-abdera",
+    "parmenides-of-elea",
+    "arche",
+    "naturalistic-explanation"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "apeiron",
+  "type": "idea",
+  "name": "The Apeiron",
+  "tradition": ["Pre-Socratic Philosophy", "Metaphysics"],
+  "contested": true,
+  "summary": "Anaximander's proposal for the arche: not water, air, fire, or any determinate substance, but the Apeiron — 'the boundless' or 'the indefinite'. The first fully abstract concept in Western philosophy. Anaximander argued that any determinate substance has an opposite, so the fundamental principle must be prior to all opposites: unlimited, eternal, and formless.",
+  "long_summary": "The Apeiron (ἄπειρον) is a remarkable intellectual leap. Thales said water; Anaximander asked why water, and gave a philosophical argument for why the answer cannot be any particular thing. Every determinate quality is balanced by an opposite: hot/cold, wet/dry. If the fundamental substance were hot, it would be in eternal conflict with the cold and would eventually be consumed. The arche must be something that does not have an opposite — something indefinite and boundless. From the Apeiron, the opposites emerge through a process of separation; the world as we know it is sustained by the ongoing tension between opposites. Anaximander also connected the Apeiron to justice (dike): the opposites pay penalty to each other for their 'injustice' — a striking ethical metaphor in a cosmological context. The Apeiron anticipates several later concepts: it bears resemblance to Plato's receptacle (the formless matter underlying all change in the Timaeus), to Aristotle's prime matter, and more distantly to Kant's thing-in-itself (the unknowable reality behind appearances). It is arguably the first concept in Western thought of an abstract, non-sensory reality underlying the visible world.",
+  "first_appearance": "c. 560 BCE",
+  "primary_thinker": "anaximander-of-miletus",
+  "tags": ["Pre-Socratic", "metaphysics", "arche", "abstraction", "the indefinite", "cosmology"],
+  "related_nodes": [
+    "anaximander-of-miletus",
+    "arche",
+    "thales-of-miletus",
+    "naturalistic-explanation"
+  ]
+}

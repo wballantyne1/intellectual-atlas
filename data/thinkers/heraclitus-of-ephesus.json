@@ -1,0 +1,24 @@
+{
+  "id": "heraclitus-of-ephesus",
+  "type": "thinker",
+  "name": "Heraclitus of Ephesus",
+  "born": "c. 535 BCE",
+  "died": "c. 475 BCE",
+  "nationality": "Greek (Ionian)",
+  "tradition": ["Pre-Socratic Philosophy", "Natural Philosophy"],
+  "key_works": [
+    { "title": "On Nature", "year": "c. 500 BCE (lost; approximately 125 fragments survive)" }
+  ],
+  "summary": "The philosopher of flux and fire. Heraclitus argued that the fundamental reality is not a static substance but a process — constant, structured change governed by an underlying rational principle he called the Logos. 'You cannot step in the same river twice.' His work stands in direct contradiction to Parmenides, who argued that change is an illusion. The tension between them runs through the whole of Western philosophy.",
+  "long_summary": "Heraclitus was a solitary, aristocratic figure from Ephesus who reportedly wrote in deliberately obscure prose — he was nicknamed 'the Dark One' in antiquity. His surviving fragments are among the most extraordinary in early philosophy. His central claims: (1) Everything is in flux — nothing is stable, everything changes continuously. (2) The arche is fire — not as a substance but as the emblem of process, transformation, and the unity of opposites. (3) The Logos — a rational principle or measure that governs all change, ensuring that flux is structured rather than chaotic. The Logos is immanent in the world, not transcendent; it is what makes the world intelligible. (4) The unity of opposites — day and night, hot and cold, life and death are not separate things but aspects of a single reality, defined by their tension with each other. Heraclitus's Logos is structurally very similar to Egyptian Ma'at — both are impersonal ordering principles immanent in the cosmos. His influence runs from the Stoics (who adopted and developed Logos extensively) to Hegel (whose dialectic is explicitly Heraclitean) to modern process philosophy. His most direct philosophical opponent is Parmenides, who argued that all change is illusion.",
+  "tags": ["Pre-Socratic", "flux", "Logos", "fire", "unity of opposites", "process philosophy", "Stoicism precursor"],
+  "related_nodes": [
+    "anaximander-of-miletus",
+    "parmenides-of-elea",
+    "logos",
+    "arche",
+    "maat-concept",
+    "egyptian-wisdom-tradition",
+    "hegel-georg-wilhelm-friedrich"
+  ]
+}

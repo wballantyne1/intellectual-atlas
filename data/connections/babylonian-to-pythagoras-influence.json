@@ -1,0 +1,11 @@
+{
+  "id": "babylonian-to-pythagoras-influence",
+  "type": "connection",
+  "from": "babylonian-intellectual-tradition",
+  "to": "pythagoras-of-samos",
+  "relationship": "influenced",
+  "weight": 4,
+  "description": "Pythagoras is reported by ancient sources to have travelled to Babylon. The Babylonian mathematical tradition — particularly its interest in numerical ratios, musical intervals, and the properties of right triangles (the 'Pythagorean' theorem was known to Babylonian mathematicians over a thousand years before Pythagoras) — almost certainly informed Pythagorean number mysticism. The leap from 'numbers are useful tools' (Babylonian) to 'number is the fundamental nature of reality' (Pythagorean) is a philosophical transformation of a mathematical inheritance.",
+  "source": "Iamblichus, Life of Pythagoras; Eleanor Robson, Mathematics in Ancient Iraq (2008)",
+  "direction": "forward"
+}

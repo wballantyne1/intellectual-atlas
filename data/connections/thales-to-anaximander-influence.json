@@ -1,0 +1,11 @@
+{
+  "id": "thales-to-anaximander-influence",
+  "type": "connection",
+  "from": "thales-of-miletus",
+  "to": "anaximander-of-miletus",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Anaximander was Thales' student and immediate successor in the Milesian school. He inherited the fundamental project — finding the arche through natural rather than mythological explanation — but gave a philosophical argument against his teacher's specific answer. The move from 'water' to 'the Apeiron' is the move from assertion to argument, from a concrete answer to an abstract one. Anaximander thus both extends and implicitly criticises Thales, demonstrating that the philosophical tradition begins with internal critique from its very first generation.",
+  "source": "Aristotle, Physics 203b; Simplicius, Commentary on Aristotle's Physics",
+  "direction": "forward"
+}

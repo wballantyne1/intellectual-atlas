@@ -1,0 +1,23 @@
+{
+  "id": "anaximander-of-miletus",
+  "type": "thinker",
+  "name": "Anaximander of Miletus",
+  "born": "c. 610 BCE",
+  "died": "c. 546 BCE",
+  "nationality": "Greek (Milesian)",
+  "tradition": ["Pre-Socratic Philosophy", "Milesian School", "Natural Philosophy"],
+  "key_works": [
+    { "title": "On Nature", "year": "c. 560 BCE (lost, fragments survive via later sources)" }
+  ],
+  "summary": "Student of Thales and the first philosopher to give a genuine philosophical argument rather than merely assert a position. He rejected his teacher's answer (water) by asking: if water is fundamental, what is water itself made of? His answer was the Apeiron — the boundless, indefinite — the first fully abstract concept in Western philosophy.",
+  "long_summary": "Anaximander represents a decisive step beyond Thales: not just a different answer to the question of the arche, but a different kind of answer. Thales said water; Anaximander asked why water, and gave a reason for rejecting it. Any determinate thing has an opposite (water is opposed by fire, cold by hot); therefore no determinate thing can be the fundamental principle, because it would always be in conflict with its opposite. The arche must be something prior to all opposites — indefinite, boundless, eternal. He called it the Apeiron (ἄπειρον). This is the first known philosophical argument in the Western tradition: a claim supported by reasoning, not just assertion. Anaximander also proposed a remarkably modern-sounding cosmology: the earth floats unsupported at the centre of the cosmos (not resting on water, as Thales thought), held in place by its equidistance from everything else. He produced what may be the first map of the known world and offered a proto-evolutionary account of life — animals emerged from the sea, and humans descended from fish-like creatures. His fragments are few but extraordinary.",
+  "tags": ["Pre-Socratic", "Milesian school", "Apeiron", "cosmology", "proto-evolution", "natural philosophy", "argument"],
+  "related_nodes": [
+    "thales-of-miletus",
+    "anaximenes-of-miletus",
+    "heraclitus-of-ephesus",
+    "apeiron",
+    "arche",
+    "naturalistic-explanation"
+  ]
+}

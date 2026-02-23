@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-02-23 — Session 1 (continued): Pre-Socratic cluster
+
+**Data — Thinkers (5 full nodes):**
+- `anaximander-of-miletus.json`, `heraclitus-of-ephesus.json`, `parmenides-of-elea.json`, `pythagoras-of-samos.json`, `democritus-of-abdera.json`
+
+**Data — Ideas (3 new nodes):**
+- `logos.json`, `apeiron.json`, `atomism.json`
+
+**Data — Connections (5 new, including first contradiction):**
+- `thales-to-anaximander-influence.json`
+- `anaximander-to-heraclitus-influence.json`
+- `heraclitus-to-parmenides-contradiction.json` — **first `contradicted` connection in the database**
+- `babylonian-to-pythagoras-influence.json`
+- `parmenides-to-atomism-responded-to.json`
+
+**Obsidian notes:**
+- Upgraded stubs to full notes: Anaximander, Heraclitus, Pythagoras, Democritus
+- New full notes: Parmenides of Elea, Logos, The Apeiron, Atomism
+- New stubs: Plato, Zeno of Elea
+
+**Next session:** Socrates, Plato, Aristotle — the classical peak and the synthesis of the Pre-Socratic debates.
+
+---
+
 ## 2026-02-23 — Session 1 (continued): Ancient world cluster and Tradition node type
 
 **Schema:**

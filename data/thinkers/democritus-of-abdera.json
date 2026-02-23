@@ -1,0 +1,22 @@
+{
+  "id": "democritus-of-abdera",
+  "type": "thinker",
+  "name": "Democritus of Abdera",
+  "born": "c. 460 BCE",
+  "died": "c. 370 BCE",
+  "nationality": "Greek (Thracian)",
+  "tradition": ["Pre-Socratic Philosophy", "Atomism", "Materialism"],
+  "key_works": [
+    { "title": "Multiple works attributed (all lost); fragments survive via later sources", "year": "c. 420 BCE" }
+  ],
+  "summary": "The originator of atomic theory: all of reality consists of indivisible particles (atoms) moving through empty void. Everything — matter, mind, soul, perception — is composed of atoms of different shapes and sizes. This is the most prescient theory in the history of philosophy: ignored for two millennia, it became the foundation of modern chemistry and physics.",
+  "long_summary": "Democritus developed atomism in collaboration with his teacher Leucippus, though the theory is primarily attributed to him. The atomic theory was partly a response to the Parmenidean problem: if change is impossible (because it requires Non-being), Democritus proposed that the void — empty space — actually exists. This was a radical move: Parmenides had argued Non-being cannot exist; Democritus said the void is a form of Non-being that does exist. With void admitted, atoms can move through it, combine, and separate — giving a mechanical account of all change and apparent becoming. Atoms themselves are unchanging (satisfying a Parmenidean requirement), but their combinations produce the changing world of experience. All qualities — colour, taste, temperature — are not properties of atoms but arise from the interaction of atoms with our sense organs. This is a genuinely modern-sounding position: primary and secondary qualities, deterministic mechanism, reduction of mind to matter. Democritus was known for his cheerfulness ('the laughing philosopher') and his extremely broad intellectual interests — he wrote on ethics, mathematics, music, and natural science. His materialism was deeply uncomfortable to Plato (who reportedly wished to burn his books) and to the Christian tradition. Epicurus adopted and modified the atomic theory; it re-entered European thought via Lucretius's 'De Rerum Natura', and eventually led to the mechanical philosophy of the 17th century.",
+  "tags": ["Pre-Socratic", "atomism", "materialism", "mechanism", "void", "physics", "Epicureanism precursor"],
+  "related_nodes": [
+    "parmenides-of-elea",
+    "atomism",
+    "arche",
+    "epicurus",
+    "naturalistic-explanation"
+  ]
+}

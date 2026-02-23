@@ -1,0 +1,11 @@
+{
+  "id": "anaximander-to-heraclitus-influence",
+  "type": "connection",
+  "from": "anaximander-of-miletus",
+  "to": "heraclitus-of-ephesus",
+  "relationship": "influenced",
+  "weight": 3,
+  "description": "Heraclitus was almost certainly familiar with Anaximander's work; both were Ionian thinkers working on similar questions within a generation of each other. Anaximander's emphasis on the tension between opposites — and his idea that the world is sustained by their conflict — is a clear precursor to Heraclitus's doctrine of the unity of opposites and the role of strife in maintaining cosmic order. Heraclitus sharpens Anaximander's cosmological intuition into a fully developed theory of flux and Logos.",
+  "source": "Charles Kahn, The Art and Thought of Heraclitus (1979)",
+  "direction": "forward"
+}
