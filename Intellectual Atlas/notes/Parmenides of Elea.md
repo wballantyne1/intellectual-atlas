@@ -1,3 +1,8 @@
+---
+tags:
+  - thinker
+---
+
 # Parmenides of Elea
 `thinker` | c. 515–450 BCE | Greek (Eleatic)
 **Traditions:** Pre-Socratic Philosophy · Eleatic School · Metaphysics

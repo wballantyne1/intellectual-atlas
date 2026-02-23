@@ -1,3 +1,8 @@
+---
+tags:
+  - tradition
+---
+
 # Babylonian Intellectual Tradition
 `tradition` | c. 3000 BCE – c. 500 BCE | Mesopotamia (modern Iraq)
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - thinker
+  - stub
+---
+
 # Zeno of Elea
 `thinker` | c. 490–430 BCE | Greek (Eleatic)
 **Traditions:** Pre-Socratic Philosophy · Eleatic School

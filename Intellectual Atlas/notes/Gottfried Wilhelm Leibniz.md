@@ -1,3 +1,9 @@
+---
+tags:
+  - thinker
+  - stub
+---
+
 # Gottfried Wilhelm Leibniz
 `thinker` | 1646–1716 | German
 **Traditions:** Rationalism · Metaphysics · Mathematics

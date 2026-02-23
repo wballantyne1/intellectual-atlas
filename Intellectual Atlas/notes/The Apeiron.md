@@ -1,3 +1,8 @@
+---
+tags:
+  - contested-idea
+---
+
 # The Apeiron
 `idea` | First articulated: c. 560 BCE | Contested: yes
 **Traditions:** Pre-Socratic Philosophy · Metaphysics

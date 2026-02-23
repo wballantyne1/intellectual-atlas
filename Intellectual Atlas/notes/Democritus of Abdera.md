@@ -1,3 +1,8 @@
+---
+tags:
+  - thinker
+---
+
 # Democritus of Abdera
 `thinker` | c. 460–370 BCE | Greek (Thracian)
 **Traditions:** Pre-Socratic Philosophy · Atomism · Materialism

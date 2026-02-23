@@ -1,3 +1,9 @@
+---
+tags:
+  - thinker
+  - stub
+---
+
 # Georg Wilhelm Friedrich Hegel
 `thinker` | 1770–1831 | German
 **Traditions:** German Idealism · Dialectical Philosophy

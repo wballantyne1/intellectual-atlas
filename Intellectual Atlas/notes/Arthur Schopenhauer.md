@@ -1,3 +1,9 @@
+---
+tags:
+  - thinker
+  - stub
+---
+
 # Arthur Schopenhauer
 `thinker` | 1788–1860 | German
 **Traditions:** German Idealism · Pessimism · Voluntarism

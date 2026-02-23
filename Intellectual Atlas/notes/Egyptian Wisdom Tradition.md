@@ -1,3 +1,8 @@
+---
+tags:
+  - tradition
+---
+
 # Egyptian Wisdom Tradition
 `tradition` | c. 3100 BCE – c. 400 CE | Northeast Africa (Nile Valley)
 

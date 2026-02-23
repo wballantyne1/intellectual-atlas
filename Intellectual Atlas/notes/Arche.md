@@ -1,3 +1,8 @@
+---
+tags:
+  - contested-idea
+---
+
 # Arche
 `idea` | First articulated: c. 585 BCE | Contested: yes
 **Traditions:** Pre-Socratic Philosophy · Metaphysics · Cosmology

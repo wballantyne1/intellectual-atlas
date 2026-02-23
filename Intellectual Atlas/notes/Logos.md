@@ -1,3 +1,8 @@
+---
+tags:
+  - contested-idea
+---
+
 # Logos
 `idea` | First articulated: c. 500 BCE | Contested: yes
 **Traditions:** Pre-Socratic Philosophy · Stoicism · Christian Theology · Neoplatonism

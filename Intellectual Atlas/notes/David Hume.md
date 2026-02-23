@@ -1,3 +1,9 @@
+---
+tags:
+  - thinker
+  - stub
+---
+
 # David Hume
 `thinker` | 1711–1776 | Scottish
 **Traditions:** Empiricism · Enlightenment · Scepticism

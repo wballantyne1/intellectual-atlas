@@ -1,3 +1,9 @@
+---
+tags:
+  - thinker
+  - stub
+---
+
 # Plato
 `thinker` | c. 428–348 BCE | Greek (Athenian)
 **Traditions:** Classical Greek Philosophy · Platonism · Idealism

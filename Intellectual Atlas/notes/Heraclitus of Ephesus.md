@@ -1,3 +1,8 @@
+---
+tags:
+  - thinker
+---
+
 # Heraclitus of Ephesus
 `thinker` | c. 535–475 BCE | Greek (Ionian)
 **Traditions:** Pre-Socratic Philosophy · Natural Philosophy

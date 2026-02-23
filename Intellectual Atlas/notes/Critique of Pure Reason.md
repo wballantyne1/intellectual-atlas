@@ -1,3 +1,8 @@
+---
+tags:
+  - idea
+---
+
 # Critique of Pure Reason
 `idea` | 1781 | Contested: no
 **Traditions:** Critical Philosophy · Epistemology · Metaphysics

@@ -1,3 +1,8 @@
+---
+tags:
+  - idea
+---
+
 # Ma'at
 `idea` | First articulated: c. 2700 BCE | Contested: no
 **Traditions:** Egyptian Wisdom Tradition · Ethics · Cosmology

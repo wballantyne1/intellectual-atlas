@@ -1,3 +1,8 @@
+---
+tags:
+  - thinker
+---
+
 # Immanuel Kant
 `thinker` | 1724–1804 | Prussian (German)
 **Traditions:** German Idealism · Enlightenment · Critical Philosophy

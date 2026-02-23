@@ -1,3 +1,8 @@
+---
+tags:
+  - thinker
+---
+
 # Pythagoras of Samos
 `thinker` | c. 570–495 BCE | Greek (Samian)
 **Traditions:** Pre-Socratic Philosophy · Mathematical Philosophy · Pythagorean School

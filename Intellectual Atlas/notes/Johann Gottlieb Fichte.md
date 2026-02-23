@@ -1,3 +1,9 @@
+---
+tags:
+  - thinker
+  - stub
+---
+
 # Johann Gottlieb Fichte
 `thinker` | 1762–1814 | German
 **Traditions:** German Idealism

@@ -1,3 +1,8 @@
+---
+tags:
+  - idea
+---
+
 # Atomism
 `idea` | First articulated: c. 430 BCE | Contested: no
 **Traditions:** Pre-Socratic Philosophy · Materialism · Natural Philosophy · Physics

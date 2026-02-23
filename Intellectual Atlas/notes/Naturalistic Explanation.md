@@ -1,3 +1,8 @@
+---
+tags:
+  - idea
+---
+
 # Naturalistic Explanation
 `idea` | First articulated: c. 585 BCE | Contested: no
 **Traditions:** Pre-Socratic Philosophy · Philosophy of Science

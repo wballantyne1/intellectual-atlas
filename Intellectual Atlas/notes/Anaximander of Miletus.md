@@ -1,3 +1,8 @@
+---
+tags:
+  - thinker
+---
+
 # Anaximander of Miletus
 `thinker` | c. 610–546 BCE | Greek (Milesian)
 **Traditions:** Pre-Socratic Philosophy · Milesian School · Natural Philosophy

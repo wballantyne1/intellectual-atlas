@@ -1,3 +1,8 @@
+---
+tags:
+  - contested-idea
+---
+
 # Transcendental Idealism
 `idea` | First articulated: 1781 | Contested: yes
 **Traditions:** Critical Philosophy · German Idealism · Epistemology

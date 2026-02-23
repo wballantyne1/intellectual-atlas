@@ -1,3 +1,8 @@
+---
+tags:
+  - thinker
+---
+
 # Thales of Miletus
 `thinker` | c. 624–546 BCE | Greek (Milesian)
 **Traditions:** Pre-Socratic Philosophy · Milesian School · Natural Philosophy
