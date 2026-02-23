@@ -1,0 +1,24 @@
+{
+  "id": "avicenna",
+  "type": "thinker",
+  "name": "Avicenna",
+  "full_name": "Abu Ali al-Husayn ibn Abd Allah ibn Sina",
+  "born": "980 CE",
+  "died": "1037 CE",
+  "nationality": "Persian",
+  "tradition": ["Islamic Golden Age", "Aristotelianism", "Neoplatonism"],
+  "location": {
+    "city": "Bukhara",
+    "modern_country": "Uzbekistan",
+    "coordinates": [39.77, 64.42]
+  },
+  "key_works": [
+    { "title": "The Book of Healing (Kitab al-Shifa)", "year": "1027" },
+    { "title": "The Canon of Medicine (Al-Qanun fi al-Tibb)", "year": "1025" },
+    { "title": "On the Soul", "year": "c. 1014" }
+  ],
+  "summary": "The greatest philosopher-scientist of the medieval world. Avicenna extended Aristotle's metaphysics into a complete system of Islamic philosophy, and simultaneously wrote the Canon of Medicine — a medical encyclopaedia used in European universities for six centuries. His Floating Man thought experiment anticipates Descartes by 600 years.",
+  "long_summary": "Born in Bukhara (modern Uzbekistan) and working across Persia, Avicenna was a polymath of staggering range. His philosophical masterwork, The Book of Healing, covers logic, natural sciences, mathematics, and metaphysics — the largest encyclopaedia of knowledge produced by a single mind in the medieval world. His metaphysics distinguished between essence and existence (a thing can be conceived without necessarily existing), a distinction that would profoundly influence both Islamic and Christian scholastic philosophy. The Floating Man argument asks you to imagine a person suspended in empty space, deprived of all sensory input — and concludes that they would still be aware of their own existence, pointing to the soul as irreducible. His Canon of Medicine remained a standard medical text in Europe until the 17th century.",
+  "tags": ["islamic-golden-age", "aristotelian", "neoplatonist", "medicine", "metaphysics", "persia"],
+  "related_nodes": ["al-kindi", "averroes", "aristotle", "plotinus", "islamic-golden-age-tradition", "active-intellect", "floating-man", "thomas-aquinas"]
+}

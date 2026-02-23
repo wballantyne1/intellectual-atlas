@@ -1,0 +1,11 @@
+{
+  "id": "aristotle-to-al-kindi-influence",
+  "type": "connection",
+  "from": "aristotle",
+  "to": "al-kindi",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Al-Kindi's entire philosophical project was built on translating and synthesising Aristotle. He led the Arabic translation of Aristotle's works at the House of Wisdom and used Aristotelian logic and metaphysics as the foundation for his own philosophy, particularly the concept of a First Cause.",
+  "source": "Al-Kindi, On First Philosophy; Adamson, P. - Al-Kindi (2007)",
+  "direction": "forward"
+}

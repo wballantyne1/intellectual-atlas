@@ -1,0 +1,24 @@
+{
+  "id": "averroes",
+  "type": "thinker",
+  "name": "Averroes",
+  "full_name": "Abu al-Walid Muhammad ibn Ahmad ibn Rushd",
+  "born": "1126 CE",
+  "died": "1198 CE",
+  "nationality": "Arab Andalusian",
+  "tradition": ["Islamic Golden Age", "Aristotelianism"],
+  "location": {
+    "city": "Córdoba",
+    "modern_country": "Spain",
+    "coordinates": [37.89, -4.78]
+  },
+  "key_works": [
+    { "title": "The Incoherence of the Incoherence (Tahafut al-Tahafut)", "year": "1180" },
+    { "title": "Commentaries on Aristotle", "year": "c. 1169–1195" },
+    { "title": "On the Harmony of Religion and Philosophy", "year": "c. 1190" }
+  ],
+  "summary": "Known in medieval Europe simply as 'The Commentator', Averroes wrote such authoritative analyses of Aristotle that his Latin translations reignited Aristotelian philosophy in Christian Europe. His work directly provoked Thomas Aquinas and sparked the Scholastic movement.",
+  "long_summary": "Working in Córdoba and Marrakesh under the Almohad Caliphate, Averroes devoted his life to recovering what he saw as the authentic Aristotle — stripped of the Neoplatonist additions that Al-Kindi and Avicenna had introduced. His three tiers of commentaries on Aristotle (short, medium, and long) became the standard reference works, translated into Latin and Hebrew and studied across medieval Europe. When his texts reached the University of Paris in the 13th century, they ignited a crisis: Aristotle seemed to contradict Christian theology on key points. Thomas Aquinas wrote his Summa Theologica partly as a response to Averroes, attempting to reconcile Aristotelian reason with Christian faith. In this way, Averroes — a Muslim philosopher in medieval Spain — shaped the entire trajectory of Christian scholastic theology.",
+  "tags": ["islamic-golden-age", "aristotelian", "commentator", "al-andalus", "scholasticism"],
+  "related_nodes": ["avicenna", "al-kindi", "aristotle", "islamic-golden-age-tradition", "thomas-aquinas", "active-intellect"]
+}

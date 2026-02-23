@@ -1,0 +1,27 @@
+{
+  "id": "islamic-golden-age-tradition",
+  "type": "tradition",
+  "name": "Islamic Golden Age",
+  "region": "Abbasid Caliphate, Al-Andalus, Persia",
+  "period": {
+    "start": "c. 750 CE",
+    "end": "c. 1258 CE"
+  },
+  "location": {
+    "city": "Baghdad",
+    "modern_country": "Iraq",
+    "coordinates": [33.34, 44.40]
+  },
+  "summary": "The period of extraordinary intellectual flourishing across the Islamic world, centred on Baghdad's House of Wisdom. Islamic scholars preserved, translated, and decisively extended Greek philosophy — transmitting it to medieval Europe and saving much of it from permanent loss.",
+  "long_summary": "Following the founding of Baghdad in 762 CE, the Abbasid Caliphate established the House of Wisdom (Bayt al-Hikma) — a translation bureau and library that systematically rendered Greek, Persian, and Indian texts into Arabic. This was not passive preservation: scholars like Al-Kindi, Avicenna, and Averroes actively critiqued, extended, and synthesised the material they inherited. The tradition eventually spread west to Al-Andalus (Islamic Spain), creating a second centre of learning in Córdoba. When the Crusades and the Reconquista brought Christian Europeans into contact with Islamic scholarship, Latin translations of Arabic texts flooded European universities, directly triggering the Scholastic movement. The tradition was effectively ended by the Mongol sack of Baghdad in 1258.",
+  "key_contributions": [
+    "Systematic translation of Aristotle, Plato, and Plotinus into Arabic",
+    "Reconciliation of Greek philosophy with monotheistic theology",
+    "Avicennian metaphysics: distinction between essence and existence",
+    "Averroist commentaries that revived Aristotelianism in Christian Europe",
+    "Advances in medicine, mathematics, optics, and astronomy"
+  ],
+  "named_thinkers": ["al-kindi", "avicenna", "averroes"],
+  "tags": ["islamic", "medieval", "aristotelian", "translation", "baghdad", "al-andalus"],
+  "related_nodes": ["al-kindi", "avicenna", "averroes", "aristotle", "plotinus", "translation-movement", "active-intellect"]
+}

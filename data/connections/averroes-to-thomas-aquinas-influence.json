@@ -1,0 +1,11 @@
+{
+  "id": "averroes-to-thomas-aquinas-influence",
+  "type": "connection",
+  "from": "averroes",
+  "to": "thomas-aquinas",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Averroes' Latin translations arrived at the University of Paris in the 13th century and caused an intellectual crisis. His claim that the active intellect was a single universal intellect — denying personal immortality — directly provoked Thomas Aquinas to write the Summa Theologica as a comprehensive refutation. Without Averroes, Aquinas would have written a very different book.",
+  "source": "Aquinas, Summa Contra Gentiles; De Libera, A. - Averroes et l'averroïsme (2002)",
+  "direction": "forward"
+}

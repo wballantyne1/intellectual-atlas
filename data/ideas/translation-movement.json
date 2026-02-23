@@ -1,0 +1,13 @@
+{
+  "id": "translation-movement",
+  "type": "idea",
+  "name": "The Translation Movement",
+  "tradition": ["Islamic Golden Age"],
+  "contested": false,
+  "first_appearance": "c. 750 CE",
+  "primary_thinker": "al-kindi",
+  "summary": "The systematic, state-sponsored effort to translate Greek philosophical and scientific texts into Arabic, centred on Baghdad's House of Wisdom. Without it, most of Aristotle's work would have been permanently lost to Western civilisation.",
+  "long_summary": "Beginning under the Abbasid Caliph al-Mansur and reaching its height under al-Mamun (813–833 CE), the Translation Movement was one of the most consequential intellectual projects in history. Translators — often Syriac Christian scholars working alongside Arab philosophers — rendered Aristotle, Plato, Galen, Euclid, and Ptolemy into Arabic. The project was not merely archival: it actively synthesised and extended the material. Al-Kindi directed much of this effort and wrote original philosophical works in parallel. When the Greek originals were later lost in Byzantium, these Arabic translations — and their subsequent Latin versions — became the only surviving record. In a very real sense, the Translation Movement is the reason Aristotle exists in Western thought.",
+  "tags": ["translation", "greek-philosophy", "baghdad", "house-of-wisdom", "transmission"],
+  "related_nodes": ["al-kindi", "islamic-golden-age-tradition", "aristotle", "plato"]
+}

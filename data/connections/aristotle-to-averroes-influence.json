@@ -1,0 +1,11 @@
+{
+  "id": "aristotle-to-averroes-influence",
+  "type": "connection",
+  "from": "aristotle",
+  "to": "averroes",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Averroes devoted his life to recovering the authentic Aristotle. He wrote three levels of commentary on virtually every Aristotelian text, and medieval Europe knew him simply as 'The Commentator' — with Aristotle as 'The Philosopher'. The relationship was one of total intellectual dedication.",
+  "source": "Averroes, Commentaries on Aristotle; Leaman, O. - Averroes and his Philosophy (1988)",
+  "direction": "forward"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "active-intellect",
+  "type": "idea",
+  "name": "Active Intellect",
+  "tradition": ["Aristotelianism", "Islamic Golden Age", "Neoplatonism"],
+  "contested": true,
+  "first_appearance": "c. 350 BCE",
+  "primary_thinker": "al-kindi",
+  "summary": "The idea that human thinking is illuminated by a divine or cosmic intellect from outside the individual mind. Originating in Aristotle, it became a central battleground in Islamic and later Christian philosophy — with Al-Kindi, Avicenna, and Averroes each offering competing interpretations.",
+  "long_summary": "Aristotle distinguished between the passive intellect (the mind's capacity to receive knowledge) and the active intellect (the power that makes thinking possible, analogous to light making colour visible). He left it tantalizingly unclear whether this active intellect was part of the individual soul or something external and divine. Al-Kindi identified it with God. Avicenna treated it as the last of ten cosmic intelligences emanating from God — a separate, eternal entity that 'gives forms' to human minds. Averroes took the most radical position: the active intellect is a single, universal intellect shared by all humanity, meaning individual immortality is impossible. This last view caused scandal in Christian Europe — if Averroes was right, there was no personal afterlife — and forced Thomas Aquinas to directly refute it in the Summa Theologica.",
+  "tags": ["intellect", "aristotelian", "metaphysics", "soul", "divine-mind"],
+  "related_nodes": ["aristotle", "al-kindi", "avicenna", "averroes", "plotinus", "thomas-aquinas"]
+}

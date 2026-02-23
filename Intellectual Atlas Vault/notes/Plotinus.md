@@ -27,4 +27,6 @@ Founder of Neoplatonism. Born in Egypt, educated in Alexandria, taught in Rome. 
 - [[Theory of Forms]] — inherited and restructured as Nous
 
 ## Influenced
-- [[Islamic Golden Age Tradition]] — via the Theology of Aristotle (Plotinus misattributed)
+- [[Al-Kindi]] — Plotinus's concept of the One became Al-Kindi's First Cause, identified with Allah
+- [[Avicenna]] — Neoplatonist emanation framework shaped Avicenna's ten cosmic intelligences
+- [[Islamic Golden Age]] — via the Theology of Aristotle (a Plotinus text misattributed to Aristotle in Arabic translation)

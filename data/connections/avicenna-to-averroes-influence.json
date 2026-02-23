@@ -1,0 +1,11 @@
+{
+  "id": "avicenna-to-averroes-influence",
+  "type": "connection",
+  "from": "avicenna",
+  "to": "averroes",
+  "relationship": "influenced",
+  "weight": 4,
+  "description": "Averroes spent much of his career responding to and critiquing Avicenna, particularly on the nature of the Active Intellect. Though he rejected Avicenna's Neoplatonist additions to Aristotle, Avicenna's framing of the key questions shaped everything Averroes wrote. Disagreement is still influence.",
+  "source": "Taylor, R.C. - Averroes on Psychology and the Principles of Metaphysics (1998)",
+  "direction": "forward"
+}

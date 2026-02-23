@@ -11,10 +11,54 @@
             "id": "b6e259e19875c3b2",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "markdown",
+              "state": {
+                "file": "Timeline.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Timeline"
+            }
+          },
+          {
+            "id": "a2fd472831a63627",
+            "type": "leaf",
+            "state": {
+              "type": "map",
+              "state": {
+                "name": "Default",
+                "mapZoom": 5,
+                "mapCenter": {
+                  "lat": 42.16340342422403,
+                  "lng": 20.676269531250004
+                },
+                "query": "",
+                "queryError": false,
+                "chosenMapSource": 0,
+                "forceHistorySave": false,
+                "followActiveNote": false,
+                "followMyLocation": false,
+                "embeddedHeight": 300,
+                "autoFit": false,
+                "lock": false,
+                "showLinks": false,
+                "linkColor": "red",
+                "markerLabels": "off",
+                "editMode": false
+              },
+              "icon": "map-pin",
+              "title": "Interactive Map View"
+            }
+          },
+          {
+            "id": "b5fd3ce293e2ef76",
+            "type": "leaf",
+            "state": {
+              "type": "path-view",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "Path view"
             }
           }
         ]
@@ -74,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 231.5
   },
   "right": {
     "id": "66ce4a7e3f768ab0",
@@ -173,11 +217,24 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-map-view:Open map view": false
     }
   },
   "active": "b6e259e19875c3b2",
   "lastOpenFiles": [
+    "notes/Thomas Aquinas.md",
+    "notes/The Floating Man.md",
+    "notes/Active Intellect.md",
+    "Untitled.canvas",
+    "notes/The Translation Movement.md",
+    "notes/Islamic Golden Age.md",
+    "notes/Averroes.md",
+    "notes/Avicenna.md",
+    "notes/Al-Kindi.md",
+    "notes/Ataraxia.md",
+    "notes/Immanuel Kant.md",
+    "Timeline.md",
     "Path Finder.html",
     "Timeline.html",
     "notes/Plotinus.md",
@@ -187,7 +244,6 @@
     "notes/Epictetus.md",
     "notes/Emanation.md",
     "notes/The One.md",
-    "notes/Ataraxia.md",
     "notes/Cosmopolitanism.md",
     "notes/Stoic Ethics.md",
     "notes/Marcus Aurelius.md",
@@ -195,18 +251,8 @@
     "notes/Epicurus.md",
     "notes/Zeno of Citium.md",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "notes/Immanuel Kant.md",
     "notes/Critique of Pure Reason.md",
     "notes/Islamic Golden Age Tradition.md",
-    "notes/Syllogistic Logic.md",
-    "notes/Virtue Ethics.md",
-    "notes/Theory of Forms.md",
-    "notes/Aristotle.md",
-    "notes/Socrates.md",
-    "notes/Zeno of Elea.md",
-    "notes/Plato.md",
-    "notes/The Apeiron.md",
     "notes"
   ]
 }

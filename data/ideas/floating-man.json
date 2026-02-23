@@ -1,0 +1,13 @@
+{
+  "id": "floating-man",
+  "type": "idea",
+  "name": "The Floating Man",
+  "tradition": ["Islamic Golden Age", "Aristotelianism"],
+  "contested": false,
+  "first_appearance": "c. 1020 CE",
+  "primary_thinker": "avicenna",
+  "summary": "Avicenna's thought experiment: imagine a person created fully formed, floating in empty space with no sensory experience whatsoever — yet they would still be aware of their own existence. This proves the soul is self-evident and irreducible to the body, anticipating Descartes' cogito by 600 years.",
+  "long_summary": "In The Book of Healing, Avicenna asks his reader to imagine a person who comes into existence fully formed but suspended in empty air, blindfolded, and unable to feel their own limbs. With zero sensory input, would this person know they exist? Avicenna says yes — the awareness of one's own existence is immediate and requires no external evidence. This is not merely an argument for the soul's existence; it's an argument that self-awareness is the most fundamental fact of consciousness, prior to all perception. The argument anticipates Descartes' 'I think therefore I am' by more than six centuries, and has renewed relevance in modern philosophy of mind debates about consciousness and first-person experience.",
+  "tags": ["consciousness", "soul", "self-awareness", "thought-experiment", "mind-body"],
+  "related_nodes": ["avicenna", "islamic-golden-age-tradition"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "al-kindi-to-avicenna-influence",
+  "type": "connection",
+  "from": "al-kindi",
+  "to": "avicenna",
+  "relationship": "influenced",
+  "weight": 4,
+  "description": "Al-Kindi established the framework — Greek philosophy reconciled with Islamic theology — that Avicenna inherited and radically extended. Avicenna built his metaphysics on the Aristotelian-Neoplatonist synthesis Al-Kindi pioneered, then pushed it further into a comprehensive philosophical system.",
+  "source": "Gutas, D. - Avicenna and the Aristotelian Tradition (1988)",
+  "direction": "forward"
+}

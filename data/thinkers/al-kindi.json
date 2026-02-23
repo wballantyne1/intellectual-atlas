@@ -1,0 +1,24 @@
+{
+  "id": "al-kindi",
+  "type": "thinker",
+  "name": "Al-Kindi",
+  "full_name": "Abu Yusuf Yaqub ibn Ishaq al-Kindi",
+  "born": "c. 801 CE",
+  "died": "c. 873 CE",
+  "nationality": "Arab",
+  "tradition": ["Islamic Golden Age", "Aristotelianism", "Neoplatonism"],
+  "location": {
+    "city": "Baghdad",
+    "modern_country": "Iraq",
+    "coordinates": [33.34, 44.40]
+  },
+  "key_works": [
+    { "title": "On First Philosophy", "year": "c. 830" },
+    { "title": "On the Intellect", "year": "c. 835" },
+    { "title": "On the Definitions of Things", "year": "c. 840" }
+  ],
+  "summary": "The first self-identified Arab philosopher, Al-Kindi worked in Baghdad's House of Wisdom and led the systematic translation of Greek philosophy into Arabic. He synthesised Aristotle and Neoplatonism with Islamic theology, opening Greek thought to the entire Islamic world.",
+  "long_summary": "Al-Kindi worked under the patronage of the Abbasid Caliphs in Baghdad, directing the translation of Aristotle, Plato, and Plotinus into Arabic. He was the first thinker to systematically argue that philosophy and Islamic faith were compatible — a bold claim at the time. His metaphysics drew heavily on Aristotle's concept of a First Cause and Plotinus's concept of the One, which he identified with Allah. He also made significant contributions to mathematics, optics, and music theory. His work created the intellectual foundation on which Avicenna and Averroes would later build.",
+  "tags": ["islamic-golden-age", "aristotelian", "neoplatonist", "translation-movement", "baghdad"],
+  "related_nodes": ["avicenna", "averroes", "aristotle", "plotinus", "islamic-golden-age-tradition", "active-intellect", "translation-movement"]
+}

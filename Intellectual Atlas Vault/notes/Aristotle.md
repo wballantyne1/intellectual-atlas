@@ -31,5 +31,8 @@ Plato's greatest student and most systematic critic. Where Plato placed reality 
 - [[Theory of Forms]] — the Third Man Argument; Forms separated from instances explain nothing
 
 ## Influenced
-- [[Islamic Golden Age Tradition]] (stub) — transmitted to Europe via Arabic scholarship
+- [[Al-Kindi]] — directed the Arabic translation of Aristotle's works; built his philosophy on the First Cause
+- [[Averroes]] — devoted his life to recovering the authentic Aristotle; known as "The Commentator"
+- [[Avicenna]] — extended Aristotelian metaphysics into the largest philosophical system of the medieval world
+- [[Islamic Golden Age]] — transmitted to Islamic and then Christian Europe via Arabic scholarship
 - [[Immanuel Kant]] — syllogistic logic as the backdrop to the Critique of Pure Reason

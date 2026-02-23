@@ -4,6 +4,35 @@
 
 ---
 
+## 2026-02-23 — Session 2: Islamic Golden Age cluster
+
+**New thinkers (3):**
+- Al-Kindi (c.801–873 CE) — first Arab philosopher, directed the Translation Movement
+- Avicenna / Ibn Sina (980–1037 CE) — greatest medieval philosopher-scientist; Floating Man argument
+- Averroes / Ibn Rushd (1126–1198 CE) — "The Commentator" on Aristotle; sparked Christian Scholasticism
+
+**New tradition (1):**
+- Islamic Golden Age (c.750–1258 CE) — centred on Baghdad's House of Wisdom
+
+**New ideas (4):**
+- The Translation Movement — systematic Arabic translation of Greek philosophy
+- Active Intellect — the most disputed idea in Islamic philosophy; three competing interpretations
+- The Floating Man — Avicenna's thought experiment anticipating Descartes by 600 years
+- Thomas Aquinas — stub node added as forward link; next cluster target
+
+**New connections (5):**
+- Aristotle → Al-Kindi, Aristotle → Averroes, Al-Kindi → Avicenna, Avicenna → Averroes, Averroes → Thomas Aquinas
+
+**Existing notes updated:**
+- Aristotle.md — forward links to Al-Kindi, Avicenna, Averroes, Islamic Golden Age
+- Plotinus.md — forward links to Al-Kindi, Avicenna, Islamic Golden Age
+
+**Vault rename:**
+- Inner Obsidian vault renamed from `Intellectual Atlas/` to `Intellectual Atlas Vault/` for clarity
+- ARCHITECTURE.md updated to reflect new folder name
+
+---
+
 ## 2026-02-23 — Session 1 (continued): Git workflow fix (D007 revised)
 
 **Decision (D007 revised):** Claude no longer runs git commands. Sandbox permission issues leave stale lock files that block the human's git operations. New rule: Claude writes files, human runs all git commands at end of session using `git add -A && git commit -m "..." && git push`.
