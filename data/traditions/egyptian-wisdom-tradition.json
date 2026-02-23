@@ -1,0 +1,32 @@
+{
+  "id": "egyptian-wisdom-tradition",
+  "type": "tradition",
+  "name": "Egyptian Wisdom Tradition",
+  "region": "Northeast Africa (Nile Valley)",
+  "period": {
+    "start": "c. 3100 BCE",
+    "end": "c. 400 CE"
+  },
+  "summary": "The intellectual and spiritual tradition of ancient Egypt spans more than three thousand years and encompasses cosmology, ethics, medicine, mathematics, and theology. Its central concept — Ma'at, the principle of cosmic order, truth, and justice — is one of the earliest attempts to articulate a universal moral law. Egyptian thought profoundly influenced early Greek philosophy through direct contact: both Pythagoras and Plato are reported to have studied in Egypt, and Alexandria later became the crucible in which Egyptian, Greek, and Jewish thought fused into Neoplatonism.",
+  "long_summary": "Egyptian intellectual life was inseparable from its religious and political structures. The pharaoh was both head of state and divine guarantor of Ma'at — the cosmic principle that held the universe in order. Ma'at is perhaps the earliest fully articulated concept of an impersonal moral and cosmic law, predating the Greek Logos by millennia and sharing significant structural similarities with it. Egyptian mathematical knowledge was substantial and practical: the Rhind Mathematical Papyrus (c. 1650 BCE) demonstrates competence in fractions, areas, and volumes — knowledge essential for pyramid construction and land surveying. Egyptian medicine was systematically recorded in the Edwin Smith Papyrus, demonstrating empirical observation and diagnosis. Herodotus claimed that Greek geometry originated in Egypt, and while this is likely an overstatement, the debt is real. The tradition's most philosophically significant later phase is Hermeticism — a body of texts attributed to Hermes Trismegistus (a fusion of the Greek Hermes and Egyptian Thoth) that blended Egyptian, Greek, and Platonic ideas, and which had enormous influence on Renaissance and early modern European thought.",
+  "key_contributions": [
+    "Ma'at: the concept of cosmic order, truth, and justice as a universal principle",
+    "Practical mathematics: geometry, fractions, land surveying (Rhind Papyrus)",
+    "Empirical medicine: systematic diagnosis and treatment (Edwin Smith Papyrus)",
+    "Theology and afterlife philosophy: the Book of the Dead, soul concepts (Ka, Ba)",
+    "Hermeticism: fusion of Egyptian and Greek philosophy with lasting Western influence",
+    "Library of Alexandria: institutional home of ancient world scholarship"
+  ],
+  "named_thinkers": [
+    "imhotep"
+  ],
+  "tags": ["cosmology", "ethics", "Ma'at", "mathematics", "medicine", "Hermeticism", "ancient Africa", "pre-Socratic influences"],
+  "related_nodes": [
+    "babylonian-intellectual-tradition",
+    "thales-of-miletus",
+    "pythagoras-of-samos",
+    "plato",
+    "maat-concept",
+    "naturalistic-explanation"
+  ]
+}

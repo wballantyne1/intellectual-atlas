@@ -1,0 +1,11 @@
+{
+  "id": "babylonian-to-thales-influence",
+  "type": "connection",
+  "from": "babylonian-intellectual-tradition",
+  "to": "thales-of-miletus",
+  "relationship": "influenced",
+  "weight": 4,
+  "description": "Thales almost certainly drew on Babylonian astronomical records and mathematical methods. His famous prediction of the solar eclipse of 585 BCE is now understood to have used Babylonian saros cycle data — a numerical pattern for predicting eclipses that Babylonian astronomers had accumulated over centuries. Miletus was a major trading city with documented commercial and cultural contact with Mesopotamia. Thales' claim that the earth floats on water also echoes Babylonian cosmological imagery.",
+  "source": "Herodotus, Histories I.74; O. Neugebauer, The Exact Sciences in Antiquity (1952)",
+  "direction": "forward"
+}

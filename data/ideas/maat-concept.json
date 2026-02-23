@@ -1,0 +1,18 @@
+{
+  "id": "maat-concept",
+  "type": "idea",
+  "name": "Ma'at",
+  "tradition": ["Egyptian Wisdom Tradition", "Ethics", "Cosmology"],
+  "contested": false,
+  "summary": "The ancient Egyptian concept of cosmic order, truth, justice, and harmony — both a description of how the universe is and a moral demand on how humans must act within it. Ma'at is one of the earliest known attempts to articulate a universal, impersonal principle governing both the natural world and human conduct. Its structural parallels with the Greek concept of Logos are significant and likely not coincidental.",
+  "long_summary": "Ma'at is simultaneously a goddess, a concept, and a practice. As a goddess she is depicted with a feather on her head — the feather against which the heart of the dead is weighed in the afterlife. As a concept she represents the right ordering of things: the sun rising, the Nile flooding at the correct time, the pharaoh ruling justly, the individual living honestly. As a practice she is a demand on every person — to act in accordance with the order of things rather than against it. What makes Ma'at philosophically significant is the move toward an impersonal, universal principle: Ma'at is not the will of a god but the nature of things themselves. The pharaoh is responsible for upholding Ma'at, but Ma'at exists independently of the pharaoh. This is structurally analogous to the Greek concept of Logos — the rational principle immanent in the universe — though whether there was direct conceptual transmission or parallel development remains debated. The later fusion of Egyptian and Greek thought in Alexandria produced Neoplatonism, in which Egyptian notions of divine order and Greek rationalism explicitly merged.",
+  "first_appearance": "c. 2700 BCE",
+  "primary_thinker": null,
+  "tags": ["ethics", "cosmology", "cosmic order", "justice", "ancient Africa", "Logos parallel", "Egyptian philosophy"],
+  "related_nodes": [
+    "egyptian-wisdom-tradition",
+    "naturalistic-explanation",
+    "logos",
+    "heraclitus-of-ephesus"
+  ]
+}

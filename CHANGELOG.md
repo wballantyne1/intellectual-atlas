@@ -4,6 +4,39 @@
 
 ---
 
+## 2026-02-23 — Session 1 (continued): Ancient world cluster and Tradition node type
+
+**Schema:**
+- `schemas/tradition.schema.json` — fourth node type for collective intellectual traditions
+
+**Data — Traditions (new folder `data/traditions/`):**
+- `babylonian-intellectual-tradition.json`
+- `egyptian-wisdom-tradition.json`
+
+**Data — Thinkers:**
+- `thales-of-miletus.json` — first named thinker in Western philosophy
+
+**Data — Ideas:**
+- `naturalistic-explanation.json` — the founding gesture of Western philosophy
+- `arche.json` — the Pre-Socratic search for a first principle
+- `maat-concept.json` — Egyptian cosmic order, structural precursor to Logos
+
+**Data — Connections:**
+- `babylonian-to-thales-influence.json`
+- `egyptian-to-thales-influence.json`
+
+**Obsidian notes (new, in `Intellectual Atlas/notes/`):**
+- Full notes: Babylonian Intellectual Tradition, Egyptian Wisdom Tradition, Thales of Miletus, Arche, Ma'at, Naturalistic Explanation
+- Stubs: Anaximander of Miletus, Heraclitus of Ephesus, Pythagoras of Samos, Democritus of Abdera
+
+**Documentation updated:** DECISIONS.md (D008), ARCHITECTURE.md (Tradition node type, Obsidian setup)
+
+**Direction change:** Starting cluster moved from Kant to the roots of Western intellectual history, beginning with Near Eastern traditions (Babylonian, Egyptian) before the first named Greek thinker (Thales).
+
+**Next session:** Full nodes for Anaximander, Heraclitus, Pythagoras, Democritus; first contradiction connection (Parmenides vs. Heraclitus on change).
+
+---
+
 ## 2026-02-23 — Session 1 (continued): GitHub setup and remote push
 
 **Actions:**

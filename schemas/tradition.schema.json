@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "tradition.schema.json",
+  "title": "Tradition",
+  "description": "A collective intellectual tradition — a culture, school, or civilisation whose contributions to the history of ideas cannot be attributed to named individuals",
+  "type": "object",
+  "required": ["id", "type", "name", "region", "period", "summary"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in kebab-case",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "type": {
+      "type": "string",
+      "const": "tradition"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the tradition"
+    },
+    "region": {
+      "type": "string",
+      "description": "Geographic region or civilisation"
+    },
+    "period": {
+      "type": "object",
+      "required": ["start"],
+      "properties": {
+        "start": {
+          "type": "string",
+          "description": "Approximate start date or era (e.g. '3000 BCE', 'c. 2500 BCE')"
+        },
+        "end": {
+          "type": "string",
+          "description": "Approximate end date, or 'ongoing'"
+        }
+      }
+    },
+    "summary": {
+      "type": "string",
+      "description": "Accessible 2-3 sentence summary for a general audience"
+    },
+    "long_summary": {
+      "type": "string",
+      "description": "Longer scholarly summary (optional)"
+    },
+    "key_contributions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Major intellectual contributions — concepts, methods, or frameworks"
+    },
+    "named_thinkers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of any named individual thinkers associated with this tradition (may be empty)"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_nodes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of directly connected nodes"
+    }
+  },
+  "additionalProperties": false
+}

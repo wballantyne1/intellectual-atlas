@@ -1,0 +1,19 @@
+{
+  "id": "naturalistic-explanation",
+  "type": "idea",
+  "name": "Naturalistic Explanation",
+  "tradition": ["Pre-Socratic Philosophy", "Natural Philosophy", "Philosophy of Science"],
+  "contested": false,
+  "summary": "The move from mythological to natural explanations of the world — explaining events through impersonal causes and principles rather than divine will or narrative. This is the founding gesture of Western philosophy and science. When Thales says 'everything is water' rather than 'Poseidon governs the sea', he is not just offering a different answer — he is playing an entirely different kind of intellectual game.",
+  "long_summary": "The shift from mythological to naturalistic explanation is one of the most significant intellectual transitions in human history, though it was gradual and never total. Mythological explanation is personal: events happen because gods will them, and understanding requires knowing the gods' intentions. Naturalistic explanation is impersonal: events happen because of inherent properties of things and general principles. Thales' claim that water is the fundamental substance is the earliest preserved example of a fully naturalistic cosmological claim in the Western tradition — though similar moves appear in Babylonian and Egyptian contexts without fully separating from religious frameworks. The naturalistic turn enabled the development of what we now call science: the expectation that the same causes produce the same effects, that the world is in principle intelligible to human reason, and that knowledge is gained by observation and argument rather than revelation. It is worth noting that this move was not the 'defeat' of religion — most Pre-Socratic thinkers retained notions of the divine — but a transformation of what divinity meant.",
+  "first_appearance": "c. 585 BCE",
+  "primary_thinker": "thales-of-miletus",
+  "tags": ["cosmology", "philosophy of science", "Pre-Socratic", "mythology vs. reason", "Enlightenment precursor"],
+  "related_nodes": [
+    "babylonian-intellectual-tradition",
+    "egyptian-wisdom-tradition",
+    "thales-of-miletus",
+    "arche",
+    "maat-concept"
+  ]
+}

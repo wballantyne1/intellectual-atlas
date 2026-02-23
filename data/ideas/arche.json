@@ -1,0 +1,20 @@
+{
+  "id": "arche",
+  "type": "idea",
+  "name": "Arche",
+  "tradition": ["Pre-Socratic Philosophy", "Metaphysics", "Cosmology"],
+  "contested": true,
+  "summary": "The Greek concept of the fundamental principle or substance from which all things originate and to which they return. Each Pre-Socratic philosopher proposed a different candidate: Thales said water, Anaximander said the Apeiron (the boundless), Anaximenes said air, Heraclitus said fire, Pythagoras said number, Democritus said atoms. The concept itself — that there is a single originating principle — is as significant as any particular answer.",
+  "long_summary": "The word 'arche' (ἀρχή) means both 'beginning' and 'principle' — a unity that the Pre-Socratics exploited. The search for the arche assumes that behind the apparent diversity of the world there is a single underlying unity — that multiplicity is an expression of something more fundamental. This assumption underlies all of Western physics: from the four elements to atoms, to quarks, to string theory. Each answer proposed by the Pre-Socratics reflects a different philosophical intuition. Thales' water is the most concrete — a visible, changeable substance. Anaximander's Apeiron is the most abstract — an indefinite, boundless principle beyond any particular thing. Heraclitus' fire captures the idea of constant change as the fundamental reality. Pythagoras' number (or ratio) introduces the idea that reality is fundamentally mathematical, not material. Democritus' atoms anticipate modern particle physics. The concept of arche was never refuted — it was inherited, via Plato and Aristotle, by all subsequent Western metaphysics and science, eventually splitting into the physical question (what is matter fundamentally?) and the metaphysical question (what is being fundamentally?).",
+  "first_appearance": "c. 585 BCE",
+  "primary_thinker": "thales-of-miletus",
+  "tags": ["cosmology", "metaphysics", "Pre-Socratic", "materialism", "monism", "first principles"],
+  "related_nodes": [
+    "thales-of-miletus",
+    "anaximander-of-miletus",
+    "heraclitus-of-ephesus",
+    "pythagoras-of-samos",
+    "democritus-of-abdera",
+    "naturalistic-explanation"
+  ]
+}

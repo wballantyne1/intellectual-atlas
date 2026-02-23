@@ -1,0 +1,24 @@
+{
+  "id": "thales-of-miletus",
+  "type": "thinker",
+  "name": "Thales of Miletus",
+  "born": "c. 624 BCE",
+  "died": "c. 546 BCE",
+  "nationality": "Greek (Milesian)",
+  "tradition": ["Pre-Socratic Philosophy", "Milesian School", "Natural Philosophy"],
+  "key_works": [
+    { "title": "On Nature", "year": "c. 585 BCE (lost, possibly never written — teachings transmitted orally)" }
+  ],
+  "summary": "Traditionally the first philosopher in the Western tradition. Thales asked what the world is fundamentally made of and answered: water. The answer matters less than the move — this was the first known attempt to explain the cosmos through a single natural principle rather than through divine agency or myth. He also reportedly predicted the solar eclipse of 585 BCE, almost certainly using Babylonian astronomical data.",
+  "long_summary": "Thales lived in Miletus, a prosperous trading city on the coast of Asia Minor (modern Turkey), at the crossroads of Greek, Lydian, Egyptian, and Babylonian cultures. His access to Babylonian astronomical records and Egyptian mathematics was probably direct. Almost nothing he wrote survives — it is debated whether he wrote at all — and we know him chiefly through later sources, especially Aristotle. His three main claims as reported: (1) the fundamental substance of all things is water; (2) the earth floats on water; (3) all things are full of gods (sometimes interpreted as an early panpsychism). The philosophical significance of (1) is not that water is a plausible answer — it isn't — but that the question is being asked in this form at all. 'What is everything made of?' is a question that expects a natural, reasoned answer, not a mythological one. This is the founding gesture of Western natural philosophy. Thales was also famed as a practical sage: a mathematician, engineer, statesman, and astronomer. Aristotle names him as the founder of natural philosophy. Whether or not Thales actually existed as a distinct historical figure (some scholars are sceptical), the tradition that begins with him is real.",
+  "tags": ["Pre-Socratic", "natural philosophy", "cosmology", "Milesian school", "arche", "materialism"],
+  "related_nodes": [
+    "babylonian-intellectual-tradition",
+    "egyptian-wisdom-tradition",
+    "anaximander-of-miletus",
+    "anaximenes-of-miletus",
+    "pythagoras-of-samos",
+    "naturalistic-explanation",
+    "arche"
+  ]
+}

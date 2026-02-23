@@ -75,6 +75,22 @@
 
 ---
 
+## D008 — Tradition as a fourth node type
+*Date: 2026-02-23*
+*Status: Confirmed*
+
+**Decision:** Add Tradition as a fourth node type alongside Thinkers, Ideas, and Connections. A Tradition node represents a collective intellectual culture whose contributions cannot be attributed to named individuals.
+
+**Reasoning:** The three original node types assumed a Western model of intellectual history where ideas are attributed to named individual thinkers. This breaks down immediately when representing Babylonian astronomy, Egyptian wisdom traditions, Vedic philosophy, Confucian schools, or any tradition that predates or operates outside the Western habit of individual attribution. Forcing these into a Thinker node (by treating "Babylonian Tradition" as a pseudo-person) would be architecturally dishonest and intellectually disrespectful. A proper Tradition node type ensures non-Western and pre-Greek intellectual traditions are first-class citizens in the database, not footnotes.
+
+**Fields added:** region, period (start/end), key_contributions, named_thinkers (for traditions that do have some named individuals within them).
+
+**Scope:** Applies to any collective tradition — ancient (Babylonian, Egyptian, Vedic) or ongoing (Confucian, Islamic, Indigenous). Can coexist with individual Thinker nodes from the same tradition where named individuals are known.
+
+**Implication:** The starting cluster for the Atlas now begins with Tradition nodes (Mesopotamian, Egyptian) before arriving at the first named individual thinker (Thales).
+
+---
+
 ## D007 — Division of labour: Claude commits, human pushes
 *Date: 2026-02-23*
 *Status: Confirmed*

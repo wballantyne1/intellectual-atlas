@@ -1,0 +1,28 @@
+{
+  "id": "babylonian-intellectual-tradition",
+  "type": "tradition",
+  "name": "Babylonian Intellectual Tradition",
+  "region": "Mesopotamia (modern Iraq)",
+  "period": {
+    "start": "c. 3000 BCE",
+    "end": "c. 500 BCE"
+  },
+  "summary": "The intellectual tradition of ancient Mesopotamia — centred on Babylon, Sumer, and Akkad — produced the earliest known mathematical astronomy, systematic record-keeping, legal philosophy, and cosmogony. These were not separated into distinct disciplines: the same priestly scribal class that tracked planetary movements also administered law, managed temples, and recorded history. Their methods and frameworks directly influenced early Greek natural philosophy, particularly through trade and cultural contact at Miletus.",
+  "long_summary": "Babylonian intellectual culture was embedded in a priestly and scribal class with highly practical aims: predicting eclipses and planetary cycles for religious and agricultural purposes, maintaining legal and commercial records, and communicating with the divine. The Enuma Elish (c. 1200 BCE) is the most developed Babylonian cosmogony — a creation myth in which the cosmos emerges from primordial conflict between Marduk and Tiamat. More significant for the history of ideas is the Babylonian mathematical tradition: base-60 arithmetic (the origin of our 60-minute hour and 360-degree circle), systematic astronomical observation over centuries, and the ability to predict eclipses using numerical patterns — without a theoretical model of the heavens. Thales of Miletus is traditionally credited with predicting the solar eclipse of 585 BCE, almost certainly using Babylonian data. The Babylonians also preceded the Greeks in developing what we would recognise as algebra. Their influence on Pythagoras (musical ratios, numerology) and on Greek astronomy is well-documented. The critical difference: Babylonian thought remained tied to divine and practical purposes; the move to abstract, impersonal natural principles — the 'arche' — was the distinctive Greek innovation.",
+  "key_contributions": [
+    "Mathematical astronomy: systematic planetary observation and eclipse prediction",
+    "Base-60 arithmetic: origin of degrees, minutes, and seconds",
+    "Cosmogony: the Enuma Elish as one of the earliest creation narratives",
+    "Legal philosophy: the Code of Hammurabi as systematic codified law",
+    "Proto-algebra: solving quadratic equations for practical purposes",
+    "Catalogue of celestial phenomena spanning centuries"
+  ],
+  "named_thinkers": [],
+  "tags": ["astronomy", "mathematics", "cosmogony", "law", "Mesopotamia", "pre-Socratic influences", "ancient Near East"],
+  "related_nodes": [
+    "egyptian-wisdom-tradition",
+    "thales-of-miletus",
+    "pythagoras-of-samos",
+    "naturalistic-explanation"
+  ]
+}

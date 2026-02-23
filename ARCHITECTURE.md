@@ -80,9 +80,30 @@ A concept, argument, movement, or doctrine.
 | `tags` | array | Free-form tags |
 | `related_nodes` | array | IDs of directly connected nodes |
 
+### Tradition
+
+A collective intellectual culture whose contributions cannot be attributed to named individuals.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Unique identifier in kebab-case, e.g. `babylonian-intellectual-tradition` |
+| `type` | string | Always `"tradition"` |
+| `name` | string | Name of the tradition |
+| `region` | string | Geographic region or civilisation |
+| `period.start` | string | Approximate start date, e.g. `"c. 3000 BCE"` |
+| `period.end` | string | Approximate end date, or `"ongoing"` |
+| `summary` | string | Accessible 2–3 sentence summary |
+| `long_summary` | string | Longer scholarly summary (optional) |
+| `key_contributions` | array | Major intellectual contributions |
+| `named_thinkers` | array | IDs of any named thinkers within this tradition |
+| `tags` | array | Free-form tags |
+| `related_nodes` | array | IDs of directly connected nodes |
+
+---
+
 ### Connection
 
-A relationship between any two nodes (thinker→thinker, thinker→idea, idea→idea).
+A relationship between any two nodes (thinker→thinker, thinker→idea, idea→idea, tradition→thinker, tradition→idea).
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -120,9 +141,14 @@ The Phase 1 JSON schema is designed to be migration-friendly: all IDs will map c
 
 ## Obsidian setup (Phase 1 visualisation)
 
-Obsidian can read the `data/` folder and render a graph view of the markdown links. To use:
-1. Open Obsidian and point it at this repository folder
-2. Enable "Graph view" in the sidebar
-3. The graph will show connections between files
+**Vault location:** `Intellectual Atlas/` (the nested subfolder, created by Obsidian on setup)
 
-Note: Obsidian's graph view works best with Markdown files. For richer visualisation, consider creating a parallel `/notes/` folder with `.md` files that mirror the JSON data. This can be generated automatically from the JSON.
+Obsidian is pointed at the nested `Intellectual Atlas/` subfolder as its vault. Markdown mirror notes live in `Intellectual Atlas/notes/` — one file per node, using `[[wiki-links]]` to create the connection graph.
+
+**How the graph works:** Obsidian scans all markdown files for `[[links]]` and draws a line between any two files that reference each other. The intelligence is in the links Claude writes, not in Obsidian itself. Obsidian's graph view shows node connections but cannot differentiate edge types (influence vs. contradiction). Node colouring by type (thinker/idea/tradition) is available via Obsidian's Groups feature.
+
+**Mirror note conventions:**
+- Full nodes: complete summaries, all connections listed with wiki-links
+- Stub nodes: minimal entry marked `> Stub — full node not yet built`, with key connections listed
+
+**Limitation:** Obsidian cannot render different connection types visually. This is a known Phase 1 constraint — React Flow in Phase 2 will display edge types (influenced/contradicted/extended) as distinct visual styles.

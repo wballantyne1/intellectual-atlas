@@ -1,0 +1,11 @@
+{
+  "id": "egyptian-to-thales-influence",
+  "type": "connection",
+  "from": "egyptian-wisdom-tradition",
+  "to": "thales-of-miletus",
+  "relationship": "influenced",
+  "weight": 3,
+  "description": "Thales is reported by later ancient sources to have visited Egypt, where he encountered Egyptian geometry and used it to calculate the height of the pyramids by their shadows — a method demonstrating knowledge of similar triangles. Herodotus credits Egyptian land surveying with inspiring Greek geometry. The influence is real but less direct than the Babylonian astronomical influence; Egyptian thought contributed methods and practical mathematics rather than cosmological frameworks.",
+  "source": "Diogenes Laërtius, Lives of the Eminent Philosophers I.27; Herodotus, Histories II.109",
+  "direction": "forward"
+}
