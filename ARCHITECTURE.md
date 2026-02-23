@@ -37,7 +37,7 @@ git push
 ## Directory structure
 
 ```
-intellectual-atlas/
+intellectual-atlas/              ← git repo root (outer folder)
 ├── README.md
 ├── ROADMAP.md
 ├── DECISIONS.md
@@ -49,10 +49,16 @@ intellectual-atlas/
 │   ├── ideas/             One .json file per idea or concept
 │   └── connections/       One .json file per relationship between nodes
 │
-└── schemas/               JSON Schema definitions (the "rules" for each file type)
-    ├── thinker.schema.json
-    ├── idea.schema.json
-    └── connection.schema.json
+├── schemas/               JSON Schema definitions (the "rules" for each file type)
+│   ├── thinker.schema.json
+│   ├── idea.schema.json
+│   └── connection.schema.json
+│
+├── prototypes/            Phase 2 design references (HTML tools, not for daily use)
+│
+└── Intellectual Atlas Vault/    ← Obsidian vault (inner folder)
+    ├── notes/             One .md file per node
+    └── .obsidian/         Obsidian config and installed plugins
 ```
 
 ---
@@ -157,9 +163,9 @@ The Phase 1 JSON schema is designed to be migration-friendly: all IDs will map c
 
 ## Obsidian setup (Phase 1 visualisation)
 
-**Vault location:** `Intellectual Atlas/` (the nested subfolder, created by Obsidian on setup)
+**Vault location:** `Intellectual Atlas Vault/` (the nested subfolder, created by Obsidian on setup)
 
-Obsidian is pointed at the nested `Intellectual Atlas/` subfolder as its vault. Markdown mirror notes live in `Intellectual Atlas/notes/` — one file per node, using `[[wiki-links]]` to create the connection graph.
+Obsidian is pointed at the nested `Intellectual Atlas Vault/` subfolder as its vault. Markdown mirror notes live in `Intellectual Atlas Vault/notes/` — one file per node, using `[[wiki-links]]` to create the connection graph.
 
 **How the graph works:** Obsidian scans all markdown files for `[[links]]` and draws a line between any two files that reference each other. The intelligence is in the links Claude writes, not in Obsidian itself. Node colouring by type (thinker/idea/tradition) is available via Obsidian's Groups feature.
 
