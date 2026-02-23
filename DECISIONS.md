@@ -75,6 +75,20 @@
 
 ---
 
+## D007 — Division of labour: Claude commits, human pushes
+*Date: 2026-02-23*
+*Status: Confirmed*
+
+**Decision:** Claude handles all file creation, editing, and git commits. The human's only recurring terminal action is `git push` to sync commits to GitHub at the end of a session.
+
+**Reasoning:** Claude runs in a sandbox environment that has access to the workspace folder and can run git commands, but cannot authenticate with GitHub directly. Rather than requiring the human to manage files manually, we draw the line at the point that actually requires their credentials: the push to the remote. Everything before that (writing, staging, committing) is Claude's responsibility.
+
+**Practical implication:** The human needs to be in the Intellectual Atlas folder in their terminal to run `git push`. The prompt will show `Intellectual Atlas %` when in the right place.
+
+**Revisit when:** A GitHub token-based authentication approach is set up that allows Claude to push directly.
+
+---
+
 ## D006 — Four living documentation files maintained after every session
 *Date: 2026-02-23*
 *Status: Confirmed*

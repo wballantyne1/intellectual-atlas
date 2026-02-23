@@ -8,9 +8,13 @@
 
 ## Current state: Phase 1
 
+**Live repository:** https://github.com/wballantyne1/intellectual-atlas (private)
+
 A GitHub repository containing structured JSON files. No server, no database, no cost.
 
 Think of it like a filing cabinet: each drawer is a folder (`thinkers/`, `ideas/`, `connections/`), each file is a card. The connections folder is the index — it tells you how the cards relate to each other.
+
+**Working arrangement:** Claude creates files, stages changes, and commits locally. The human runs `git push` from the Intellectual Atlas folder to sync to GitHub.
 
 ---
 

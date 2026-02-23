@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-02-23 — Session 1 (continued): GitHub setup and remote push
+
+**Actions:**
+- Installed Homebrew (Mac package manager) and GitHub CLI (`gh`) on the human's machine
+- Authenticated GitHub CLI with account `wballantyne1`
+- Created private GitHub repository: `https://github.com/wballantyne1/intellectual-atlas`
+- Pushed all 21 files from initial commit to remote origin
+
+**Decisions made this session:** D007 (see DECISIONS.md)
+
+**Workflow established:** Claude handles all file creation, editing, and git commits. Human runs `git push` from the Intellectual Atlas folder to sync to GitHub at the end of a session.
+
+---
+
 ## 2026-02-23 — Session 1: Repository initialisation
 
 **Added:**
@@ -18,8 +32,8 @@
 - `data/thinkers/kant-immanuel.json` — first Thinker node
 - `data/ideas/transcendental-idealism.json` — first Idea node
 - `data/ideas/critique-of-pure-reason.json` — second Idea node (the work as an idea-node)
-- `data/connections/hume-to-kant.json` — Hume's influence on Kant ("dogmatic slumber")
-- `data/connections/kant-to-hegel.json` — Kant's influence on Hegel
+- `data/connections/hume-to-kant-influence.json` — Hume's influence on Kant ("dogmatic slumber")
+- `data/connections/kant-to-hegel-influence.json` — Kant's influence on Hegel
 
 **Decisions made this session:** D001–D006 (see DECISIONS.md)
 
