@@ -1,0 +1,19 @@
+{
+  "id": "emanation",
+  "type": "idea",
+  "name": "Emanation",
+  "tradition": ["Neoplatonism", "Metaphysics", "Cosmology"],
+  "contested": true,
+  "summary": "The Neoplatonic account of how the world comes to exist: not through deliberate creation (as in Genesis) but through necessary overflow. The One is so full of reality that it overflows into lesser levels of existence — Nous, Soul, Matter — as the sun overflows into light without any act of will. Reality is a hierarchy of levels, each less unified than the one above, all ultimately deriving from and pointing back toward the One.",
+  "long_summary": "Emanation is Plotinus's answer to the cosmological question: how does a diverse, material world arise from an absolutely simple, immaterial first principle? The key move is to reject the idea of deliberate creation — the One does not choose to create, because choice implies lack and deliberation, which would complicate the One's simplicity. Instead, the One 'emanates' — overflows — necessarily, as a full vessel overflows, or as the sun radiates light. Three levels of emanation: (1) Nous (Intellect/Mind) — the first emanation, the realm of Plato's Forms, thinking itself thinking. (2) Soul — the second emanation, the animating principle of the world, turning outward toward matter. (3) Matter — the lowest level, a kind of shadow, nearly non-being, characterised by privation of the higher levels. Each level contemplates the one above it and in doing so produces the level below. The system is deterministic and hierarchical, but not dualistic in the Gnostic sense: matter is not evil, merely the furthest from the source. This contrasted sharply with Gnostic cosmologies (which saw matter as the product of an evil demiurge) and with Christian creation ex nihilo (which insisted on a free act of divine will). Emanation was deeply influential on Islamic Neoplatonists (Al-Farabi, Avicenna), who used it to reconcile Aristotelian philosophy with Quranic theology, and on Jewish mysticism (Kabbalistic sefirot).",
+  "first_appearance": "c. 253 CE",
+  "primary_thinker": "plotinus",
+  "tags": ["Neoplatonism", "cosmology", "metaphysics", "creation", "hierarchy of being", "mysticism"],
+  "related_nodes": [
+    "plotinus",
+    "the-one",
+    "plato",
+    "theory-of-forms",
+    "islamic-golden-age-tradition"
+  ]
+}

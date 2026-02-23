@@ -1,0 +1,11 @@
+{
+  "id": "plato-to-plotinus-influence",
+  "type": "connection",
+  "from": "plato",
+  "to": "plotinus",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Plotinus understood himself as a faithful interpreter of Plato — 'these are not new doctrines; they were said long ago, though not explicitly.' His entire system is a radicalisation of Platonic ideas: the Form of the Good (described by Plato as 'beyond being') becomes the One; the realm of Forms becomes Nous; the world-soul of the Timaeus becomes Soul. The hierarchical structure of reality, the soul's kinship with the intelligible world, the goal of philosophical ascent — all are Platonic. What Plotinus adds is the mystical dimension: the direct, non-cognitive union with the One as the telos of the philosophical life, and the emanation account of how the Many proceeds from the One.",
+  "source": "Plotinus, Enneads V.1; Porphyry, Life of Plotinus",
+  "direction": "forward"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "lucretius",
+  "type": "thinker",
+  "name": "Lucretius",
+  "born": "c. 99 BCE",
+  "died": "c. 55 BCE",
+  "nationality": "Roman",
+  "tradition": ["Epicureanism", "Roman Philosophy", "Poetry"],
+  "key_works": [
+    { "title": "De Rerum Natura (On the Nature of Things)", "year": "c. 55 BCE" }
+  ],
+  "summary": "Roman poet and Epicurean philosopher whose single surviving work, De Rerum Natura, preserved the atomic theory for Western civilisation. His poem — six books of Latin verse explaining Epicurean physics and ethics — was lost for a thousand years, rediscovered in 1417, and arguably changed the course of history. Stephen Greenblatt called it 'the book that changed the world.'",
+  "long_summary": "Almost nothing is known of Lucretius's life. His importance is his work: De Rerum Natura is an extraordinary achievement — a full exposition of Epicurean atomism in the form of a philosophical poem, written in the tradition of Empedocles. Its argument runs through six books: the nature of atoms and void, the nature of the mind and soul (both material, both mortal), the nature of perception, cosmology and meteorology, the development of human civilisation, and religion and disease. Its central purpose is therapeutic: if we understand that everything is atoms in void, we will be freed from the fears — of death, of divine punishment, of the supernatural — that make human life miserable. The manuscript was preserved in a single monastery, found by the humanist Poggio Bracciolini in 1417 in Germany. Its rediscovery introduced atomic materialism, the principle of the constancy of matter, and a naturalistic account of human origins into Renaissance Europe. Its influence on Galileo, Gassendi, Newton, Jefferson (who owned five copies), and Darwin has been extensively documented.",
+  "tags": ["Epicureanism", "atomism", "Roman philosophy", "poetry", "De Rerum Natura", "Scientific Revolution influence"],
+  "related_nodes": [
+    "epicurus",
+    "democritus-of-abdera",
+    "atomism",
+    "ataraxia"
+  ]
+}

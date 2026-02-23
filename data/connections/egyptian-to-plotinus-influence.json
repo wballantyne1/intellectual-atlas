@@ -1,0 +1,11 @@
+{
+  "id": "egyptian-to-plotinus-influence",
+  "type": "connection",
+  "from": "egyptian-wisdom-tradition",
+  "to": "plotinus",
+  "relationship": "influenced",
+  "weight": 4,
+  "description": "Plotinus was born and educated in Egypt, studying under Ammonius Saccas in Alexandria — a city that was the crucible of Egyptian, Greek, Jewish, and Oriental thought. His mystical framework — the soul's return to its divine source, the ineffability of the ultimate principle, the hierarchy of being — has clear structural parallels with Egyptian theological and mystical traditions, including Hermetic texts that fused Egyptian and Greek ideas. The concept of the One overflowing into creation echoes Egyptian theological accounts of the primordial source. Whether the influence was direct or mediated through the Alexandrian philosophical milieu is debated, but the Egyptian context of Plotinus's formation is undeniable.",
+  "source": "Porphyry, Life of Plotinus 1–3; Garth Fowden, The Egyptian Hermes (1986)",
+  "direction": "forward"
+}

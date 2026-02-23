@@ -1,0 +1,24 @@
+{
+  "id": "plotinus",
+  "type": "thinker",
+  "name": "Plotinus",
+  "born": "c. 204 CE",
+  "died": "270 CE",
+  "nationality": "Egyptian-Roman",
+  "tradition": ["Neoplatonism", "Mysticism", "Late Antique Philosophy"],
+  "key_works": [
+    { "title": "The Enneads (collected by Porphyry)", "year": "c. 253–270 CE" }
+  ],
+  "summary": "The founder of Neoplatonism and one of the most important philosophers of late antiquity. Born in Egypt, he fused Plato's philosophy with Egyptian mystical thought and Oriental influences into a grand vision of reality as emanating from a single source — the One — through successive levels down to matter. His philosophy became the intellectual framework of both Christian theology (via Augustine) and Islamic philosophy (via translation into Arabic).",
+  "long_summary": "Plotinus studied in Alexandria under Ammonius Saccas — a mysterious figure who also taught Origen, an early Christian theologian. He later moved to Rome, where he taught for decades. His works were collected and edited after his death by his student Porphyry into the Enneads (six groups of nine treatises). Plotinus's system is a radical development of Platonic philosophy. At its apex is the One — absolutely simple, beyond being and thought, the source of all existence. From the One emanates Nous (Intellect) — the realm of Plato's Forms, but now understood as the self-thinking thought of divine intellect. From Nous emanates Soul — the principle of life and of the world. From Soul proceeds matter — the lowest level, a kind of shadow or privation. The goal of philosophy and of life is the soul's return to its source — a mystical ascent through contemplation back to the One. Plotinus reportedly experienced moments of complete union with the One. This framework — the One, Nous, Soul — was adopted almost wholesale by Christian theologians: the Trinity (Father, Son, Holy Spirit) maps remarkably closely onto it. Augustine, who was deeply influenced by Neoplatonism before his conversion, explicitly acknowledged this. Islamic philosophers (Avicenna, Al-Farabi) engaged deeply with Neoplatonism. The Enneads remained influential through the Renaissance (Marsilio Ficino's translation, 1492) and into German Idealism.",
+  "tags": ["Neoplatonism", "mysticism", "the One", "emanation", "Platonism", "Christian theology influence", "Islamic philosophy influence"],
+  "related_nodes": [
+    "plato",
+    "egyptian-wisdom-tradition",
+    "porphyry",
+    "the-one",
+    "emanation",
+    "theory-of-forms",
+    "islamic-golden-age-tradition"
+  ]
+}

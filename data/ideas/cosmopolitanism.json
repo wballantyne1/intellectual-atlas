@@ -1,0 +1,19 @@
+{
+  "id": "cosmopolitanism",
+  "type": "idea",
+  "name": "Cosmopolitanism",
+  "tradition": ["Stoicism", "Political Philosophy", "Ethics"],
+  "contested": true,
+  "summary": "The idea that all human beings are members of a single community, regardless of nationality, ethnicity, or city-state. Coined by the Cynic Diogenes ('I am a citizen of the world') and developed into a full political and ethical philosophy by the Stoics. All humans share in the divine Logos and are therefore equal in moral standing. One of the most consequential ideas in Western political thought, feeding directly into natural law theory, human rights, and international law.",
+  "long_summary": "The Stoic doctrine of the universal Logos — the rational principle shared by all humans — gave cosmopolitanism its philosophical foundation. If all humans participate in reason, then all have equal moral worth, regardless of social position, nationality, or birth. This was a genuinely radical claim in the ancient world, which took the distinction between Greek and barbarian, free and slave, as natural. The Stoics did not necessarily argue for the abolition of slavery (a significant limitation), but they did argue that the slave was the equal of the master in the only respect that mattered — rational capacity and virtue. Marcus Aurelius: 'One human nature, one law, one reason.' This tradition fed into: Roman law's concept of the ius gentium (law of peoples, applicable to all regardless of citizenship); medieval natural law theory (Aquinas); Hugo Grotius's international law (17th century); the Enlightenment concept of universal human rights; and contemporary cosmopolitan political philosophy (Rawls, Nussbaum, Singer). It also stands in tension with: nationalism, cultural particularism, and communitarian critiques of liberal universalism.",
+  "first_appearance": "c. 400 BCE",
+  "primary_thinker": "zeno-of-citium",
+  "tags": ["political philosophy", "ethics", "Stoicism", "human rights precursor", "universalism", "natural law"],
+  "related_nodes": [
+    "zeno-of-citium",
+    "marcus-aurelius",
+    "stoic-ethics",
+    "logos",
+    "kant-immanuel"
+  ]
+}

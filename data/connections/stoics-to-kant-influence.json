@@ -1,0 +1,11 @@
+{
+  "id": "stoics-to-kant-influence",
+  "type": "connection",
+  "from": "zeno-of-citium",
+  "to": "kant-immanuel",
+  "relationship": "influenced",
+  "weight": 3,
+  "description": "Kant's ethics — particularly his concept of duty, the categorical imperative, and the dignity of rational beings — has deep Stoic roots. Kant explicitly invoked the Stoic sage as a moral ideal. His claim that virtue is the only unconditional good echoes the Stoic claim that virtue is the only genuine good. His cosmopolitanism — the idea that rational beings constitute a 'kingdom of ends' — directly continues the Stoic tradition of universal moral community. The Stoic concept of natural law (reason as the source of universal moral norms) was transmitted to Kant via the natural law tradition (Grotius, Pufendorf, Wolff).",
+  "source": "Kant, Groundwork of the Metaphysics of Morals; Critique of Practical Reason; Julia Annas, The Morality of Happiness (1993)",
+  "direction": "forward"
+}

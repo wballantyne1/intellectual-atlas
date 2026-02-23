@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-02-23 — Session 1 (continued): Hellenistic period — Stoics, Epicureans, Neoplatonists
+
+**Data — Thinkers (5 full nodes):**
+- `epicurus.json`, `lucretius.json`, `marcus-aurelius.json`, `plotinus.json`, `zeno-of-citium.json`
+
+**Data — Ideas (5 new nodes):**
+- `stoic-ethics.json`, `cosmopolitanism.json`, `ataraxia.json`, `the-one.json`, `emanation.json`
+
+**Data — Connections (6 new):**
+- `heraclitus-to-stoics-influence.json` — Logos tradition feeds directly into Stoic physics
+- `democritus-to-epicurus-influence.json` — atomism as the basis for Epicurean physics
+- `plato-to-plotinus-influence.json` — Forms and the Good become the basis for Neoplatonism
+- `egyptian-to-plotinus-influence.json` — Egyptian One/Monad concept as structural precursor
+- `plotinus-to-islamic-golden-age-influence.json` — Neoplatonism transmitted into Arabic philosophy
+- `stoics-to-kant-influence.json` — Stoic cosmopolitanism and duty ethics prefigure the categorical imperative
+
+**Obsidian notes:**
+- New full notes: Zeno of Citium, Epicurus, Lucretius, Plotinus, Marcus Aurelius, Stoic Ethics, Cosmopolitanism, Ataraxia, The One, Emanation
+- New stubs: Epictetus, Chrysippus, Porphyry
+
+**Next session:** Islamic Golden Age — Avicenna, Averroes, Al-Kindi — as the transmission bridge between Greek antiquity and medieval Europe.
+
+---
+
 ## 2026-02-23 — Session 1 (continued): Classical Greek cluster + colour coding
 
 **Obsidian:**

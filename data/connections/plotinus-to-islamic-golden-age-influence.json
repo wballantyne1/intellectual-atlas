@@ -1,0 +1,11 @@
+{
+  "id": "plotinus-to-islamic-golden-age-influence",
+  "type": "connection",
+  "from": "plotinus",
+  "to": "islamic-golden-age-tradition",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Neoplatonism was transmitted to the Islamic world primarily through a text known as the Theology of Aristotle — actually a paraphrase of Plotinus's Enneads IV–VI, mistakenly attributed to Aristotle. This meant Islamic philosophers absorbed Neoplatonic ideas while believing they were reading Aristotle, creating a distinctive fusion. Al-Farabi and Avicenna (Ibn Sina) developed Neoplatonic emanation theory within an Islamic theological framework. The concept of the Active Intellect — which illuminates human thought — is fundamentally Plotinian. Avicenna's famous 'Floating Man' thought experiment (a version of the mind-body problem) emerges from Neoplatonic psychology. Al-Farabi's political philosophy fused Platonic philosopher-kingship with Islamic prophethood via Plotinian emanation.",
+  "source": "Peter Adamson, Al-Kindi (2007); Majid Fakhry, A History of Islamic Philosophy (2004)",
+  "direction": "forward"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "marcus-aurelius",
+  "type": "thinker",
+  "name": "Marcus Aurelius",
+  "born": "121 CE",
+  "died": "180 CE",
+  "nationality": "Roman",
+  "tradition": ["Stoicism", "Roman Philosophy"],
+  "key_works": [
+    { "title": "Meditations", "year": "c. 161–180 CE (written as a private journal, never intended for publication)" }
+  ],
+  "summary": "Roman Emperor and Stoic philosopher — the most powerful person in the world who wrote one of the most intimate documents in philosophical history. The Meditations are personal notes to himself, not a treatise: reminders to practise Stoic principles under the pressure of governing an empire, conducting military campaigns, and dealing with plague, loss, and human weakness. One of the most widely read philosophical texts in the world today.",
+  "long_summary": "Marcus Aurelius ruled the Roman Empire from 161–180 CE, a period of significant external pressure (wars with Parthia, Germanic invasions, the Antonine Plague that killed millions). He was trained in Stoic philosophy from youth and corresponded with his tutor Fronto. The Meditations — written in Greek, in private — are unlike any other philosophical text: they are exercises in self-examination and self-correction, not arguments directed at others. Their recurring themes: the transience of all things and the consequent need to focus on what is within one's control (one's own judgments and responses, not external events); the cosmopolitan brotherhood of all humans under reason; the duty to act justly and service to others even when thankless; the importance of living in the present moment. Their appeal across centuries is partly their directness — they were not written to be impressive — and partly the Stoic insight they embody: that the quality of a life is determined entirely by the quality of the mind that lives it. Marcus represents the fullest expression of Stoicism as a practical philosophy, demonstrating that its principles could be maintained under the most extreme external pressures.",
+  "tags": ["Stoicism", "Roman philosophy", "ethics", "Meditations", "self-examination", "leadership"],
+  "related_nodes": [
+    "zeno-of-citium",
+    "epictetus",
+    "stoic-ethics",
+    "cosmopolitanism"
+  ]
+}

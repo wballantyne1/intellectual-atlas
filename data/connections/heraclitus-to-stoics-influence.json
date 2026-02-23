@@ -1,0 +1,11 @@
+{
+  "id": "heraclitus-to-stoics-influence",
+  "type": "connection",
+  "from": "heraclitus-of-ephesus",
+  "to": "zeno-of-citium",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Heraclitus's Logos — the rational principle governing all flux — is the direct ancestor of the Stoic Logos. The Stoics explicitly adopted and developed Heraclitean ideas: the world is governed by a divine rational principle (Logos/Zeus/Fate), everything is interconnected through this principle, and the good life consists in living in accordance with it. Zeno reportedly read Heraclitus carefully, and his successors (especially Chrysippus) made the Heraclitean inheritance explicit. The Stoics also inherited Heraclitus's fire cosmology — their periodic ekpyrosis (world-conflagration) is a development of the Heraclitean idea that fire is the arche.",
+  "source": "Diogenes Laërtius, Lives of the Eminent Philosophers VII.1; Long & Sedley, The Hellenistic Philosophers (1987)",
+  "direction": "forward"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "zeno-of-citium",
+  "type": "thinker",
+  "name": "Zeno of Citium",
+  "born": "c. 334 BCE",
+  "died": "c. 262 BCE",
+  "nationality": "Cypriot-Greek (Athenian)",
+  "tradition": ["Stoicism", "Hellenistic Philosophy"],
+  "key_works": [
+    { "title": "Republic", "year": "c. 300 BCE (lost)" },
+    { "title": "On Human Nature", "year": "c. 300 BCE (lost)" }
+  ],
+  "summary": "Founder of Stoicism, one of the most enduring philosophical schools in Western history. Zeno began teaching in the Stoa Poikile ('Painted Porch') in Athens around 300 BCE, giving the school its name. He synthesised Heraclitus's Logos with a practical ethics: if the universe is governed by rational law, the good life consists in living in accordance with that law — with reason and nature.",
+  "long_summary": "Zeno was born in Citium, Cyprus, of Phoenician descent — making him one of the first major philosophers with clear non-Greek origins, a fact worth noting in an Atlas committed to global scope. He came to Athens after a shipwreck (according to tradition), encountered Socratic philosophy, and eventually developed his own school. Stoicism has three parts: logic, physics, and ethics — but the ethics is the centre of gravity. The physical world is entirely governed by the Logos — the rational principle Heraclitus had identified — which the Stoics identified with God, fate, and nature. Everything that happens is determined by this rational order. The ethical consequence: virtue consists in living in accordance with reason and nature, accepting what cannot be changed with equanimity. External circumstances — wealth, health, reputation — are 'indifferent' (adiaphora); only virtue is genuinely good, only vice genuinely bad. This radical internalism — the good life is available to anyone regardless of external fortune — made Stoicism extraordinarily powerful across centuries and social positions, from the slave Epictetus to the emperor Marcus Aurelius.",
+  "tags": ["Stoicism", "ethics", "Logos", "virtue", "Hellenistic philosophy", "determinism", "cosmopolitanism"],
+  "related_nodes": [
+    "heraclitus-of-ephesus",
+    "logos",
+    "socrates",
+    "chrysippus",
+    "epictetus",
+    "marcus-aurelius",
+    "stoic-ethics",
+    "cosmopolitanism"
+  ]
+}

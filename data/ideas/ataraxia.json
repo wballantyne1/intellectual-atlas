@@ -1,0 +1,18 @@
+{
+  "id": "ataraxia",
+  "type": "idea",
+  "name": "Ataraxia",
+  "tradition": ["Epicureanism", "Hellenistic Philosophy", "Ethics"],
+  "contested": false,
+  "summary": "The Epicurean ideal of tranquillity — an undisturbed, anxiety-free state of mind achieved through the elimination of unnecessary fears (above all, fear of death and divine punishment) and the cultivation of simple pleasures. Not excitement or intensity, but steadiness. Ataraxia is the goal of Epicurean philosophy, achieved through philosophical understanding, friendship, and withdrawal from political ambition.",
+  "long_summary": "Ataraxia (ἀταραξία — literally 'not troubled') is the Epicurean answer to the question 'what is the good life?' It is not pleasure in the sense of sensory intensity (though Epicurus did not dismiss physical pleasure), but a lasting positive state of undisturbedness — the absence of anxiety, pain, and fear. Epicurus distinguished two kinds of pleasure: kinetic (active, involving change and desire) and katastematic (static, constituted by the absence of pain and disturbance). Ataraxia is the highest katastematic pleasure. The path to ataraxia runs through philosophical understanding: once you understand, via atomism, that death is simply the cessation of sensation (not a state to be experienced), and that the gods are indifferent to human affairs, the two great sources of anxiety dissolve. What remains is simple: friendship (Epicurus considered it the greatest of goods), philosophical conversation, modest food and drink, and withdrawal from the anxieties of public and political life. This last element — political withdrawal — made Epicureanism a persistent target of criticism from Stoics (who emphasised civic duty) and later from Christian thinkers. The contrast between Stoic engagement and Epicurean withdrawal is one of the most enduring tensions in Western ethics.",
+  "first_appearance": "c. 300 BCE",
+  "primary_thinker": "epicurus",
+  "tags": ["ethics", "tranquillity", "Epicureanism", "pleasure", "fear of death", "friendship", "Hellenistic philosophy"],
+  "related_nodes": [
+    "epicurus",
+    "lucretius",
+    "atomism",
+    "stoic-ethics"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "democritus-to-epicurus-influence",
+  "type": "connection",
+  "from": "democritus-of-abdera",
+  "to": "epicurus",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Epicurus adopted Democritus's atomic theory almost wholesale, but transformed its purpose from purely physical explanation to psychological liberation. Where Democritus used atomism to explain nature, Epicurus used it to dissolve fear: if everything — including the soul — is made of atoms that disperse at death, then death is simply the cessation of sensation, not a state to be experienced and feared. 'Where death is, I am not; where I am, death is not.' Epicurus modified the strict Democritean determinism by introducing the 'swerve' (clinamen) — a tiny random deviation in atomic motion — to preserve free will. This modification was philosophically significant: it acknowledged the problem of determinism that Democritean atomism implied.",
+  "source": "Epicurus, Letter to Herodotus; Lucretius, De Rerum Natura II.216–250",
+  "direction": "forward"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "epicurus",
+  "type": "thinker",
+  "name": "Epicurus",
+  "born": "341 BCE",
+  "died": "270 BCE",
+  "nationality": "Greek (Samian)",
+  "tradition": ["Epicureanism", "Hellenistic Philosophy", "Materialism"],
+  "key_works": [
+    { "title": "Letter to Menoeceus", "year": "c. 300 BCE" },
+    { "title": "Letter to Herodotus", "year": "c. 300 BCE" },
+    { "title": "Principal Doctrines", "year": "c. 300 BCE" }
+  ],
+  "summary": "Founder of Epicureanism, one of the most misunderstood philosophies in history. Epicurus did not advocate hedonistic excess — he argued for the quiet pleasure of friendship, philosophical conversation, and freedom from fear. He adopted Democritus's atomism to eliminate the two great sources of human anxiety: fear of death (we are just atoms; death is nothing to us) and fear of the gods (they exist but are indifferent to us).",
+  "long_summary": "Epicurus founded his school — the Garden — in Athens around 306 BCE. Unlike Plato's Academy or Aristotle's Lyceum, the Garden admitted women and slaves, a remarkable departure. His philosophy begins with a diagnosis: humans are primarily driven by unnecessary fears, above all fear of death and fear of divine punishment. His cure was philosophical: adopt Democritean atomism. If everything — including the soul — is made of atoms that disperse at death, then death is simply the cessation of sensation. 'Death is nothing to us: when we are, death has not come; when death has come, we are not.' The gods, if they exist, are themselves made of fine atoms and are entirely uninvolved in human affairs — no divine punishment to fear. The positive goal is ataraxia — a tranquil, undisturbed state of mind — achieved through simple pleasures (friendship, philosophical conversation, modest food) rather than the pursuit of intense pleasure, which brings its own anxieties. Epicureanism was Christianity's great rival in the ancient world for several centuries, and was largely suppressed as a result. Lucretius's poem preserved it. The rediscovery of Lucretius's manuscript in 1417 by Poggio Bracciolini helped spark the Renaissance and, through Gassendi and others, fed directly into the Scientific Revolution and the social contract tradition.",
+  "tags": ["Epicureanism", "atomism", "pleasure", "ataraxia", "materialism", "death", "Hellenistic philosophy"],
+  "related_nodes": [
+    "democritus-of-abdera",
+    "atomism",
+    "lucretius",
+    "ataraxia",
+    "aristotle"
+  ]
+}

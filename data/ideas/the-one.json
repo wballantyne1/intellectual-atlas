@@ -1,0 +1,19 @@
+{
+  "id": "the-one",
+  "type": "idea",
+  "name": "The One",
+  "tradition": ["Neoplatonism", "Metaphysics", "Mysticism"],
+  "contested": true,
+  "summary": "Plotinus's term for the absolute first principle of all reality — utterly simple, beyond being, beyond thought, beyond description. Everything that exists emanates from the One as light emanates from the sun, without diminishing it. The One is not a god who creates willfully, but a principle whose very nature overflows into existence. This concept became the philosophical backbone of mystical theology in both Christianity and Islam.",
+  "long_summary": "The One (τὸ Ἕν) is Plotinus's radicalisation of Plato's Form of the Good, which Plato described as 'beyond being' in the Republic. The One is absolutely simple — it has no parts, no attributes, no internal complexity. It cannot even be said to 'exist' in the ordinary sense, because existence implies some distinction between the thing and what it is. The One simply is — the source and ground of all being, not itself a being. This creates an immediate problem: how does a multiplicity of things arise from absolute simplicity? Plotinus's answer is emanation (see Emanation node): the One 'overflows' into Nous (Intellect/Mind), which contemplates the One and in so doing generates the multiplicity of Platonic Forms. Nous in turn overflows into Soul, which generates the material world. Each level is less unified, less real, than the one above. The One itself is unchanged by all of this — like the sun, it radiates without being diminished. The goal of the philosophic life is the soul's return to its source — a mystical ascent through contemplation, ultimately to the direct experience of union with the One, which Plotinus reportedly achieved several times. This framework profoundly shaped Christian mystical theology (Pseudo-Dionysius the Areopagite, Meister Eckhart), Islamic Sufi mysticism, and Jewish Kabbalah.",
+  "first_appearance": "c. 253 CE",
+  "primary_thinker": "plotinus",
+  "tags": ["Neoplatonism", "metaphysics", "mysticism", "unity", "Christian theology", "Islamic mysticism", "Plotinus"],
+  "related_nodes": [
+    "plotinus",
+    "emanation",
+    "plato",
+    "theory-of-forms",
+    "islamic-golden-age-tradition"
+  ]
+}

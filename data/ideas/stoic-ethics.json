@@ -1,0 +1,20 @@
+{
+  "id": "stoic-ethics",
+  "type": "idea",
+  "name": "Stoic Ethics",
+  "tradition": ["Stoicism", "Ethics", "Hellenistic Philosophy"],
+  "contested": false,
+  "summary": "The Stoic ethical framework: virtue is the only genuine good; everything else — wealth, health, reputation, even life itself — is 'indifferent'. The quality of a life is determined entirely by the quality of the mind that lives it. We cannot control external events, only our responses to them. This radical internalism made Stoicism available to slave and emperor alike, and gives it extraordinary modern relevance.",
+  "long_summary": "Stoic ethics rests on three pillars: (1) The distinction between what is 'up to us' (our judgments, impulses, desires, and aversions) and what is not (health, wealth, reputation, others' actions). Only the former are genuinely good or bad. (2) Virtue — practical wisdom, justice, courage, temperance — is the only genuine good and is sufficient for eudaimonia (the good life). External circumstances are 'preferred indifferents' — health is preferred to illness, but neither is genuinely good or bad. (3) Living in accordance with nature and reason, which for humans means living virtuously, since reason is our defining nature. The Stoic sage — one who has perfected virtue — cannot be harmed by any external event, since nothing external is genuinely good. This ideal was acknowledged as unachievable by most Stoics, who focused instead on the practice of making progress toward it. The psychological tools the Stoics developed — negative visualisation (imagining loss to appreciate what you have), the view from above (seeing one's situation sub specie aeternitatis), journaling (Marcus Aurelius's Meditations) — have been adopted almost wholesale by modern Cognitive Behavioural Therapy. The connection between Stoicism and CBT is explicit: Aaron Beck and Albert Ellis both acknowledged Stoic influence.",
+  "first_appearance": "c. 300 BCE",
+  "primary_thinker": "zeno-of-citium",
+  "tags": ["ethics", "virtue", "indifferents", "resilience", "Stoicism", "CBT precursor", "Hellenistic philosophy"],
+  "related_nodes": [
+    "zeno-of-citium",
+    "marcus-aurelius",
+    "epictetus",
+    "logos",
+    "virtue-ethics",
+    "heraclitus-of-ephesus"
+  ]
+}
