@@ -1,0 +1,11 @@
+{
+  "id": "plato-to-aristotle-influence",
+  "type": "connection",
+  "from": "plato",
+  "to": "aristotle",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Aristotle studied at Plato's Academy for approximately twenty years (367–347 BCE), leaving only after Plato's death. The relationship was one of deep intellectual formation followed by systematic disagreement. Aristotle accepted Plato's framework of questions — the nature of knowledge, the good life, the structure of reality — while rejecting his central answers. His critique of the Theory of Forms runs throughout the Metaphysics. The intellectual arc from Plato to Aristotle is one of the most productive disagreements in Western thought: Plato's idealism gives rise to Aristotle's empiricism, Plato's transcendent Forms give way to Aristotle's immanent teleology.",
+  "source": "Aristotle, Metaphysics Book I; Nicomachean Ethics Book X",
+  "direction": "forward"
+}

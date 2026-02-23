@@ -1,0 +1,21 @@
+{
+  "id": "theory-of-forms",
+  "type": "idea",
+  "name": "Theory of Forms",
+  "tradition": ["Platonism", "Metaphysics", "Epistemology"],
+  "contested": true,
+  "summary": "Plato's doctrine that true reality consists of eternal, perfect, abstract entities — Forms — of which physical things are imperfect, temporary copies. The Form of Beauty is perfectly beautiful; particular beautiful things merely participate in it imperfectly. This two-world ontology resolved the Heraclitus/Parmenides contradiction: the world of Forms is Parmenidean (eternal, unchanging), the sensible world is Heraclitean (in constant flux).",
+  "long_summary": "The Theory of Forms is Plato's central philosophical contribution and the target of much subsequent philosophy. The Forms are: (1) abstract — not physical objects; (2) eternal — they do not come into being or pass away; (3) perfect — the Form of Beauty is perfectly beautiful, unlike any particular beautiful thing; (4) the cause of their instances — things are beautiful because they participate in the Form of Beauty. The most important Form is the Form of the Good — which Plato describes in the Republic as the source of all being and knowledge, analogous to the sun. Epistemologically, genuine knowledge (episteme) is of Forms; perception of the sensible world yields only opinion (doxa). This grounds the famous allegory of the cave: ordinary humans mistake shadows (sensory appearances) for reality, while the philosopher ascends to see the Forms directly. Aristotle's critique was decisive: Forms separated from their instances explain nothing — how does a horse 'participate' in Horse-Form? The Theory has been debated in various forms ever since: mathematical Platonism (the view that mathematical objects like numbers really exist) is a version of it, defended by Frege and Gödel.",
+  "first_appearance": "c. 385 BCE",
+  "primary_thinker": "plato",
+  "tags": ["metaphysics", "epistemology", "idealism", "Platonism", "Forms", "two worlds", "mathematics"],
+  "related_nodes": [
+    "plato",
+    "aristotle",
+    "parmenides-of-elea",
+    "heraclitus-of-ephesus",
+    "pythagoras-of-samos",
+    "transcendental-idealism",
+    "kant-immanuel"
+  ]
+}

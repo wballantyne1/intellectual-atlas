@@ -1,0 +1,21 @@
+{
+  "id": "socrates",
+  "type": "thinker",
+  "name": "Socrates",
+  "born": "c. 470 BCE",
+  "died": "399 BCE",
+  "nationality": "Greek (Athenian)",
+  "tradition": ["Classical Greek Philosophy", "Ethics", "Dialectic"],
+  "key_works": [
+    { "title": "None — Socrates wrote nothing. Known entirely through the dialogues of Plato, Xenophon, and Aristophanes", "year": "c. 420–399 BCE" }
+  ],
+  "summary": "The founder of Western ethical philosophy — and one of the most paradoxical figures in intellectual history. He wrote nothing, claimed to know nothing, and was executed for his ideas. His method — the Socratic dialogue, relentless questioning to expose hidden assumptions — changed philosophy permanently. Everything we know of him is filtered through others, primarily Plato, making the 'historical Socrates' a perpetual problem.",
+  "long_summary": "Socrates is the pivot between Pre-Socratic natural philosophy and classical philosophy's turn toward ethics, knowledge, and the good life. The Pre-Socratics asked 'what is the world made of?'; Socrates asked 'how should we live?' and 'what do we actually know?' His method was the elenchus — cross-examination. He would approach someone who claimed expertise (a general on courage, a priest on piety) and through questioning reveal that they could not define the very thing they claimed to know. His conclusion: genuine wisdom begins with recognising one's own ignorance. 'I know that I know nothing.' Socrates was tried in 399 BCE on charges of impiety and corrupting the youth of Athens — almost certainly a politically motivated prosecution following Athens's defeat in the Peloponnesian War. He was sentenced to death and refused to flee, drinking hemlock as an act of philosophical integrity. His death electrified Plato, who spent his life working out what Socrates' questions implied. The 'Socratic problem' — how much of Plato's dialogues reflects Socrates' actual views versus Plato's own — remains unresolved. Early dialogues (Apology, Euthyphro) are generally considered closer to the historical Socrates; middle and late dialogues (Republic, Phaedo) increasingly reflect Plato's own philosophy.",
+  "tags": ["ethics", "dialectic", "elenchus", "epistemology", "classical Athens", "moral philosophy"],
+  "related_nodes": [
+    "plato",
+    "sophists-tradition",
+    "naturalistic-explanation",
+    "virtue-ethics"
+  ]
+}

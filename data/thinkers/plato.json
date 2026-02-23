@@ -1,0 +1,33 @@
+{
+  "id": "plato",
+  "type": "thinker",
+  "name": "Plato",
+  "born": "c. 428 BCE",
+  "died": "c. 348 BCE",
+  "nationality": "Greek (Athenian)",
+  "tradition": ["Classical Greek Philosophy", "Platonism", "Idealism"],
+  "key_works": [
+    { "title": "The Republic", "year": "c. 375 BCE" },
+    { "title": "Phaedo", "year": "c. 385 BCE" },
+    { "title": "Meno", "year": "c. 385 BCE" },
+    { "title": "Symposium", "year": "c. 385 BCE" },
+    { "title": "Timaeus", "year": "c. 360 BCE" },
+    { "title": "Parmenides", "year": "c. 370 BCE" },
+    { "title": "Theaetetus", "year": "c. 369 BCE" }
+  ],
+  "summary": "The most influential philosopher in the Western tradition. Student of Socrates, teacher of Aristotle, founder of the Academy. His theory of Forms — that true reality is a realm of eternal, perfect, abstract entities of which the physical world is an imperfect copy — attempted to synthesise the entire Pre-Socratic debate. His philosophical range covered epistemology, ethics, politics, cosmology, and aesthetics, almost always in the form of dramatic dialogue.",
+  "long_summary": "Plato's achievement was to synthesise the competing strands of Pre-Socratic philosophy through the lens of Socratic ethics. From Parmenides he took the idea that true reality is eternal and unchanging. From Heraclitus he accepted that the sensible world is in constant flux. His resolution: the world of flux is real but is only a pale participation in the truly real — the Forms. The Form of Beauty is perfectly beautiful; particular beautiful things merely approximate it. The Form of Justice is perfectly just; particular just acts approximate it. This two-world ontology had vast consequences: it grounded ethics (the Good is a Form, the highest Form), epistemology (genuine knowledge is of Forms, not of fleeting particulars), politics (The Republic imagines a state ruled by those who know the Form of Justice), and cosmology (the Timaeus depicts a demiurge crafting the world in imitation of the Forms). Plato's debt to Pythagoras is equally profound: the Forms are mathematical in character, and Plato's Academy emphasised mathematics as the path to philosophical understanding. His founding of the Academy in Athens (c. 387 BCE) — the first institution of higher learning in the Western world — was an act of institutional philosophy: he was not just arguing for ideas but creating the conditions for their perpetuation. Whitehead's famous remark that all of Western philosophy is 'footnotes to Plato' is an overstatement, but a productive one.",
+  "tags": ["Forms", "idealism", "epistemology", "ethics", "politics", "Academy", "Platonism", "classical Greece"],
+  "related_nodes": [
+    "socrates",
+    "aristotle",
+    "parmenides-of-elea",
+    "heraclitus-of-ephesus",
+    "pythagoras-of-samos",
+    "egyptian-wisdom-tradition",
+    "theory-of-forms",
+    "virtue-ethics",
+    "kant-immanuel",
+    "hegel-georg-wilhelm-friedrich"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "pythagoras-to-plato-influence",
+  "type": "connection",
+  "from": "pythagoras-of-samos",
+  "to": "plato",
+  "relationship": "influenced",
+  "weight": 4,
+  "description": "Plato's mathematical idealism — the idea that the Forms are mathematical in character and that reality is ultimately structured by mathematical relations — is deeply Pythagorean. Plato reportedly visited the Pythagorean communities of southern Italy. The inscription above the Academy's door is said to have read 'Let no one enter who does not know geometry.' The Timaeus, Plato's cosmological dialogue, depicts the demiurge constructing the world using mathematical ratios and geometric solids. Plato's Good (the highest Form) has the status that Pythagoras gave to Number: the ultimate organising principle of reality.",
+  "source": "Plato, Timaeus; Aristotle, Metaphysics 987a–b (on Plato's relation to Pythagoras)",
+  "direction": "forward"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "socrates-to-plato-influence",
+  "type": "connection",
+  "from": "socrates",
+  "to": "plato",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "The most consequential teacher-student relationship in Western philosophy. Plato witnessed Socrates' trial and execution in 399 BCE, an event that decisively shaped his life's work. The dialogues — Plato's primary vehicle for philosophy — are almost entirely dramatisations of Socratic conversation. Plato's early dialogues (Apology, Euthyphro, Crito) are generally considered close to the historical Socrates; his middle and late dialogues increasingly develop Plato's own views through the character of Socrates. It is impossible to fully separate Socratic from Platonic philosophy, and this was likely intentional on Plato's part — a form of intellectual tribute.",
+  "source": "Plato, Phaedo 57a–118a (account of Socrates' death); Apology (Socrates' defence speech)",
+  "direction": "forward"
+}

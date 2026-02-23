@@ -1,0 +1,11 @@
+{
+  "id": "parmenides-to-plato-influence",
+  "type": "connection",
+  "from": "parmenides-of-elea",
+  "to": "plato",
+  "relationship": "influenced",
+  "weight": 5,
+  "description": "Parmenides' influence on Plato is foundational. The Theory of Forms is essentially a Parmenidean move: true reality (the Forms) is eternal, unchanging, and knowable only by reason — just as Parmenides' Being is eternal, unchanging, and accessible only to rational thought rather than sense experience. Plato even wrote a dialogue called 'Parmenides' in which Socrates debates the historical Parmenides — an unusual act of philosophical tribute and self-examination. The key difference: Plato accepted the reality of the changing world as a lower grade of reality (participation), where Parmenides dismissed it entirely as illusion.",
+  "source": "Plato, Parmenides; Republic 509d–511e (the Divided Line)",
+  "direction": "forward"
+}

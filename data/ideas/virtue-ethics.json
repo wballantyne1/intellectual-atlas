@@ -1,0 +1,18 @@
+{
+  "id": "virtue-ethics",
+  "type": "idea",
+  "name": "Virtue Ethics",
+  "tradition": ["Classical Greek Philosophy", "Ethics", "Moral Philosophy"],
+  "contested": true,
+  "summary": "The ethical framework that locates morality in the character of the agent rather than the consequences of actions or adherence to rules. Originating with Socrates and developed by Plato and Aristotle, it asks not 'what should I do?' but 'what kind of person should I be?' Virtues — courage, justice, temperance, wisdom — are stable dispositions that constitute human flourishing (eudaimonia).",
+  "long_summary": "Virtue ethics is the oldest of the major ethical frameworks and has experienced a major revival since the mid-20th century. Its core claim: what matters morally is the character of the person acting, not primarily the act itself or its outcomes. A courageous act done by a cowardly person by accident is not morally equivalent to the same act done by a genuinely courageous person. Aristotle's account is the most developed: virtues are the mean between extremes (courage is the mean between cowardice and recklessness), and they are developed through habituation — you become courageous by practising courageous actions. The telos of human life is eudaimonia, often translated as 'happiness' but better rendered as 'flourishing' or 'living well.' Eudaimonia is an activity, not a feeling — it is the ongoing exercise of human capacities in accordance with virtue. Plato's account differs: virtue ultimately requires knowledge of the Good (the highest Form); wrongdoing is always a form of ignorance. Socrates held the radical view that virtue is knowledge — no one does wrong willingly; all wrongdoing is error. Virtue ethics was largely displaced by Kantian deontology and utilitarian consequentialism in the 18th-19th centuries, but was revived by Elizabeth Anscombe's 1958 paper 'Modern Moral Philosophy' and subsequently by Alasdair MacIntyre, Martha Nussbaum, and Philippa Foot.",
+  "first_appearance": "c. 400 BCE",
+  "primary_thinker": "aristotle",
+  "tags": ["ethics", "character", "eudaimonia", "flourishing", "Aristotle", "Plato", "moral philosophy"],
+  "related_nodes": [
+    "socrates",
+    "plato",
+    "aristotle",
+    "kant-immanuel"
+  ]
+}

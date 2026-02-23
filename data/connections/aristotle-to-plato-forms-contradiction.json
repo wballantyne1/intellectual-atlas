@@ -1,0 +1,11 @@
+{
+  "id": "aristotle-to-plato-forms-contradiction",
+  "type": "connection",
+  "from": "aristotle",
+  "to": "theory-of-forms",
+  "relationship": "contradicted",
+  "weight": 5,
+  "description": "Aristotle's most famous philosophical disagreement: his systematic rejection of Plato's Theory of Forms. Aristotle's objection, known as the 'Third Man Argument', runs: if particulars are beautiful because they participate in the Form of Beauty, then the Form of Beauty and the particular beautiful things must share something in common — which would require a third entity to explain their commonality, and so on infinitely. More fundamentally, Aristotle argued that separating Forms from their instances explains nothing: how does a horse 'participate' in Horse-Form? Forms must be immanent in things, not transcendent above them. His own position — hylomorphism — holds that form and matter are inseparable, and that reality just is individual things with their actual constitutions and capacities.",
+  "source": "Aristotle, Metaphysics 990b–991b; 1033a–1034b",
+  "direction": "forward"
+}

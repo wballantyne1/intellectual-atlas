@@ -9,23 +9,38 @@
   "colorGroups": [
     {
       "query": "tag:#contested-idea",
-      "color": { "a": 1, "rgb": 15220800 }
+      "color": {
+        "a": 1,
+        "rgb": 15220800
+      }
     },
     {
       "query": "tag:#idea",
-      "color": { "a": 1, "rgb": 16041008 }
+      "color": {
+        "a": 1,
+        "rgb": 16041008
+      }
     },
     {
       "query": "tag:#tradition",
-      "color": { "a": 1, "rgb": 15230218 }
+      "color": {
+        "a": 1,
+        "rgb": 15230218
+      }
     },
     {
       "query": "tag:#thinker",
-      "color": { "a": 1, "rgb": 4890367 }
+      "color": {
+        "a": 1,
+        "rgb": 4890367
+      }
     },
     {
       "query": "tag:#stub",
-      "color": { "a": 1, "rgb": 8421504 }
+      "color": {
+        "a": 1,
+        "rgb": 8421504
+      }
     }
   ],
   "collapse-display": true,
@@ -38,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7480882050624916,
-  "close": false
+  "scale": 0.963850871275362,
+  "close": true
 }

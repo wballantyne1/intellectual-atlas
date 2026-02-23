@@ -1,0 +1,17 @@
+{
+  "id": "syllogistic-logic",
+  "type": "idea",
+  "name": "Syllogistic Logic",
+  "tradition": ["Classical Greek Philosophy", "Logic", "Philosophy of Language"],
+  "contested": false,
+  "summary": "Aristotle's invention of formal deductive logic — the syllogism. 'All men are mortal; Socrates is a man; therefore Socrates is mortal.' For the first time, the form of a valid argument was separated from its content and analysed in its own right. This was the dominant framework for logic for two thousand years, until Frege's predicate logic in 1879 superseded it.",
+  "long_summary": "The syllogism is the first systematic formal logic in any tradition. Aristotle's insight was to notice that certain argument patterns are valid regardless of what they are about: if all A are B, and all B are C, then all A are C — the structure guarantees the conclusion independently of what A, B, and C refer to. This separation of logical form from content was a profound intellectual achievement. Aristotle identified four basic types of categorical proposition (All S are P; No S are P; Some S are P; Some S are not P), analysed their logical relationships (the Square of Opposition), and classified valid syllogistic forms. His logical works (collectively called the Organon) covered not just syllogistic but also categories, interpretation, topics, and sophistic refutations. Syllogistic logic was transmitted to the medieval Islamic world (via translations by Hunayn ibn Ishaq and others), then to medieval Europe (via translations from Arabic), where it became the backbone of scholastic theology. It was challenged but not replaced until Frege's Begriffsschrift (1879), which introduced quantifier logic capable of handling relational statements and mathematical reasoning that syllogistic could not. Modern formal logic is not Aristotelian, but Aristotle's framing of logic as a formal discipline with its own subject matter was never reversed.",
+  "first_appearance": "c. 350 BCE",
+  "primary_thinker": "aristotle",
+  "tags": ["logic", "deduction", "syllogism", "formal reasoning", "Aristotle", "medieval philosophy"],
+  "related_nodes": [
+    "aristotle",
+    "plato",
+    "islamic-golden-age-tradition"
+  ]
+}
